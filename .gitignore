@@ -1,0 +1,6 @@
+# Never commit the official UGOS Skill Creation Tool (licensed, not redistributable)
+uliya-skill-kit/
+uliya-skill-kit*.zip
+# Local tooling
+.claude/
+*.tmp
