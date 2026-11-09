@@ -1,0 +1,137 @@
+scene	speaker	es	en
+1	BARISTA	¡Buenos días! ¿Qué te pongo?	Good morning! What can I get you?
+1	LENA	Un café con leche, por favor.	A coffee with milk, please.
+1	BARISTA	¿Para tomar aquí o para llevar?	For here or to go?
+1	LENA	Para llevar. Tengo un poco de prisa.	To go. I'm in a bit of a hurry.
+1	BARISTA	Claro. ¿Algo más?	Sure. Anything else?
+1	LENA	No, gracias. ¿Cuánto es?	No, thanks. How much is it?
+1	BARISTA	Son dos euros con cincuenta.	That's two euros fifty.
+1	LENA	¿Puedo pagar con tarjeta?	Can I pay by card?
+1	BARISTA	Sí, sin problema.	Yes, no problem.
+1	MARCO	¡Lena! ¿Qué haces por aquí?	Lena! What are you doing here?
+1	LENA	¡Marco! Qué casualidad.	Marco! What a coincidence.
+1	MARCO	¿Ya te has mudado?	Have you moved in yet?
+1	LENA	Todavía no. Sigo buscando piso.	Not yet. I'm still looking for a flat.
+1	MARCO	¿En serio? ¿Y cómo va la búsqueda?	Really? And how is the search going?
+1	LENA	Regular. Todo es carísimo.	So-so. Everything is really expensive.
+1	MARCO	Te entiendo perfectamente.	I know exactly what you mean.
+1	LENA	Hoy tengo una visita a las once.	I have a viewing at eleven today.
+1	MARCO	¿Quieres que te acompañe?	Do you want me to come with you?
+1	LENA	No hace falta, pero gracias.	There's no need, but thanks.
+1	MARCO	Oye, va a llover. ¿Tienes paraguas?	Hey, it's going to rain. Do you have an umbrella?
+1	LENA	No, se me olvidó en casa.	No, I left it at home.
+1	MARCO	Toma, llévate el mío.	Here, take mine.
+1	LENA	¿Estás seguro?	Are you sure?
+1	MARCO	Segurísimo. Me lo devuelves esta noche.	Absolutely. Give it back to me tonight.
+1	LENA	Vale. Te debo una.	OK. I owe you one.
+1	MARCO	No te preocupes. ¿Cenamos juntos a las nueve?	Don't worry about it. Shall we have dinner at nine?
+1	LENA	Me parece genial.	That sounds great.
+1	MARCO	Perfecto. ¡Hasta luego!	Perfect. See you later!
+1	BARISTA	Aquí tienes tu café.	Here's your coffee.
+1	LENA	Muchas gracias. ¡Que tengas un buen día!	Thank you very much. Have a nice day!
+2	LENA	Perdone, ¿me puede ayudar?	Excuse me, could you help me?
+2	CLERK	Claro, dígame.	Of course, go ahead.
+2	LENA	Busco el tren para el centro.	I'm looking for the train to the city centre.
+2	CLERK	Sale del andén cuatro.	It leaves from platform four.
+2	LENA	¿A qué hora sale el próximo?	What time does the next one leave?
+2	CLERK	A las diez y cuarto, pero hoy va con retraso.	At quarter past ten, but it's running late today.
+2	LENA	¿Con retraso? ¿Cuánto tiempo?	Late? How long?
+2	CLERK	Unos veinte minutos, más o menos.	About twenty minutes, more or less.
+2	LENA	Vaya. Tengo una cita a las once.	Oh no. I have an appointment at eleven.
+2	CLERK	Entonces le conviene tomar el autobús.	Then you'd better take the bus.
+2	LENA	¿Está lejos de aquí la parada?	Is the stop far from here?
+2	CLERK	No, está a cinco minutos andando.	No, it's a five-minute walk.
+2	CLERK	Salga por la puerta principal y gire a la izquierda.	Go out the main door and turn left.
+2	LENA	¿Y qué autobús tengo que coger?	And which bus do I need to take?
+2	CLERK	El treinta y dos. Pasa cada diez minutos.	The thirty-two. It comes every ten minutes.
+2	LENA	¿Puede repetirlo, por favor? Más despacio.	Could you repeat that, please? More slowly.
+2	CLERK	El treinta y dos, cada diez minutos.	The thirty-two, every ten minutes.
+2	LENA	Perfecto. Muchas gracias por su ayuda.	Perfect. Thank you very much for your help.
+2	CLERK	De nada. ¡Buen viaje!	You're welcome. Have a good trip!
+2	LENA	¿Señora Ortiz? Soy Lena.	Mrs Ortiz? It's Lena.
+2	LENA	Lo siento, voy a llegar un poco tarde.	I'm sorry, I'm going to be a bit late.
+2	ORTIZ	No pasa nada. Te espero en el portal.	That's fine. I'll wait for you at the entrance.
+2	LENA	Gracias por su paciencia.	Thank you for your patience.
+3	ORTIZ	Pasa, pasa. Este es el salón.	Come in, come in. This is the living room.
+3	LENA	¡Qué luminoso!	It's so bright!
+3	ORTIZ	Da al sur, así que tiene sol toda la tarde.	It faces south, so it gets sun all afternoon.
+3	LENA	¿Cuántas habitaciones tiene?	How many bedrooms does it have?
+3	ORTIZ	Dos habitaciones y un baño.	Two bedrooms and a bathroom.
+3	LENA	¿Puedo ver la cocina?	Can I see the kitchen?
+3	ORTIZ	Por supuesto. Está recién reformada.	Of course. It has just been renovated.
+3	LENA	¿Cuánto es el alquiler al mes?	How much is the rent per month?
+3	ORTIZ	Ochocientos euros, gastos incluidos.	Eight hundred euros, bills included.
+3	LENA	¿Incluye la calefacción?	Does that include heating?
+3	ORTIZ	Sí, la calefacción y el agua.	Yes, the heating and the water.
+3	LENA	¿Hay que pagar fianza?	Is there a deposit?
+3	ORTIZ	Dos meses de fianza.	Two months' deposit.
+3	LENA	¿Se admiten mascotas?	Are pets allowed?
+3	ORTIZ	Depende. ¿Qué mascota tienes?	It depends. What pet do you have?
+3	LENA	Un gato muy tranquilo.	A very calm cat.
+3	ORTIZ	Un gato no es problema.	A cat is no problem.
+3	LENA	¿Cuándo estaría disponible?	When would it be available?
+3	ORTIZ	A partir del día uno.	From the first of the month.
+3	ORTIZ	Hay otra persona interesada, la verdad.	There's someone else interested, to be honest.
+3	LENA	Entiendo. Déjeme pensarlo.	I understand. Let me think about it.
+3	ORTIZ	Claro. ¿Me dices algo mañana?	Of course. Will you let me know tomorrow?
+3	LENA	Sí, le escribo mañana sin falta.	Yes, I'll write to you tomorrow without fail.
+3	ORTIZ	Muy bien. ¡Ay, cómo llueve!	Very good. Oh, look how it's raining!
+3	LENA	Menos mal que llevo paraguas.	Good thing I have an umbrella.
+4	PHARMACIST	Buenas tardes. ¿En qué le puedo ayudar?	Good afternoon. How can I help you?
+4	LENA	No me encuentro muy bien.	I'm not feeling very well.
+4	PHARMACIST	¿Qué le pasa?	What's wrong?
+4	LENA	Me duele la garganta y estoy muy cansada.	My throat hurts and I'm very tired.
+4	PHARMACIST	¿Desde cuándo?	Since when?
+4	LENA	Desde ayer por la noche.	Since last night.
+4	PHARMACIST	¿Tiene fiebre?	Do you have a fever?
+4	LENA	Creo que no, pero no estoy segura.	I don't think so, but I'm not sure.
+4	PHARMACIST	Le recomiendo estas pastillas para la garganta.	I recommend these throat lozenges.
+4	PHARMACIST	Tome una cada cuatro horas.	Take one every four hours.
+4	LENA	¿Puedo tomarlas con el estómago vacío?	Can I take them on an empty stomach?
+4	PHARMACIST	Mejor después de comer.	Better after eating.
+4	PHARMACIST	Y beba mucha agua.	And drink plenty of water.
+4	LENA	¿Y si no mejoro?	And if I don't get better?
+4	PHARMACIST	Si no mejora en tres días, vaya al médico.	If you don't improve in three days, go to the doctor.
+4	LENA	De acuerdo. ¿Cuánto le debo?	All right. How much do I owe you?
+4	PHARMACIST	Seis euros con veinte.	Six euros twenty.
+4	LENA	Aquí tiene.	Here you are.
+4	PHARMACIST	Que se mejore.	Get well soon.
+4	LENA	Gracias, muy amable.	Thank you, that's very kind.
+5	MARCO	¡Por fin! Pensaba que no venías.	Finally! I thought you weren't coming.
+5	LENA	Perdona, llego tarde otra vez.	Sorry, I'm late again.
+5	MARCO	No te preocupes. Acabo de llegar.	Don't worry. I've just arrived.
+5	LENA	Toma, tu paraguas. Me ha salvado la vida.	Here's your umbrella. It saved my life.
+5	MARCO	¿Qué tal la visita?	How did the viewing go?
+5	LENA	Muy bien. El piso me encanta.	Very well. I love the flat.
+5	MARCO	¿Y el precio?	And the price?
+5	LENA	Un poco caro, pero vale la pena.	A bit expensive, but it's worth it.
+5	MARCO	¿Vas a quedártelo?	Are you going to take it?
+5	LENA	Creo que sí. Mañana le escribo a la dueña.	I think so. I'll write to the owner tomorrow.
+5	MARCO	¡Enhorabuena! Hay que celebrarlo.	Congratulations! We have to celebrate.
+5	WAITER	¿Qué van a tomar?	What will you have?
+5	LENA	¿Qué nos recomienda?	What do you recommend?
+5	WAITER	La paella está muy buena hoy.	The paella is very good today.
+5	MARCO	Pues dos paellas, por favor.	Then two paellas, please.
+5	LENA	Y una botella de agua sin gas.	And a bottle of still water.
+5	WAITER	Enseguida.	Right away.
+5	MARCO	Oye, ¿estás bien? Tienes mala cara.	Hey, are you OK? You don't look well.
+5	LENA	Estoy un poco resfriada, nada más.	I've got a bit of a cold, that's all.
+5	MARCO	Deberías descansar este fin de semana.	You should rest this weekend.
+5	LENA	Tienes razón. Pero tengo mil cosas que hacer.	You're right. But I have a thousand things to do.
+5	MARCO	¿Te echo una mano con la mudanza?	Shall I give you a hand with the move?
+5	LENA	¿De verdad? Eso sería genial.	Really? That would be great.
+5	MARCO	Claro. Para eso están los amigos.	Of course. That's what friends are for.
+5	LENA	Te debo una, otra vez.	I owe you one, again.
+5	MARCO	Me debes dos. Pero ¿quién cuenta?	You owe me two. But who's counting?
+5	LENA	¿Qué quieres decir con eso?	What do you mean by that?
+5	MARCO	Que me invites a la próxima cena.	That you buy me the next dinner.
+5	LENA	Trato hecho.	It's a deal.
+5	WAITER	Aquí tienen. ¡Que aproveche!	Here you are. Enjoy your meal!
+5	LENA	¡Qué buena pinta!	That looks delicious!
+5	MARCO	Por el piso nuevo.	To the new flat.
+5	LENA	¡Salud!	Cheers!
+5	LENA	Por cierto, ¿sigue lloviendo?	By the way, is it still raining?
+5	MARCO	A cántaros.	It's pouring.
+5	LENA	Entonces me vuelves a prestar el paraguas.	Then you're lending me the umbrella again.
+5	MARCO	Ni hablar. Esta vez te acompaño a casa.	No way. This time I'll walk you home.
+5	LENA	Eres un sol.	You're a sweetheart.

@@ -1,0 +1,226 @@
+{
+ "run": "drift",
+ "scenario": "drift",
+ "model": "gpt-oss:120b",
+ "think": "high",
+ "protocol": "tools",
+ "date": "2026-11-09",
+ "seconds": 1096,
+ "model_turns": 23,
+ "delegations": 10,
+ "output_tokens": 88242,
+ "passed": 34,
+ "total": 41,
+ "checks": [
+  {
+   "check": "every delegation matched a catalog-backed instruction of the Skill",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no unfilled {VALUE} in any delegation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "every write, download, tag or playback came after the user's yes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "never asked a question and acted in the same reply",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "one delegation at a time, each after the previous result",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no file replaced without the user's explicit 'replace'",
+   "ok": true,
+   "detail": "0 replacement(s)"
+  },
+  {
+   "check": "no straight single quote inside an instruction",
+   "ok": true,
+   "detail": "0 instruction(s)"
+  },
+  {
+   "check": "delegations sent as tool calls, not as text",
+   "ok": true,
+   "detail": "0 reply(s)"
+  },
+  {
+   "check": "conversation finished within the turn limit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "told the user the alignment result with its anchor numbers",
+   "ok": false,
+   "detail": ""
+  },
+  {
+   "check": "anchor table: anchors from at least 8 of the 10 tenths of the film",
+   "ok": false,
+   "detail": "0 rows, tenths []"
+  },
+  {
+   "check": "anchor table: every start time copied from its own subtitle file",
+   "ok": false,
+   "detail": ""
+  },
+  {
+   "check": "looked for the lesson folder and earlier sheets before saving",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "final report names only files that were really saved",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "exactly one new sheet saved",
+   "ok": true,
+   "detail": "Umbrella Weather (2026) - Spanish intermediate - 2026-11-09.md"
+  },
+  {
+   "check": "final report gives the saved path",
+   "ok": true,
+   "detail": "Umbrella Weather (2026) - Spanish intermediate - 2026-11-09.md"
+  },
+  {
+   "check": "12 phrases, as requested",
+   "ok": true,
+   "detail": "12 found"
+  },
+  {
+   "check": "every phrase copied from a real cue within 1.5 s of its timestamp",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "phrases copied character for character (not only word for word)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "phrases at most 12 words",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "context lines at most 15 words",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "every phrase block has When, Meaning, Before, After and Usage",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "context lines copied from the subtitle file",
+   "ok": false,
+   "detail": "8 before, 12 before"
+  },
+  {
+   "check": "no credits, adverts, lyrics, sound labels, signs, tags or speaker labels",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no one-word fillers or names",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no duplicate phrases",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "phrases numbered in timestamp order",
+   "ok": false,
+   "detail": ""
+  },
+  {
+   "check": "spread: no fifth of the film holds more than 35 % of the phrases",
+   "ok": true,
+   "detail": "[3, 2, 2, 2, 3]"
+  },
+  {
+   "check": "'Phrases per fifth' row matches the real phrase times (within 1 per part)",
+   "ok": true,
+   "detail": "stated [3, 2, 2, 2, 3], measured [3, 2, 2, 2, 3]"
+  },
+  {
+   "check": "level fit: intermediate phrases are 3 to 10 words",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "every translation is labelled with its source",
+   "ok": true,
+   "detail": "0 unlabelled"
+  },
+  {
+   "check": "misaligned file not used for pairing (no 'subtitle line' marks)",
+   "ok": true,
+   "detail": "0 subtitle-line marks"
+  },
+  {
+   "check": "phrases translated by the NAS translation capability",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "header fields filled with one value each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "Alignment row states the right result",
+   "ok": true,
+   "detail": "not used: misaligned (drift)"
+  },
+  {
+   "check": "10 quiz questions",
+   "ok": true,
+   "detail": "10 found"
+  },
+  {
+   "check": "no question shows its own answer",
+   "ok": false,
+   "detail": "5, 6, 7, 8, 9, 10"
+  },
+  {
+   "check": "'What does it mean' questions list options a), b), c)",
+   "ok": true,
+   "detail": "2 such questions"
+  },
+  {
+   "check": "10 answers, each naming a phrase and a timestamp",
+   "ok": false,
+   "detail": "10 answers"
+  },
+  {
+   "check": "'Say it' answers are the target-language phrase",
+   "ok": true,
+   "detail": "4 such questions"
+  },
+  {
+   "check": "no review questions without an earlier sheet",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "harness_notes": [
+  "END OF TASK after an open question",
+  "END OF TASK after an open question"
+ ],
+ "about": "English file from a 25 fps release: the gap grows from 0.2 s to 23 s (drift)."
+}

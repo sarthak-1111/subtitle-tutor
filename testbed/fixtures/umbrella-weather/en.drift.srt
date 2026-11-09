@@ -1,0 +1,543 @@
+1
+00:00:04,171 --> 00:00:07,236
+Good morning! What can I get you?
+
+2
+00:00:07,966 --> 00:00:11,089
+A coffee with milk, please.
+
+3
+00:00:12,080 --> 00:00:15,317
+For here or to go?
+
+4
+00:00:16,569 --> 00:00:20,093
+To go. I'm in a bit of a hurry.
+
+5
+00:00:20,823 --> 00:00:23,258
+Sure. Anything else?
+
+6
+00:00:24,248 --> 00:00:27,084
+No, thanks. How much is it?
+
+7
+00:00:28,336 --> 00:00:31,401
+That's two euros fifty.
+
+8
+00:00:32,131 --> 00:00:35,025
+Can I pay by card?
+
+9
+00:00:36,015 --> 00:00:38,450
+Yes, no problem.
+
+10
+00:00:39,701 --> 00:00:42,709
+Lena! What are you doing here?
+
+11
+00:00:43,439 --> 00:00:46,218
+Marco! What a coincidence.
+
+12
+00:00:47,209 --> 00:00:49,701
+Have you moved in yet?
+
+13
+00:00:50,952 --> 00:00:54,190
+Not yet. I'm still looking for a flat.
+
+14
+00:00:54,920 --> 00:00:58,329
+Really? And how is the search going?
+
+15
+00:00:59,320 --> 00:01:02,271
+So-so. Everything is really expensive.
+
+16
+00:01:03,522 --> 00:01:06,473
+I know exactly what you mean.
+
+17
+00:01:07,203 --> 00:01:10,498
+I have a viewing at eleven today.
+
+18
+00:01:11,488 --> 00:01:14,382
+Do you want me to come with you?
+
+19
+00:01:15,633 --> 00:01:18,698
+There's no need, but thanks.
+
+20
+00:01:19,428 --> 00:01:22,895
+Hey, it's going to rain. Do you have an umbrella?
+
+21
+00:01:23,886 --> 00:01:26,779
+No, I left it at home.
+
+22
+00:01:28,031 --> 00:01:30,695
+Here, take mine.
+
+23
+00:01:31,425 --> 00:01:33,687
+Are you sure?
+
+24
+00:01:34,678 --> 00:01:38,374
+Absolutely. Give it back to me tonight.
+
+25
+00:01:39,626 --> 00:01:42,118
+OK. I owe you one.
+
+26
+00:01:42,848 --> 00:01:46,888
+Don't worry about it. Shall we have dinner at nine?
+
+27
+00:01:47,879 --> 00:01:50,313
+That sounds great.
+
+28
+00:01:51,565 --> 00:01:54,344
+Perfect. See you later!
+
+29
+00:01:55,073 --> 00:01:57,680
+Here's your coffee.
+
+30
+00:01:58,671 --> 00:02:02,425
+Thank you very much. Have a nice day!
+
+31
+00:02:10,975 --> 00:02:13,926
+Excuse me, could you help me?
+
+32
+00:02:14,655 --> 00:02:16,918
+Of course, go ahead.
+
+33
+00:02:17,909 --> 00:02:21,032
+I'm looking for the train to the city centre.
+
+34
+00:02:22,283 --> 00:02:25,004
+It leaves from platform four.
+
+35
+00:02:25,734 --> 00:02:28,800
+What time does the next one leave?
+
+36
+00:02:29,790 --> 00:02:33,831
+At quarter past ten, but it's running late today.
+
+37
+00:02:35,082 --> 00:02:38,205
+Late? How long?
+
+38
+00:02:38,935 --> 00:02:42,287
+About twenty minutes, more or less.
+
+39
+00:02:43,278 --> 00:02:46,573
+Oh no. I have an appointment at eleven.
+
+40
+00:02:47,824 --> 00:02:51,463
+Then you'd better take the bus.
+
+41
+00:02:52,193 --> 00:02:55,373
+Is the stop far from here?
+
+42
+00:02:56,364 --> 00:02:59,716
+No, it's a five-minute walk.
+
+43
+00:03:00,967 --> 00:03:05,347
+Go out the main door and turn left.
+
+44
+00:03:06,077 --> 00:03:09,314
+And which bus do I need to take?
+
+45
+00:03:10,305 --> 00:03:14,116
+The thirty-two. It comes every ten minutes.
+
+46
+00:03:15,367 --> 00:03:19,236
+Could you repeat that, please? More slowly.
+
+47
+00:03:19,966 --> 00:03:23,490
+The thirty-two, every ten minutes.
+
+48
+00:03:24,481 --> 00:03:28,120
+Perfect. Thank you very much for your help.
+
+49
+00:03:29,371 --> 00:03:32,035
+You're welcome. Have a good trip!
+
+50
+00:03:32,765 --> 00:03:35,601
+Mrs Ortiz? It's Lena.
+
+51
+00:03:36,592 --> 00:03:40,231
+I'm sorry, I'm going to be a bit late.
+
+52
+00:03:41,482 --> 00:03:45,064
+That's fine. I'll wait for you at the entrance.
+
+53
+00:03:45,794 --> 00:03:48,687
+Thank you for your patience.
+
+54
+00:03:56,977 --> 00:04:00,099
+Come in, come in. This is the living room.
+
+55
+00:04:01,351 --> 00:04:03,613
+It's so bright!
+
+56
+00:04:04,343 --> 00:04:08,269
+It faces south, so it gets sun all afternoon.
+
+57
+00:04:09,260 --> 00:04:12,325
+How many bedrooms does it have?
+
+58
+00:04:13,576 --> 00:04:16,585
+Two bedrooms and a bathroom.
+
+59
+00:04:17,315 --> 00:04:19,979
+Can I see the kitchen?
+
+60
+00:04:20,969 --> 00:04:24,494
+Of course. It has just been renovated.
+
+61
+00:04:25,745 --> 00:04:28,925
+How much is the rent per month?
+
+62
+00:04:29,655 --> 00:04:33,179
+Eight hundred euros, bills included.
+
+63
+00:04:34,170 --> 00:04:37,006
+Does that include heating?
+
+64
+00:04:38,257 --> 00:04:41,380
+Yes, the heating and the water.
+
+65
+00:04:42,110 --> 00:04:44,832
+Is there a deposit?
+
+66
+00:04:45,822 --> 00:04:48,429
+Two months' deposit.
+
+67
+00:04:49,680 --> 00:04:52,344
+Are pets allowed?
+
+68
+00:04:53,074 --> 00:04:56,197
+It depends. What pet do you have?
+
+69
+00:04:57,188 --> 00:04:59,909
+A very calm cat.
+
+70
+00:05:01,161 --> 00:05:03,939
+A cat is no problem.
+
+71
+00:05:04,669 --> 00:05:07,677
+When would it be available?
+
+72
+00:05:08,668 --> 00:05:11,332
+From the first of the month.
+
+73
+00:05:12,583 --> 00:05:16,280
+There's someone else interested, to be honest.
+
+74
+00:05:17,010 --> 00:05:19,961
+I understand. Let me think about it.
+
+75
+00:05:20,951 --> 00:05:24,074
+Of course. Will you let me know tomorrow?
+
+76
+00:05:25,325 --> 00:05:28,620
+Yes, I'll write to you tomorrow without fail.
+
+77
+00:05:29,350 --> 00:05:32,358
+Very good. Oh, look how it's raining!
+
+78
+00:05:33,349 --> 00:05:36,472
+Good thing I have an umbrella.
+
+79
+00:05:45,022 --> 00:05:48,719
+Good afternoon. How can I help you?
+
+80
+00:05:49,448 --> 00:05:52,342
+I'm not feeling very well.
+
+81
+00:05:53,332 --> 00:05:55,538
+What's wrong?
+
+82
+00:05:56,789 --> 00:06:00,600
+My throat hurts and I'm very tired.
+
+83
+00:06:01,330 --> 00:06:03,593
+Since when?
+
+84
+00:06:04,583 --> 00:06:07,420
+Since last night.
+
+85
+00:06:08,671 --> 00:06:10,933
+Do you have a fever?
+
+86
+00:06:11,663 --> 00:06:15,073
+I don't think so, but I'm not sure.
+
+87
+00:06:16,064 --> 00:06:20,219
+I recommend these throat lozenges.
+
+88
+00:06:21,470 --> 00:06:24,478
+Take one every four hours.
+
+89
+00:06:25,208 --> 00:06:28,847
+Can I take them on an empty stomach?
+
+90
+00:06:29,838 --> 00:06:32,617
+Better after eating.
+
+91
+00:06:33,868 --> 00:06:36,360
+And drink plenty of water.
+
+92
+00:06:37,090 --> 00:06:39,467
+And if I don't get better?
+
+93
+00:06:40,458 --> 00:06:44,326
+If you don't improve in three days, go to the doctor.
+
+94
+00:06:45,577 --> 00:06:48,643
+All right. How much do I owe you?
+
+95
+00:06:49,373 --> 00:06:52,094
+Six euros twenty.
+
+96
+00:06:53,085 --> 00:06:55,176
+Here you are.
+
+97
+00:06:56,427 --> 00:06:58,690
+Get well soon.
+
+98
+00:06:59,419 --> 00:07:02,026
+Thank you, that's very kind.
+
+99
+00:07:10,316 --> 00:07:13,611
+Finally! I thought you weren't coming.
+
+100
+00:07:14,862 --> 00:07:18,042
+Sorry, I'm late again.
+
+101
+00:07:18,772 --> 00:07:22,124
+Don't worry. I've just arrived.
+
+102
+00:07:23,115 --> 00:07:26,926
+Here's your umbrella. It saved my life.
+
+103
+00:07:28,177 --> 00:07:30,727
+How did the viewing go?
+
+104
+00:07:31,457 --> 00:07:34,580
+Very well. I love the flat.
+
+105
+00:07:35,570 --> 00:07:37,775
+And the price?
+
+106
+00:07:39,027 --> 00:07:42,322
+A bit expensive, but it's worth it.
+
+107
+00:07:43,052 --> 00:07:45,544
+Are you going to take it?
+
+108
+00:07:46,534 --> 00:07:50,403
+I think so. I'll write to the owner tomorrow.
+
+109
+00:07:51,654 --> 00:07:55,006
+Congratulations! We have to celebrate.
+
+110
+00:07:55,736 --> 00:07:58,171
+What will you have?
+
+111
+00:07:59,161 --> 00:08:01,768
+What do you recommend?
+
+112
+00:08:03,019 --> 00:08:06,142
+The paella is very good today.
+
+113
+00:08:06,872 --> 00:08:09,938
+Then two paellas, please.
+
+114
+00:08:10,928 --> 00:08:14,109
+And a bottle of still water.
+
+115
+00:08:15,360 --> 00:08:17,393
+Right away.
+
+116
+00:08:18,123 --> 00:08:21,590
+Hey, are you OK? You don't look well.
+
+117
+00:08:22,581 --> 00:08:25,990
+I've got a bit of a cold, that's all.
+
+118
+00:08:27,242 --> 00:08:30,881
+You should rest this weekend.
+
+119
+00:08:31,611 --> 00:08:35,651
+You're right. But I have a thousand things to do.
+
+120
+00:08:36,642 --> 00:08:39,994
+Shall I give you a hand with the move?
+
+121
+00:08:41,245 --> 00:08:44,368
+Really? That would be great.
+
+122
+00:08:45,098 --> 00:08:48,450
+Of course. That's what friends are for.
+
+123
+00:08:49,441 --> 00:08:52,162
+I owe you one, again.
+
+124
+00:08:53,414 --> 00:08:56,766
+You owe me two. But who's counting?
+
+125
+00:08:57,496 --> 00:09:00,504
+What do you mean by that?
+
+126
+00:09:01,495 --> 00:09:04,847
+That you buy me the next dinner.
+
+127
+00:09:06,098 --> 00:09:08,246
+It's a deal.
+
+128
+00:09:08,976 --> 00:09:12,042
+Here you are. Enjoy your meal!
+
+129
+00:09:13,032 --> 00:09:15,467
+That looks delicious!
+
+130
+00:09:16,718 --> 00:09:19,210
+To the new flat.
+
+131
+00:09:19,940 --> 00:09:21,801
+Cheers!
+
+132
+00:09:22,792 --> 00:09:25,915
+By the way, is it still raining?
+
+133
+00:09:27,166 --> 00:09:29,257
+It's pouring.
+
+134
+00:09:29,987 --> 00:09:33,855
+Then you're lending me the umbrella again.
+
+135
+00:09:34,846 --> 00:09:38,542
+No way. This time I'll walk you home.
+
+136
+00:09:39,793 --> 00:09:41,941
+You're a sweetheart.

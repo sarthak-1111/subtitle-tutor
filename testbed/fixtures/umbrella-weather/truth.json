@@ -1,0 +1,1247 @@
+{
+ "title": "Umbrella Weather",
+ "year": 2026,
+ "cues": [
+  {
+   "n": 1,
+   "scene": 1,
+   "speaker": "BARISTA",
+   "start": 4.0,
+   "end": 6.94,
+   "es": "¡Buenos días! ¿Qué te pongo?",
+   "en": "Good morning! What can I get you?"
+  },
+  {
+   "n": 2,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 7.64,
+   "end": 10.635,
+   "es": "Un café con leche, por favor.",
+   "en": "A coffee with milk, please."
+  },
+  {
+   "n": 3,
+   "scene": 1,
+   "speaker": "BARISTA",
+   "start": 11.585,
+   "end": 14.69,
+   "es": "¿Para tomar aquí o para llevar?",
+   "en": "For here or to go?"
+  },
+  {
+   "n": 4,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 15.89,
+   "end": 19.27,
+   "es": "Para llevar. Tengo un poco de prisa.",
+   "en": "To go. I'm in a bit of a hurry."
+  },
+  {
+   "n": 5,
+   "scene": 1,
+   "speaker": "BARISTA",
+   "start": 19.97,
+   "end": 22.305,
+   "es": "Claro. ¿Algo más?",
+   "en": "Sure. Anything else?"
+  },
+  {
+   "n": 6,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 23.255,
+   "end": 25.975,
+   "es": "No, gracias. ¿Cuánto es?",
+   "en": "No, thanks. How much is it?"
+  },
+  {
+   "n": 7,
+   "scene": 1,
+   "speaker": "BARISTA",
+   "start": 27.175,
+   "end": 30.115,
+   "es": "Son dos euros con cincuenta.",
+   "en": "That's two euros fifty."
+  },
+  {
+   "n": 8,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 30.815,
+   "end": 33.59,
+   "es": "¿Puedo pagar con tarjeta?",
+   "en": "Can I pay by card?"
+  },
+  {
+   "n": 9,
+   "scene": 1,
+   "speaker": "BARISTA",
+   "start": 34.54,
+   "end": 36.875,
+   "es": "Sí, sin problema.",
+   "en": "Yes, no problem."
+  },
+  {
+   "n": 10,
+   "scene": 1,
+   "speaker": "MARCO",
+   "start": 38.075,
+   "end": 40.96,
+   "es": "¡Lena! ¿Qué haces por aquí?",
+   "en": "Lena! What are you doing here?"
+  },
+  {
+   "n": 11,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 41.66,
+   "end": 44.325,
+   "es": "¡Marco! Qué casualidad.",
+   "en": "Marco! What a coincidence."
+  },
+  {
+   "n": 12,
+   "scene": 1,
+   "speaker": "MARCO",
+   "start": 45.275,
+   "end": 47.665,
+   "es": "¿Ya te has mudado?",
+   "en": "Have you moved in yet?"
+  },
+  {
+   "n": 13,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 48.865,
+   "end": 51.97,
+   "es": "Todavía no. Sigo buscando piso.",
+   "en": "Not yet. I'm still looking for a flat."
+  },
+  {
+   "n": 14,
+   "scene": 1,
+   "speaker": "MARCO",
+   "start": 52.67,
+   "end": 55.94,
+   "es": "¿En serio? ¿Y cómo va la búsqueda?",
+   "en": "Really? And how is the search going?"
+  },
+  {
+   "n": 15,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 56.89,
+   "end": 59.72,
+   "es": "Regular. Todo es carísimo.",
+   "en": "So-so. Everything is really expensive."
+  },
+  {
+   "n": 16,
+   "scene": 1,
+   "speaker": "MARCO",
+   "start": 60.92,
+   "end": 63.75,
+   "es": "Te entiendo perfectamente.",
+   "en": "I know exactly what you mean."
+  },
+  {
+   "n": 17,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 64.45,
+   "end": 67.61,
+   "es": "Hoy tengo una visita a las once.",
+   "en": "I have a viewing at eleven today."
+  },
+  {
+   "n": 18,
+   "scene": 1,
+   "speaker": "MARCO",
+   "start": 68.56,
+   "end": 71.335,
+   "es": "¿Quieres que te acompañe?",
+   "en": "Do you want me to come with you?"
+  },
+  {
+   "n": 19,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 72.535,
+   "end": 75.475,
+   "es": "No hace falta, pero gracias.",
+   "en": "There's no need, but thanks."
+  },
+  {
+   "n": 20,
+   "scene": 1,
+   "speaker": "MARCO",
+   "start": 76.175,
+   "end": 79.5,
+   "es": "Oye, va a llover. ¿Tienes paraguas?",
+   "en": "Hey, it's going to rain. Do you have an umbrella?"
+  },
+  {
+   "n": 21,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 80.45,
+   "end": 83.225,
+   "es": "No, se me olvidó en casa.",
+   "en": "No, I left it at home."
+  },
+  {
+   "n": 22,
+   "scene": 1,
+   "speaker": "MARCO",
+   "start": 84.425,
+   "end": 86.98,
+   "es": "Toma, llévate el mío.",
+   "en": "Here, take mine."
+  },
+  {
+   "n": 23,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 87.68,
+   "end": 89.85,
+   "es": "¿Estás seguro?",
+   "en": "Are you sure?"
+  },
+  {
+   "n": 24,
+   "scene": 1,
+   "speaker": "MARCO",
+   "start": 90.8,
+   "end": 94.345,
+   "es": "Segurísimo. Me lo devuelves esta noche.",
+   "en": "Absolutely. Give it back to me tonight."
+  },
+  {
+   "n": 25,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 95.545,
+   "end": 97.935,
+   "es": "Vale. Te debo una.",
+   "en": "OK. I owe you one."
+  },
+  {
+   "n": 26,
+   "scene": 1,
+   "speaker": "MARCO",
+   "start": 98.635,
+   "end": 102.51,
+   "es": "No te preocupes. ¿Cenamos juntos a las nueve?",
+   "en": "Don't worry about it. Shall we have dinner at nine?"
+  },
+  {
+   "n": 27,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 103.46,
+   "end": 105.795,
+   "es": "Me parece genial.",
+   "en": "That sounds great."
+  },
+  {
+   "n": 28,
+   "scene": 1,
+   "speaker": "MARCO",
+   "start": 106.995,
+   "end": 109.66,
+   "es": "Perfecto. ¡Hasta luego!",
+   "en": "Perfect. See you later!"
+  },
+  {
+   "n": 29,
+   "scene": 1,
+   "speaker": "BARISTA",
+   "start": 110.36,
+   "end": 112.86,
+   "es": "Aquí tienes tu café.",
+   "en": "Here's your coffee."
+  },
+  {
+   "n": 30,
+   "scene": 1,
+   "speaker": "LENA",
+   "start": 113.81,
+   "end": 117.41,
+   "es": "Muchas gracias. ¡Que tengas un buen día!",
+   "en": "Thank you very much. Have a nice day!"
+  },
+  {
+   "n": 31,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 125.61,
+   "end": 128.44,
+   "es": "Perdone, ¿me puede ayudar?",
+   "en": "Excuse me, could you help me?"
+  },
+  {
+   "n": 32,
+   "scene": 2,
+   "speaker": "CLERK",
+   "start": 129.14,
+   "end": 131.31,
+   "es": "Claro, dígame.",
+   "en": "Of course, go ahead."
+  },
+  {
+   "n": 33,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 132.26,
+   "end": 135.255,
+   "es": "Busco el tren para el centro.",
+   "en": "I'm looking for the train to the city centre."
+  },
+  {
+   "n": 34,
+   "scene": 2,
+   "speaker": "CLERK",
+   "start": 136.455,
+   "end": 139.065,
+   "es": "Sale del andén cuatro.",
+   "en": "It leaves from platform four."
+  },
+  {
+   "n": 35,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 139.765,
+   "end": 142.705,
+   "es": "¿A qué hora sale el próximo?",
+   "en": "What time does the next one leave?"
+  },
+  {
+   "n": 36,
+   "scene": 2,
+   "speaker": "CLERK",
+   "start": 143.655,
+   "end": 147.53,
+   "es": "A las diez y cuarto, pero hoy va con retraso.",
+   "en": "At quarter past ten, but it's running late today."
+  },
+  {
+   "n": 37,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 148.73,
+   "end": 151.725,
+   "es": "¿Con retraso? ¿Cuánto tiempo?",
+   "en": "Late? How long?"
+  },
+  {
+   "n": 38,
+   "scene": 2,
+   "speaker": "CLERK",
+   "start": 152.425,
+   "end": 155.64,
+   "es": "Unos veinte minutos, más o menos.",
+   "en": "About twenty minutes, more or less."
+  },
+  {
+   "n": 39,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 156.59,
+   "end": 159.75,
+   "es": "Vaya. Tengo una cita a las once.",
+   "en": "Oh no. I have an appointment at eleven."
+  },
+  {
+   "n": 40,
+   "scene": 2,
+   "speaker": "CLERK",
+   "start": 160.95,
+   "end": 164.44,
+   "es": "Entonces le conviene tomar el autobús.",
+   "en": "Then you'd better take the bus."
+  },
+  {
+   "n": 41,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 165.14,
+   "end": 168.19,
+   "es": "¿Está lejos de aquí la parada?",
+   "en": "Is the stop far from here?"
+  },
+  {
+   "n": 42,
+   "scene": 2,
+   "speaker": "CLERK",
+   "start": 169.14,
+   "end": 172.355,
+   "es": "No, está a cinco minutos andando.",
+   "en": "No, it's a five-minute walk."
+  },
+  {
+   "n": 43,
+   "scene": 2,
+   "speaker": "CLERK",
+   "start": 173.555,
+   "end": 177.755,
+   "es": "Salga por la puerta principal y gire a la izquierda.",
+   "en": "Go out the main door and turn left."
+  },
+  {
+   "n": 44,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 178.455,
+   "end": 181.56,
+   "es": "¿Y qué autobús tengo que coger?",
+   "en": "And which bus do I need to take?"
+  },
+  {
+   "n": 45,
+   "scene": 2,
+   "speaker": "CLERK",
+   "start": 182.51,
+   "end": 186.165,
+   "es": "El treinta y dos. Pasa cada diez minutos.",
+   "en": "The thirty-two. It comes every ten minutes."
+  },
+  {
+   "n": 46,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 187.365,
+   "end": 191.075,
+   "es": "¿Puede repetirlo, por favor? Más despacio.",
+   "en": "Could you repeat that, please? More slowly."
+  },
+  {
+   "n": 47,
+   "scene": 2,
+   "speaker": "CLERK",
+   "start": 191.775,
+   "end": 195.155,
+   "es": "El treinta y dos, cada diez minutos.",
+   "en": "The thirty-two, every ten minutes."
+  },
+  {
+   "n": 48,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 196.105,
+   "end": 199.595,
+   "es": "Perfecto. Muchas gracias por su ayuda.",
+   "en": "Perfect. Thank you very much for your help."
+  },
+  {
+   "n": 49,
+   "scene": 2,
+   "speaker": "CLERK",
+   "start": 200.795,
+   "end": 203.35,
+   "es": "De nada. ¡Buen viaje!",
+   "en": "You're welcome. Have a good trip!"
+  },
+  {
+   "n": 50,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 204.05,
+   "end": 206.77,
+   "es": "¿Señora Ortiz? Soy Lena.",
+   "en": "Mrs Ortiz? It's Lena."
+  },
+  {
+   "n": 51,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 207.72,
+   "end": 211.21,
+   "es": "Lo siento, voy a llegar un poco tarde.",
+   "en": "I'm sorry, I'm going to be a bit late."
+  },
+  {
+   "n": 52,
+   "scene": 2,
+   "speaker": "ORTIZ",
+   "start": 212.41,
+   "end": 215.845,
+   "es": "No pasa nada. Te espero en el portal.",
+   "en": "That's fine. I'll wait for you at the entrance."
+  },
+  {
+   "n": 53,
+   "scene": 2,
+   "speaker": "LENA",
+   "start": 216.545,
+   "end": 219.32,
+   "es": "Gracias por su paciencia.",
+   "en": "Thank you for your patience."
+  },
+  {
+   "n": 54,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 227.27,
+   "end": 230.265,
+   "es": "Pasa, pasa. Este es el salón.",
+   "en": "Come in, come in. This is the living room."
+  },
+  {
+   "n": 55,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 231.465,
+   "end": 233.635,
+   "es": "¡Qué luminoso!",
+   "en": "It's so bright!"
+  },
+  {
+   "n": 56,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 234.335,
+   "end": 238.1,
+   "es": "Da al sur, así que tiene sol toda la tarde.",
+   "en": "It faces south, so it gets sun all afternoon."
+  },
+  {
+   "n": 57,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 239.05,
+   "end": 241.99,
+   "es": "¿Cuántas habitaciones tiene?",
+   "en": "How many bedrooms does it have?"
+  },
+  {
+   "n": 58,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 243.19,
+   "end": 246.075,
+   "es": "Dos habitaciones y un baño.",
+   "en": "Two bedrooms and a bathroom."
+  },
+  {
+   "n": 59,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 246.775,
+   "end": 249.33,
+   "es": "¿Puedo ver la cocina?",
+   "en": "Can I see the kitchen?"
+  },
+  {
+   "n": 60,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 250.28,
+   "end": 253.66,
+   "es": "Por supuesto. Está recién reformada.",
+   "en": "Of course. It has just been renovated."
+  },
+  {
+   "n": 61,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 254.86,
+   "end": 257.91,
+   "es": "¿Cuánto es el alquiler al mes?",
+   "en": "How much is the rent per month?"
+  },
+  {
+   "n": 62,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 258.61,
+   "end": 261.99,
+   "es": "Ochocientos euros, gastos incluidos.",
+   "en": "Eight hundred euros, bills included."
+  },
+  {
+   "n": 63,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 262.94,
+   "end": 265.66,
+   "es": "¿Incluye la calefacción?",
+   "en": "Does that include heating?"
+  },
+  {
+   "n": 64,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 266.86,
+   "end": 269.855,
+   "es": "Sí, la calefacción y el agua.",
+   "en": "Yes, the heating and the water."
+  },
+  {
+   "n": 65,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 270.555,
+   "end": 273.165,
+   "es": "¿Hay que pagar fianza?",
+   "en": "Is there a deposit?"
+  },
+  {
+   "n": 66,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 274.115,
+   "end": 276.615,
+   "es": "Dos meses de fianza.",
+   "en": "Two months' deposit."
+  },
+  {
+   "n": 67,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 277.815,
+   "end": 280.37,
+   "es": "¿Se admiten mascotas?",
+   "en": "Are pets allowed?"
+  },
+  {
+   "n": 68,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 281.07,
+   "end": 284.065,
+   "es": "Depende. ¿Qué mascota tienes?",
+   "en": "It depends. What pet do you have?"
+  },
+  {
+   "n": 69,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 285.015,
+   "end": 287.625,
+   "es": "Un gato muy tranquilo.",
+   "en": "A very calm cat."
+  },
+  {
+   "n": 70,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 288.825,
+   "end": 291.49,
+   "es": "Un gato no es problema.",
+   "en": "A cat is no problem."
+  },
+  {
+   "n": 71,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 292.19,
+   "end": 295.075,
+   "es": "¿Cuándo estaría disponible?",
+   "en": "When would it be available?"
+  },
+  {
+   "n": 72,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 296.025,
+   "end": 298.58,
+   "es": "A partir del día uno.",
+   "en": "From the first of the month."
+  },
+  {
+   "n": 73,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 299.78,
+   "end": 303.325,
+   "es": "Hay otra persona interesada, la verdad.",
+   "en": "There's someone else interested, to be honest."
+  },
+  {
+   "n": 74,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 304.025,
+   "end": 306.855,
+   "es": "Entiendo. Déjeme pensarlo.",
+   "en": "I understand. Let me think about it."
+  },
+  {
+   "n": 75,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 307.805,
+   "end": 310.8,
+   "es": "Claro. ¿Me dices algo mañana?",
+   "en": "Of course. Will you let me know tomorrow?"
+  },
+  {
+   "n": 76,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 312.0,
+   "end": 315.16,
+   "es": "Sí, le escribo mañana sin falta.",
+   "en": "Yes, I'll write to you tomorrow without fail."
+  },
+  {
+   "n": 77,
+   "scene": 3,
+   "speaker": "ORTIZ",
+   "start": 315.86,
+   "end": 318.745,
+   "es": "Muy bien. ¡Ay, cómo llueve!",
+   "en": "Very good. Oh, look how it's raining!"
+  },
+  {
+   "n": 78,
+   "scene": 3,
+   "speaker": "LENA",
+   "start": 319.695,
+   "end": 322.69,
+   "es": "Menos mal que llevo paraguas.",
+   "en": "Good thing I have an umbrella."
+  },
+  {
+   "n": 79,
+   "scene": 4,
+   "speaker": "PHARMACIST",
+   "start": 330.89,
+   "end": 334.435,
+   "es": "Buenas tardes. ¿En qué le puedo ayudar?",
+   "en": "Good afternoon. How can I help you?"
+  },
+  {
+   "n": 80,
+   "scene": 4,
+   "speaker": "LENA",
+   "start": 335.135,
+   "end": 337.91,
+   "es": "No me encuentro muy bien.",
+   "en": "I'm not feeling very well."
+  },
+  {
+   "n": 81,
+   "scene": 4,
+   "speaker": "PHARMACIST",
+   "start": 338.86,
+   "end": 340.975,
+   "es": "¿Qué le pasa?",
+   "en": "What's wrong?"
+  },
+  {
+   "n": 82,
+   "scene": 4,
+   "speaker": "LENA",
+   "start": 342.175,
+   "end": 345.83,
+   "es": "Me duele la garganta y estoy muy cansada.",
+   "en": "My throat hurts and I'm very tired."
+  },
+  {
+   "n": 83,
+   "scene": 4,
+   "speaker": "PHARMACIST",
+   "start": 346.53,
+   "end": 348.7,
+   "es": "¿Desde cuándo?",
+   "en": "Since when?"
+  },
+  {
+   "n": 84,
+   "scene": 4,
+   "speaker": "LENA",
+   "start": 349.65,
+   "end": 352.37,
+   "es": "Desde ayer por la noche.",
+   "en": "Since last night."
+  },
+  {
+   "n": 85,
+   "scene": 4,
+   "speaker": "PHARMACIST",
+   "start": 353.57,
+   "end": 355.74,
+   "es": "¿Tiene fiebre?",
+   "en": "Do you have a fever?"
+  },
+  {
+   "n": 86,
+   "scene": 4,
+   "speaker": "LENA",
+   "start": 356.44,
+   "end": 359.71,
+   "es": "Creo que no, pero no estoy segura.",
+   "en": "I don't think so, but I'm not sure."
+  },
+  {
+   "n": 87,
+   "scene": 4,
+   "speaker": "PHARMACIST",
+   "start": 360.66,
+   "end": 364.645,
+   "es": "Le recomiendo estas pastillas para la garganta.",
+   "en": "I recommend these throat lozenges."
+  },
+  {
+   "n": 88,
+   "scene": 4,
+   "speaker": "PHARMACIST",
+   "start": 365.845,
+   "end": 368.73,
+   "es": "Tome una cada cuatro horas.",
+   "en": "Take one every four hours."
+  },
+  {
+   "n": 89,
+   "scene": 4,
+   "speaker": "LENA",
+   "start": 369.43,
+   "end": 372.92,
+   "es": "¿Puedo tomarlas con el estómago vacío?",
+   "en": "Can I take them on an empty stomach?"
+  },
+  {
+   "n": 90,
+   "scene": 4,
+   "speaker": "PHARMACIST",
+   "start": 373.87,
+   "end": 376.535,
+   "es": "Mejor después de comer.",
+   "en": "Better after eating."
+  },
+  {
+   "n": 91,
+   "scene": 4,
+   "speaker": "PHARMACIST",
+   "start": 377.735,
+   "end": 380.125,
+   "es": "Y beba mucha agua.",
+   "en": "And drink plenty of water."
+  },
+  {
+   "n": 92,
+   "scene": 4,
+   "speaker": "LENA",
+   "start": 380.825,
+   "end": 383.105,
+   "es": "¿Y si no mejoro?",
+   "en": "And if I don't get better?"
+  },
+  {
+   "n": 93,
+   "scene": 4,
+   "speaker": "PHARMACIST",
+   "start": 384.055,
+   "end": 387.765,
+   "es": "Si no mejora en tres días, vaya al médico.",
+   "en": "If you don't improve in three days, go to the doctor."
+  },
+  {
+   "n": 94,
+   "scene": 4,
+   "speaker": "LENA",
+   "start": 388.965,
+   "end": 391.905,
+   "es": "De acuerdo. ¿Cuánto le debo?",
+   "en": "All right. How much do I owe you?"
+  },
+  {
+   "n": 95,
+   "scene": 4,
+   "speaker": "PHARMACIST",
+   "start": 392.605,
+   "end": 395.215,
+   "es": "Seis euros con veinte.",
+   "en": "Six euros twenty."
+  },
+  {
+   "n": 96,
+   "scene": 4,
+   "speaker": "LENA",
+   "start": 396.165,
+   "end": 398.17,
+   "es": "Aquí tiene.",
+   "en": "Here you are."
+  },
+  {
+   "n": 97,
+   "scene": 4,
+   "speaker": "PHARMACIST",
+   "start": 399.37,
+   "end": 401.54,
+   "es": "Que se mejore.",
+   "en": "Get well soon."
+  },
+  {
+   "n": 98,
+   "scene": 4,
+   "speaker": "LENA",
+   "start": 402.24,
+   "end": 404.74,
+   "es": "Gracias, muy amable.",
+   "en": "Thank you, that's very kind."
+  },
+  {
+   "n": 99,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 412.69,
+   "end": 415.85,
+   "es": "¡Por fin! Pensaba que no venías.",
+   "en": "Finally! I thought you weren't coming."
+  },
+  {
+   "n": 100,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 417.05,
+   "end": 420.1,
+   "es": "Perdona, llego tarde otra vez.",
+   "en": "Sorry, I'm late again."
+  },
+  {
+   "n": 101,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 420.8,
+   "end": 424.015,
+   "es": "No te preocupes. Acabo de llegar.",
+   "en": "Don't worry. I've just arrived."
+  },
+  {
+   "n": 102,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 424.965,
+   "end": 428.62,
+   "es": "Toma, tu paraguas. Me ha salvado la vida.",
+   "en": "Here's your umbrella. It saved my life."
+  },
+  {
+   "n": 103,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 429.82,
+   "end": 432.265,
+   "es": "¿Qué tal la visita?",
+   "en": "How did the viewing go?"
+  },
+  {
+   "n": 104,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 432.965,
+   "end": 435.96,
+   "es": "Muy bien. El piso me encanta.",
+   "en": "Very well. I love the flat."
+  },
+  {
+   "n": 105,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 436.91,
+   "end": 439.025,
+   "es": "¿Y el precio?",
+   "en": "And the price?"
+  },
+  {
+   "n": 106,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 440.225,
+   "end": 443.385,
+   "es": "Un poco caro, pero vale la pena.",
+   "en": "A bit expensive, but it's worth it."
+  },
+  {
+   "n": 107,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 444.085,
+   "end": 446.475,
+   "es": "¿Vas a quedártelo?",
+   "en": "Are you going to take it?"
+  },
+  {
+   "n": 108,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 447.425,
+   "end": 451.135,
+   "es": "Creo que sí. Mañana le escribo a la dueña.",
+   "en": "I think so. I'll write to the owner tomorrow."
+  },
+  {
+   "n": 109,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 452.335,
+   "end": 455.55,
+   "es": "¡Enhorabuena! Hay que celebrarlo.",
+   "en": "Congratulations! We have to celebrate."
+  },
+  {
+   "n": 110,
+   "scene": 5,
+   "speaker": "WAITER",
+   "start": 456.25,
+   "end": 458.585,
+   "es": "¿Qué van a tomar?",
+   "en": "What will you have?"
+  },
+  {
+   "n": 111,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 459.535,
+   "end": 462.035,
+   "es": "¿Qué nos recomienda?",
+   "en": "What do you recommend?"
+  },
+  {
+   "n": 112,
+   "scene": 5,
+   "speaker": "WAITER",
+   "start": 463.235,
+   "end": 466.23,
+   "es": "La paella está muy buena hoy.",
+   "en": "The paella is very good today."
+  },
+  {
+   "n": 113,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 466.93,
+   "end": 469.87,
+   "es": "Pues dos paellas, por favor.",
+   "en": "Then two paellas, please."
+  },
+  {
+   "n": 114,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 470.82,
+   "end": 473.87,
+   "es": "Y una botella de agua sin gas.",
+   "en": "And a bottle of still water."
+  },
+  {
+   "n": 115,
+   "scene": 5,
+   "speaker": "WAITER",
+   "start": 475.07,
+   "end": 477.02,
+   "es": "Enseguida.",
+   "en": "Right away."
+  },
+  {
+   "n": 116,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 477.72,
+   "end": 481.045,
+   "es": "Oye, ¿estás bien? Tienes mala cara.",
+   "en": "Hey, are you OK? You don't look well."
+  },
+  {
+   "n": 117,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 481.995,
+   "end": 485.265,
+   "es": "Estoy un poco resfriada, nada más.",
+   "en": "I've got a bit of a cold, that's all."
+  },
+  {
+   "n": 118,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 486.465,
+   "end": 489.955,
+   "es": "Deberías descansar este fin de semana.",
+   "en": "You should rest this weekend."
+  },
+  {
+   "n": 119,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 490.655,
+   "end": 494.53,
+   "es": "Tienes razón. Pero tengo mil cosas que hacer.",
+   "en": "You're right. But I have a thousand things to do."
+  },
+  {
+   "n": 120,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 495.48,
+   "end": 498.695,
+   "es": "¿Te echo una mano con la mudanza?",
+   "en": "Shall I give you a hand with the move?"
+  },
+  {
+   "n": 121,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 499.895,
+   "end": 502.89,
+   "es": "¿De verdad? Eso sería genial.",
+   "en": "Really? That would be great."
+  },
+  {
+   "n": 122,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 503.59,
+   "end": 506.805,
+   "es": "Claro. Para eso están los amigos.",
+   "en": "Of course. That's what friends are for."
+  },
+  {
+   "n": 123,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 507.755,
+   "end": 510.365,
+   "es": "Te debo una, otra vez.",
+   "en": "I owe you one, again."
+  },
+  {
+   "n": 124,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 511.565,
+   "end": 514.78,
+   "es": "Me debes dos. Pero ¿quién cuenta?",
+   "en": "You owe me two. But who's counting?"
+  },
+  {
+   "n": 125,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 515.48,
+   "end": 518.365,
+   "es": "¿Qué quieres decir con eso?",
+   "en": "What do you mean by that?"
+  },
+  {
+   "n": 126,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 519.315,
+   "end": 522.53,
+   "es": "Que me invites a la próxima cena.",
+   "en": "That you buy me the next dinner."
+  },
+  {
+   "n": 127,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 523.73,
+   "end": 525.79,
+   "es": "Trato hecho.",
+   "en": "It's a deal."
+  },
+  {
+   "n": 128,
+   "scene": 5,
+   "speaker": "WAITER",
+   "start": 526.49,
+   "end": 529.43,
+   "es": "Aquí tienen. ¡Que aproveche!",
+   "en": "Here you are. Enjoy your meal!"
+  },
+  {
+   "n": 129,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 530.38,
+   "end": 532.715,
+   "es": "¡Qué buena pinta!",
+   "en": "That looks delicious!"
+  },
+  {
+   "n": 130,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 533.915,
+   "end": 536.305,
+   "es": "Por el piso nuevo.",
+   "en": "To the new flat."
+  },
+  {
+   "n": 131,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 537.005,
+   "end": 538.79,
+   "es": "¡Salud!",
+   "en": "Cheers!"
+  },
+  {
+   "n": 132,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 539.74,
+   "end": 542.735,
+   "es": "Por cierto, ¿sigue lloviendo?",
+   "en": "By the way, is it still raining?"
+  },
+  {
+   "n": 133,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 543.935,
+   "end": 545.94,
+   "es": "A cántaros.",
+   "en": "It's pouring."
+  },
+  {
+   "n": 134,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 546.64,
+   "end": 550.35,
+   "es": "Entonces me vuelves a prestar el paraguas.",
+   "en": "Then you're lending me the umbrella again."
+  },
+  {
+   "n": 135,
+   "scene": 5,
+   "speaker": "MARCO",
+   "start": 551.3,
+   "end": 554.845,
+   "es": "Ni hablar. Esta vez te acompaño a casa.",
+   "en": "No way. This time I'll walk you home."
+  },
+  {
+   "n": 136,
+   "scene": 5,
+   "speaker": "LENA",
+   "start": 556.045,
+   "end": 558.105,
+   "es": "Eres un sol.",
+   "en": "You're a sweetheart."
+  }
+ ],
+ "noise_texts": [
+  "Subtítulos: Equipo Paraguas",
+  "♪ Llueve sobre la ciudad ♪",
+  "Mmm.",
+  "[Suena el teléfono]",
+  "Eh...",
+  "(Risas)",
+  "Ajá.",
+  "[Llueve con fuerza]",
+  "¡Lena!",
+  "Descarga más subtítulos en www.subtitulos-ejemplo.test"
+ ],
+ "labelled_cues": [
+  10,
+  22,
+  98
+ ]
+}

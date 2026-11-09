@@ -1,0 +1,20 @@
+¡Buenos días! ¿Qué te pongo?	Good morning! What can I get you?	Umbrella Weather 00:00:04
+Un café con leche, por favor.	A coffee with milk, please.	Umbrella Weather 00:00:07
+¿Para tomar aquí o para llevar?	For here or to go?	Umbrella Weather 00:00:11
+¿Puedo pagar con tarjeta?	Can I pay by card?	Umbrella Weather 00:00:30
+Oye, va a llover. ¿Tienes paraguas?	Hey, it's going to rain. Do you have an umbrella?	Umbrella Weather 00:01:16
+Segurísimo. Me lo devuelves esta noche.	Absolutely. Give it back to me tonight.	Umbrella Weather 00:01:30
+Perdone, ¿me puede ayudar?	Excuse me, could you help me?	Umbrella Weather 00:02:05
+Busco el tren para el centro.	I'm looking for the train to the city centre.	Umbrella Weather 00:02:12
+Dos habitaciones y un baño.	Two bedrooms and a bathroom.	Umbrella Weather 00:04:03
+Ochocientos euros, gastos incluidos.	Eight hundred euros, bills included.	Umbrella Weather 00:04:18
+Sí, la calefacción y el agua.	Yes, the heating and the water.	Umbrella Weather 00:04:26
+Depende. ¿Qué mascota tienes?	It depends. What pet do you have?	Umbrella Weather 00:04:41
+Menos mal que llevo paraguas.	Good thing I have an umbrella.	Umbrella Weather 00:05:19
+No me encuentro muy bien.	I'm not feeling very well.	Umbrella Weather 00:05:35
+No creo que, pero no estoy segura.	I don't think so, but I'm not sure.	Umbrella Weather 00:05:56
+Y beba mucha agua.	And drink plenty of water.	Umbrella Weather 00:06:17
+Aquí tienes, tu paraguas. Me ha salvado la vida.	Here's your umbrella. It saved my life.	Umbrella Weather 00:07:04
+¿Qué van a tomar?	What will you have?	Umbrella Weather 00:07:36
+Oye, ¿estás bien? Tienes mala cara.	Hey, are you OK? You don't look well.	Umbrella Weather 00:07:57
+Está lloviendo a cántaros.	It's pouring.	Umbrella Weather 00:09:03

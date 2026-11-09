@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Subtitle Tutor flow</title>
+<style>
+  :root {
+    --bg: #f6f4ef; --ink: #1c1c1e; --muted: #5d5d63; --line: #d9d5cc; --card: #ffffff;
+    --accent: #0f6e66; --accent-soft: #e2f0ee; --warn: #9a5b00; --warn-soft: #fbefdc;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1500px; height: 1000px; background: var(--bg); color: var(--ink);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  .page { padding: 56px 64px; height: 100%; display: grid; grid-template-columns: 820px 1fr; gap: 48px; }
+  h1 { font-size: 46px; letter-spacing: -0.5px; }
+  .sub { font-size: 22px; color: var(--muted); margin-top: 6px; margin-bottom: 30px; }
+  .steps { display: flex; flex-direction: column; gap: 12px; }
+  .step { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px;
+    display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 14px; }
+  .n { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700;
+    display: grid; place-items: center; font-size: 19px; }
+  .t { font-size: 21px; font-weight: 600; }
+  .d { font-size: 16px; color: var(--muted); margin-top: 2px; }
+  .chips { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+  .chip { font-family: Consolas, "SFMono-Regular", monospace; font-size: 14px; padding: 3px 9px; border-radius: 6px;
+    background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+  .chip.think { background: #ecebf6; color: #43407a; }
+  .ask { font-size: 13px; font-weight: 700; color: var(--warn); background: var(--warn-soft); padding: 3px 9px;
+    border-radius: 6px; white-space: nowrap; }
+  .side { display: flex; flex-direction: column; gap: 16px; padding-top: 6px; }
+  .bubble { border-radius: 16px; padding: 14px 18px; font-size: 18px; line-height: 1.4; max-width: 520px; }
+  .user { background: var(--accent); color: #fff; align-self: flex-end; border-bottom-right-radius: 4px; }
+  .bot { background: var(--card); border: 1px solid var(--line); border-bottom-left-radius: 4px; }
+  .who { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; opacity: 0.75; margin-bottom: 4px; }
+  .sheet { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 22px; margin-top: 4px; }
+  .sheet h3 { font-size: 20px; margin-bottom: 8px; }
+  .sheet .row { font-size: 16px; line-height: 1.55; }
+  .sheet b { font-weight: 600; }
+  .src { color: var(--accent); font-style: italic; }
+  .foot { position: absolute; left: 64px; bottom: 26px; font-size: 15px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <div>
+    <h1>Subtitle Tutor</h1>
+    <div class="sub">A film already on your NAS becomes a language lesson. Every NAS action goes to a registered expert.</div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><div class="t">Find the title</div><div class="d">By name, or from what you watched recently</div></div>
+        <div class="chips"><span class="chip">media-agent · ug-video search</span></div></div>
+      <div class="step"><div class="n">2</div><div><div class="t">Find both subtitle files</div><div class="d">Language from the file name or the first lines</div></div>
+        <div class="chips"><span class="chip">file-agent · ug-filesystem ls</span></div></div>
+      <div class="step"><div class="n">3</div><div><div class="t">Download a missing file</div><div class="d">Only after you say yes; found again by listing the folder</div></div>
+        <div class="chips"><span class="ask">ASKS FIRST</span><span class="chip">media-agent · subtitle-search, -download</span></div></div>
+      <div class="step"><div class="n">4</div><div><div class="t">Read subtitles and earlier sheets</div><div class="d">Full text with timestamps; old phrases are excluded</div></div>
+        <div class="chips"><span class="chip">file-agent · ug-filesystem cat</span></div></div>
+      <div class="step"><div class="n">5</div><div><div class="t">Choose phrases, check alignment</div><div class="d">Level, usefulness, frequency, spread; 10 anchors by meaning</div></div>
+        <div class="chips"><span class="chip think">NAS assistant reasoning</span></div></div>
+      <div class="step"><div class="n">6</div><div><div class="t">Translate only the gaps</div><div class="d">Subtitle lines first; unsupported pairs are reported</div></div>
+        <div class="chips"><span class="chip">document-agent · ug-document translate</span></div></div>
+      <div class="step"><div class="n">7</div><div><div class="t">Save the lesson, tag the video</div><div class="d">Sheet and flashcards; never overwrites, shares or deletes</div></div>
+        <div class="chips"><span class="ask">ASKS FIRST</span><span class="chip">knowledge-agent · save-text · ug-filemgr tag</span></div></div>
+    </div>
+  </div>
+  <div class="side">
+    <div class="bubble user"><div class="who">You</div>Make an intermediate Spanish lesson from Umbrella Weather.</div>
+    <div class="bubble bot"><div class="who">NAS assistant</div>Alignment check: 10 of 10 anchors matched, median difference +0.0 s: aligned.<br>20 phrases ready. Save the study sheet to Language Lessons/Umbrella Weather? Reply yes, yes with flashcards, or no.</div>
+    <div class="bubble user"><div class="who">You</div>Yes with flashcards.</div>
+    <div class="sheet">
+      <h3>3. ¿Para tomar aquí o para llevar?</h3>
+      <div class="row"><b>When</b> 00:00:11</div>
+      <div class="row"><b>Meaning</b> For here or to go? <span class="src">(subtitle line)</span></div>
+      <div class="row"><b>Before</b> Un café con leche, por favor.</div>
+      <div class="row"><b>After</b> Para llevar. Tengo un poco de prisa.</div>
+      <div class="row"><b>Usage</b> Asked in any café or bakery. Neutral; answer with "para llevar" (to go).</div>
+    </div>
+  </div>
+</div>
+<div class="foot">Illustration with the original test script "Umbrella Weather" (CC0). Conversation shortened.</div>
+</body>
+</html>

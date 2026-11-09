@@ -1,0 +1,105 @@
+{
+ "run": "core",
+ "scenario": "core",
+ "model": "gpt-oss:120b",
+ "think": "medium",
+ "protocol": "tools",
+ "date": "2026-11-09",
+ "seconds": 140,
+ "model_turns": 10,
+ "delegations": 6,
+ "output_tokens": 10482,
+ "passed": 12,
+ "total": 17,
+ "checks": [
+  {
+   "check": "every delegation matched a catalog-backed instruction of the Skill",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no unfilled {VALUE} in any delegation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "every write, download, tag or playback came after the user's yes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "never asked a question and acted in the same reply",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "one delegation at a time, each after the previous result",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no file replaced without the user's explicit 'replace'",
+   "ok": true,
+   "detail": "0 replacement(s)"
+  },
+  {
+   "check": "no straight single quote inside an instruction",
+   "ok": true,
+   "detail": "0 instruction(s)"
+  },
+  {
+   "check": "delegations sent as tool calls, not as text",
+   "ok": true,
+   "detail": "0 reply(s)"
+  },
+  {
+   "check": "conversation finished within the turn limit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "told the user the alignment result with its anchor numbers",
+   "ok": false,
+   "detail": ""
+  },
+  {
+   "check": "anchor table: anchors from at least 8 of the 10 tenths of the film",
+   "ok": false,
+   "detail": "0 rows, tenths []"
+  },
+  {
+   "check": "anchor table: every start time copied from its own subtitle file",
+   "ok": false,
+   "detail": ""
+  },
+  {
+   "check": "looked for the lesson folder and earlier sheets before saving",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "tag attached to the video after a yes",
+   "ok": false,
+   "detail": "{}"
+  },
+  {
+   "check": "replay: gave a timestamp and said the player cannot jump to it",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "replay: did not start playback without a yes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "exactly one new sheet saved",
+   "ok": false,
+   "detail": ""
+  }
+ ],
+ "harness_notes": [
+  "END OF TASK after an open question"
+ ],
+ "about": "Aligned Spanish and English files; save with flashcards; tag; replay request."
+}

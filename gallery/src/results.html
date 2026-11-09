@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Stand-in results</title><style>
+:root { --bg:#f6f4ef; --ink:#1c1c1e; --muted:#5d5d63; --line:#d9d5cc; --accent:#0f6e66; --warn:#9a5b00; }
+* { box-sizing:border-box; margin:0; padding:0; }
+html,body { width:1500px; height:1000px; background:var(--bg); color:var(--ink); font-family:"Segoe UI",Arial,sans-serif; }
+.page { padding:52px 64px; }
+h1 { font-size:40px; } .sub { font-size:20px; color:var(--muted); margin:8px 0 18px; }
+.badge { display:inline-block; font-size:15px; font-weight:700; color:var(--warn); background:#fbefdc; padding:5px 12px; border-radius:7px; margin-bottom:22px; }
+.total { font-size:22px; margin-bottom:14px; } .total b { color:var(--accent); font-size:30px; }
+table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+.tiles { display:flex; gap:18px; margin-bottom:18px; }
+.tile { flex:1; background:#fff; border:1px solid var(--line); border-radius:14px; padding:12px 18px; }
+.tile .k { font-size:16px; color:var(--muted); } .tile .v { font-size:26px; font-weight:700; margin:2px 0 8px; }
+.tile .bar { height:10px; background:#ece8df; border-radius:5px; } .tile .bar div { height:10px; background:var(--accent); border-radius:5px; }
+td { padding:8px 18px; border-bottom:1px solid #eee; font-size:18px; }
+td.s { font-family:Consolas,monospace; font-size:16px; color:var(--accent); width:150px; }
+td.n { width:120px; text-align:right; font-weight:600; }
+td.bar { width:260px; } td.bar div { height:12px; background:var(--accent); border-radius:6px; }
+.foot { position:absolute; left:64px; bottom:24px; font-size:15px; color:var(--muted); max-width:1370px; }
+</style></head><body><div class="page">
+<h1>Off-device stand-in tests</h1>
+<div class="sub">Ten scenarios on original test subtitles; every phrase, timestamp, translation and confirmation is checked automatically.</div>
+<div class="badge">PC STAND-IN, NOT THE NAS: gpt-oss:120b (high reasoning) follows SKILL.md; NAS experts, approvals and user are emulated</div>
+<div class="total"><b>310 / 360</b> checks passed, one attempt per scenario</div>
+<div class="tiles"><div class='tile'><div class='k'>Workflow and safety</div><div class='v'>131 / 135</div><div class='bar'><div style='width:97%'></div></div></div><div class='tile'><div class='k'>Sheet text and quiz</div><div class='v'>160 / 193</div><div class='bar'><div style='width:83%'></div></div></div><div class='tile'><div class='k'>Alignment</div><div class='v'>19 / 32</div><div class='bar'><div style='width:59%'></div></div></div></div>
+<table><tr><td class='s'>core</td><td>Normal lesson: save with flashcards, tag, replay</td><td class='n'>38 / 47</td><td class='bar'><div style='width:81%'></div></td></tr><tr><td class='s'>offset</td><td>English subtitles 4.0 s late</td><td class='n'>11 / 15</td><td class='bar'><div style='width:73%'></div></td></tr><tr><td class='s'>drift</td><td>English subtitles drifting (other frame rate)</td><td class='n'>34 / 41</td><td class='bar'><div style='width:83%'></div></td></tr><tr><td class='s'>download</td><td>Spanish file missing: confirmed download</td><td class='n'>37 / 44</td><td class='bar'><div style='width:84%'></div></td></tr><tr><td class='s'>notfound</td><td>Title not in the library</td><td class='n'>12 / 12</td><td class='bar'><div style='width:100%'></div></td></tr><tr><td class='s'>decline</td><td>User says no to saving</td><td class='n'>33 / 36</td><td class='bar'><div style='width:92%'></div></td></tr><tr><td class='s'>noisy</td><td>Credits, adverts, lyrics, labels in the file</td><td class='n'>34 / 41</td><td class='bar'><div style='width:83%'></div></td></tr><tr><td class='s'>ass</td><td>Advanced SubStation file, advanced level</td><td class='n'>37 / 41</td><td class='bar'><div style='width:90%'></div></td></tr><tr><td class='s'>repeat</td><td>Second lesson: no repeats, review questions</td><td class='n'>37 / 44</td><td class='bar'><div style='width:84%'></div></td></tr><tr><td class='s'>unsupported</td><td>No English file, unsupported language pair</td><td class='n'>37 / 39</td><td class='bar'><div style='width:95%'></div></td></tr></table>
+</div><div class="foot">Test bench, transcripts and scoring: github.com/sarthak-1111/subtitle-tutor, folder testbed/. Results on the UGREEN NAS will be measured on the finalist testing day.</div></body></html>

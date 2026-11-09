@@ -1,6 +1,8 @@
 # Devpost submission text: Subtitle Tutor
 
-Paste each block into the matching Devpost field. The judging-criteria names below are the official ones from the Rules (§6): User Value, Innovation & Differentiation, Technical Quality, AI NAS Fit & Validation. They correspond to the brief's "Usefulness", "Creativity", "Technical Execution" and "AI NAS Fit".
+Paste each block into the matching Devpost field. The Devpost FAQ asks entrants to write the project description and PDF answers in their own words ("be human where it counts"); treat the text below as a factual draft to rewrite in your voice, and keep the AI-tool disclosure.
+
+Judging criteria, in the Rules' names (UGREEN's own pages use the names in brackets): User Value (Usefulness), Innovation & Differentiation (Creativity), Technical Quality (Technical Execution), AI NAS Fit & Validation (AI NAS Fit).
 
 ---
 
@@ -10,124 +12,95 @@ Subtitle Tutor
 
 ## Elevator pitch (at most 200 characters)
 
-Turn the films and series already on your UGREEN NAS into language lessons: level-matched phrases with translations, exact timestamps and a self-quiz, saved next to your notes.
+Turn the films already on your UGREEN NAS into language lessons: phrases for your level with real subtitle translations, exact timestamps, a quiz and flashcards, saved next to your notes.
 
 ## Track
 
-Open Innovation
+Explore Your Imagination (the Rules call it Open Innovation)
 
 ## Built with (tags)
 
-`markdown` · `ugos` · `uliya-skill-kit` · `ugreen-ai-nas` · `claude-code`
+`markdown` · `ugos` · `uliya-skill-kit` · `ugreen-ai-nas` · `python` · `ollama` · `gpt-oss` · `claude-code`
 
 ## Files to upload
 
-- `proposal/proposal.pdf` (Project Proposal, 2 pages, 61 KB)
-- `dist/subtitle-tutor.zip` (Pre-test Skill Package, 16 KB)
+- `proposal/proposal.pdf` (Project Proposal)
+- `dist/subtitle-tutor.zip` (Pre-test Skill Package)
 
-## Try it out (optional)
+## Image gallery
 
-Leave this empty, or use the public repository link if it was created: https://github.com/sarthak-1111/subtitle-tutor
+- `gallery/1-flow.png`: how it works, with the expert behind each step
+- `gallery/2-sheet.png`: the study sheet saved in the final stand-in run of the core scenario (PC, not the NAS), shown as it came out
+- `gallery/3-results.png`: final-round stand-in results, by scenario and by kind of check
+
+## Try it out
+
+https://github.com/sarthak-1111/subtitle-tutor
 
 ---
 
-## About the project (paste into the main description; Markdown)
+## About the project (main description; Markdown)
 
 ### Inspiration
 
-Many people learn languages with subtitled films. The useful lines go by in a second, though, and turning them into study notes means pausing, copying and translating line by line. Meanwhile a NAS often holds hundreds of films and series that are only ever watched once. Subtitle Tutor turns that library from storage into something you study with.
+Subtitled films are one of the most enjoyable ways to learn a language, but the useful lines go by in a second, and turning them into study notes means pausing, copying and translating line by line. A NAS already holds the films and their subtitle files. Subtitle Tutor turns that library from storage into something you can study with.
 
 ### What it does
 
-You name a title and the language you are learning. Optionally you add your level (beginner, intermediate or advanced), the number of phrases and a scene range. Subtitle Tutor then works in five stages:
+You name a title, or say "the film I watched last night", and the language you are learning. Optionally you add your level, the number of phrases and a scene range. Subtitle Tutor then:
 
-1. **Find the title.** It finds the title in the NAS media library and asks you to choose if there are several matches.
-2. **Find the subtitles.** It looks for subtitle files in both languages next to the video. If one is missing, it offers to download it, but only after telling you this fetches a file from outside the NAS.
-3. **Read and choose.** It reads the subtitle text with timestamps and picks the most useful phrases for your level. Names, one-word fillers, sound labels, credits and adverts are excluded.
-4. **Translate.** It pairs each phrase with a translation. It prefers the other-language subtitle at the same timestamp, and uses the NAS translation capability only for the gaps. Before relying on timestamps, it measures whether the two subtitle files are aligned.
-5. **Save.** It writes a study sheet: each phrase with its translation, timestamp, the line before and after, and a usage note, followed by a 10-question self-quiz. The sheet is saved to `Language Lessons/<title>/` only after you confirm, and an existing file is never overwritten without asking.
+1. **Finds the title** in the NAS video library, or lists what you watched recently.
+2. **Finds both subtitle files** next to the video. If one is missing, it offers to download it, and tells you first that this contacts a source outside the NAS.
+3. **Checks earlier lessons** in your lesson folder, so known phrases are not repeated.
+4. **Reads the subtitles** with their timestamps and picks phrases from across the whole film that suit your level. Names, fillers, sound labels, lyrics, signs, credits and adverts are left out.
+5. **Measures alignment** between the two subtitle files on 10 anchor lines, and pairs each phrase with the subtitle line spoken at the same moment. It corrects a constant offset and refuses to pair misaligned versions. Machine translation fills only the gaps.
+6. **Saves a study sheet** after you say yes: each phrase with its translation, timestamp, the lines before and after, a usage note, and a 10-question quiz with answers. Optional flashcards are saved as a tab-separated file. Nothing is overwritten.
+7. On request it gives the timestamp to **replay** a phrase, and after a yes it **tags** the video `studied: Spanish intermediate`.
 
-On request it gives the exact timestamp to replay a phrase. After confirmation it can tag the video `studied: <language> <level>`, so your progress is visible later.
+UGREEN's own SkillHub Skill "Smart subtitle matching" finds and downloads subtitle files. Subtitle Tutor starts where that ends and turns subtitles into lessons.
 
 ### How it works: capability chain
 
 | Step | Expert | Catalog capability |
 |---|---|---|
-| Find title | `media-agent` | `ug-video` `search` |
+| Find the title, or recently watched titles | `media-agent` | `ug-video` `search` |
 | Find subtitle files | `file-agent` | `ug-filesystem` `ls`, `ug-filemgr` `tag-get-file` |
-| Download missing subtitles (confirmed) | `media-agent` | `ug-video` `subtitle-search`, `subtitle-download` |
-| Read timestamped text | `file-agent` | `ug-filesystem` `cat` (chunked) |
+| Download a missing subtitle (after a yes) | `media-agent` | `ug-video` `subtitle-search`, `subtitle-download` |
+| Find earlier lessons, read the subtitles | `file-agent` | `file-workflow` `get-user-dir`, `ug-filesystem` `ls`, `cat` |
 | Translate unmatched phrases | `document-agent` | `ug-document` `translate` |
-| Save the sheet (confirmed) | `file-agent`, `knowledge-agent` | `file-workflow` `get-user-dir`, `ug-filesystem` `stat` / `mkdir`, `ug-knowledge` `save-text` |
-| Replay | `media-agent` | `ug-video` `search` (play) plus the exact timestamp |
-| Tag as studied (confirmed) | `file-agent` | `ug-filemgr` `tag-get-by-name`, `tag-add`, `tag-add-file` |
+| Save sheet and flashcards (after a yes) | `file-agent`, `knowledge-agent` | `ug-filesystem` `stat`, `mkdir`, `ug-knowledge` `save-text` |
+| Replay | `media-agent` | `ug-video` `search` (play), plus the exact timestamp |
+| Tag as studied (after a yes) | `file-agent` | `ug-filemgr` `tag-get-by-name`, `tag-add`, `tag-add-file` |
 
 ### How we built it
 
-- The entrant defined the idea.
-- Feasibility was checked against the official UGOS Skill Creation Tool (`uliya-skill-kit` 0.7.3) and its capability catalog, CLI by CLI, before any file was generated.
-- The Skill was then generated with the same tool and checked with its official static checker. The result is **static-pass with 0 errors and 0 warnings**.
-- The package is Markdown only: `SKILL.md` and three linked references (phrase selection and alignment, study-sheet format, disclosures).
-- Claude Code (Anthropic) was used to draft and check the text. All disclosures are in `references/disclosures.md`.
+- Feasibility was checked CLI by CLI against the official capability catalog (`uliya-skill-kit` 0.7.3, catalog 2.0.0) before any file was written.
+- The Skill is Markdown only: `SKILL.md` and five linked references (phrase selection and alignment, sheet format, an example sheet, install and testing, disclosures). The official static checker reports static-pass with 0 errors and 0 warnings.
+- Because no NAS was available before the finalist day, we built an off-device test bench: an original bilingual screenplay turned into subtitle files with known faults (offset, drift, noise, `.ass` tags), emulated NAS experts and approval prompts, a scripted user, and automatic checks against the ground truth. An open-weight model (gpt-oss-120b on a PC) plays the NAS assistant and follows `SKILL.md` word for word.
+- We ran all scenarios in rounds, rewrote the Skill after each round, and then froze the text for one final round. Every run is kept with its transcript and score.
+- Claude Code (Anthropic) helped draft the Skill text, the test bench and these documents. All disclosures are in `references/disclosures.md`.
 
 ### Challenges
 
-The catalog leaves three gaps that the Skill handles honestly instead of guessing:
+The stand-in runs found problems a static check cannot see, and each one changed the Skill text (details in `testbed/DEVLOG.md`):
 
-- **No video seek.** Replay gives the exact timestamp to jump to.
-- **No published list of translation pairs.** Subtitle-to-subtitle pairing comes first. Machine translation covers only the gaps, and an unsupported pair is reported, never invented.
-- **No documented save location for downloaded subtitles.** The Skill lists the video folder before and after the download and uses only a file it actually finds.
+- The model once saved a "sheet" that contained only the placeholder `{SHEET_TEXT}`, after pasting the real sheet into the chat. The Skill now states that experts never see the conversation, so every value goes into the instruction in full.
+- Phrases bunched in the first minutes of the film, because the model's reasoning walked through the cues in order. Selection is now done part by part, and the sheet reports its "Phrases per fifth", which the checks compare with the real timestamps.
+- The model picked its 10 alignment anchors from the opening minutes and, where it found no match, filled the row with the Spanish time. Anchors now come one from each tenth of the film, the anchor table quotes both lines, and the checks look up every quoted time in the files.
+- The model's reasoning from the preview turn is not kept (as in most agent runtimes), so it wrote the sheet a second time when saving, and that copy drifted: times a minute off, a 20-question quiz. The preview now lists every phrase with its time and translation, the saved sheet must match that list, and the same checks run every time the sheet is written.
+- Measuring alignment is still the weak point. In the final round only 19 of 32 alignment checks passed, and in the offset run the model copied the Spanish times into the English column. It never paired a phrase with a line from a misaligned file, so the failure stays on the safe side.
+- The catalog has no video seek, no list of translation pairs and no documented save location for downloads. The Skill gives the replay timestamp, reports an unsupported pair instead of guessing, and finds a downloaded file by listing the folder before and after.
 
 ### Accomplishments
 
-- **Real data only.** Every step passes on the real result of the previous one: paths, `file-id` values and text.
-- **Explicit states.** All five delegation states (`completed`, `failed`, `cancelled`, `waiting_user`, `waiting_approval`) are handled explicitly.
-- **Failures named.** The failure catalogue covers a missing title, missing subtitles, an unsupported language pair, misaligned subtitle versions, partial reads, a short phrase list and save conflicts.
-- **Measured alignment.** The two subtitle files are compared by measurement (aligned, constant offset corrected, or misaligned), and the numbers are shown to the user.
+- In the final stand-in round (PC, not the NAS; Skill text frozen; one attempt per scenario), 310 of 360 automatic checks passed. Workflow and safety passed 131 of 135: every write, download and tag came after the user's yes.
+- Phrases, timestamps and paired translations are verified against the ground truth of the test subtitles, not judged by eye. Every run is published with its transcript and score, including the failures.
+- All five delegation states and every failure in the catalogue (missing title, missing subtitles, misaligned versions, unsupported pair, partial read, save conflict) have a defined response.
 
 ### What we learned
 
-Orchestration Skills are strongest when each expert does one verifiable thing and the Skill refuses to fill gaps with assumptions. Writing down "what if nothing is found" for every step shaped the design more than the happy path did.
+A Skill is a program whose interpreter is a language model. The happy path is easy to write; what made the Skill robust was running it, reading the transcripts, and rewriting every sentence the model could misread. We also learned that one run per scenario is a small sample: a change that helped one scenario sometimes hurt another, so we report every run as it came out.
 
-### What's next (finalist testing day)
+### What's next
 
-Nothing has run on a real UGREEN NAS yet. On the testing day we will validate the open runtime questions:
-
-- the fields returned by the media search;
-- the download location;
-- which translation pairs work;
-- save and overwrite behaviour;
-- tag approval.
-
-We will run two core cases and one edge case on a public-domain film, then fix anything that behaves differently, re-check and record the demo.
-
----
-
-## How it meets the judging criteria (for your reference; paste only if a form field asks)
-
-**User Value.** It solves a concrete problem: learning from films you already own without manual note-taking. The workflow is clear (one request, two or three confirmations) and gives useful feedback at each step: the matches found, the subtitles found or missing, the alignment result and a preview. The result is a saved study sheet with a quiz that you can use straight away.
-
-**Innovation & Differentiation.** Most chat AI tools need the subtitle text uploaded and lose the timings. Subtitle Tutor works in place on the user's own library and keeps every phrase tied to its scene. It prefers human subtitle translations over machine translation and measures subtitle alignment rather than assuming it. It also remembers progress through NAS tags and earlier sheets, so a second run picks new phrases.
-
-**Technical Quality.**
-
-- Markdown-only Skill that passes the official static check with 0 errors and 0 warnings.
-- Delegation only to registered experts, with self-contained instructions that carry real values.
-- Explicit handling of all five delegation states and of every listed failure.
-- Every write action needs user confirmation plus NAS approval: download, folder creation, save, overwrite and tag.
-- No delete, move or share actions exist.
-- No credentials and no scripts.
-- Third-party components: none.
-
-**AI NAS Fit & Validation.** The Skill only makes sense on a NAS: the media library, the subtitle files beside each video, the file tags and the lesson folder all live there. It chains media, file, document and knowledge capabilities. Reasoning runs on the NAS assistant's model, intended to be local, and nothing leaves the NAS except a subtitle download the user approved. Validation is planned for the finalist day, with two core cases and one edge case. No on-device results are claimed yet.
-
----
-
-## Disclosures (if the form asks)
-
-- **Third-party components and licences:** none. The package contains no third-party code, libraries, models, datasets or media. The Skill itself is under the MIT licence.
-- **External services and data flows:** only the optional online subtitle search and download, run by the NAS video service after explicit user confirmation.
-- **AI tools used:**
-  - Claude Code (Anthropic, model Claude Opus 5.5) for reading the rules and tool documentation, drafting and revising the Skill and submission text, and running and acting on the official static check.
-  - UGOS Skill Creation Tool `uliya-skill-kit` 0.7.3 for the capability catalog, generation guidance and the static check. The tool is not included in the package.
-- **Development status:** the Skill package and proposal are complete for Round 1. No NAS runtime testing has been done yet.
+Nothing has run on a UGREEN NAS yet. On the finalist day we will first check where the stand-in was weakest (alignment measurement, exact copying), then the open runtime questions (the fields returned by the media search, the download location, the supported translation pairs, save and overwrite behaviour, tag approval), run the same scenarios on a public-domain film, and compare each NAS run with its stand-in transcript.

@@ -1,0 +1,20 @@
+¡Buenos días! ¿Qué te pongo?	Good morning! What can I get you?	Umbrella Weather 00:00:04
+Para llevar. Tengo un poco de prisa.	To go. I'm in a hurry.	Umbrella Weather 00:00:15
+¿Puedo pagar con tarjeta?	Can I pay by card?	Umbrella Weather 00:00:30
+Regular. Todo es carísimo.	So‑so. Everything is very expensive.	Umbrella Weather 00:00:56
+Te entiendo perfectamente.	I understand you perfectly.	Umbrella Weather 00:01:00
+¿Quieres que te acompañe?	Do you want me to accompany you?	Umbrella Weather 00:01:08
+Oye, va a llover. ¿Tienes paraguas?	Hey, it's going to rain. Do you have an umbrella?	Umbrella Weather 00:01:16
+Toma, llévate el mío.	Here, take mine.	Umbrella Weather 00:01:24
+Perdone, ¿me puede ayudar?	Excuse me, could you help me?	Umbrella Weather 00:02:05
+Busco el tren para el centro.	I'm looking for the train to the city centre.	Umbrella Weather 00:02:12
+A las diez y cuarto, pero hoy va con retraso.	At quarter past ten, but today it's running late.	Umbrella Weather 00:02:23
+Salga por la puerta principal y gire a la izquierda.	Go out the main door and turn left.	Umbrella Weather 00:02:53
+Da al sur, así que tiene sol toda la tarde.	It faces south, so it gets sun all afternoon.	Umbrella Weather 00:03:54
+Ochocientos euros, gastos incluidos.	Eight hundred euros, bills included.	Umbrella Weather 00:04:18
+Depende. ¿Qué mascota tienes?	It depends. What pet do you have?	Umbrella Weather 00:04:41
+Hay otra persona interesada, la verdad.	There's another person interested, honestly.	Umbrella Weather 00:04:59
+¿Qué le pasa?	What's wrong?	Umbrella Weather 00:05:38
+Si no mejora en tres días, vaya al médico.	If it doesn't improve in three days, go to the doctor.	Umbrella Weather 00:06:24
+La paella está muy buena hoy.	The paella is very good today.	Umbrella Weather 00:07:43
+Tienes razón. Pero tengo mil cosas que hacer.	You're right. But I have a thousand things to do.	Umbrella Weather 00:08:10

@@ -114,6 +114,8 @@ The parent Skill may only `delegate --target <agent> --instruction '<task>'`. Th
 
 **Open Innovation** (confirmed against the track definitions on the Devpost overview and rules). It "combine[s] the NAS, AI, media, file and knowledge capabilities provided for the challenge to build an original AI Skill that solves a real user need". The Skill chains media (`ug-video`), file (`ug-filesystem`, `ug-filemgr`), document (`ug-document` translate) and knowledge (`ug-knowledge` save) capabilities.
 
+On the Devpost submission form the four tracks carry different names: Automate Your Workflow, Understand Your Life, Unleash Your Creativity and Explore Your Imagination. By their order and descriptions, Open Innovation is **Explore Your Imagination**; select that one on the form.
+
 The other tracks fit less well:
 
 - Automate Your Workflow covers office-style organising and extraction.
