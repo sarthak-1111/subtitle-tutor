@@ -79,7 +79,7 @@ UGREEN's own SkillHub Skill "Smart subtitle matching" finds and downloads subtit
 - Because no NAS was available before the finalist day, we built an off-device test bench: an original bilingual screenplay turned into subtitle files with known faults (offset, drift, noise, `.ass` tags), emulated NAS experts and approval prompts, a scripted user, and automatic checks against the ground truth. An open-weight model (gpt-oss-120b on a PC) plays the NAS assistant and follows `SKILL.md` word for word.
 - We ran all scenarios in rounds, rewrote the Skill after each round, and then froze the text for one final round. Every run is kept with its transcript and score.
 - Claude Code (Anthropic) helped draft the Skill text, the test bench and these documents. All disclosures are in `references/disclosures.md`.
-- The gallery images are HTML pages built from the saved run files and captured with headless Chrome. Their styling follows unslop by Damir Sokolovsky (CC BY 4.0, https://github.com/heydamir/unslop).
+- The gallery images are HTML pages built from the saved run files and captured with headless Chrome.
 
 ### Challenges
 

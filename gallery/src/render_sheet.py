@@ -2,7 +2,6 @@
 
 Usage: python -I gallery/src/render_sheet.py SHEET.md OUT.html "caption text" [FLASHCARDS.txt]
 Only the subset of Markdown used by study sheets is handled. The text is shown exactly as saved.
-Styled following unslop by Damir Sokolovsky (@heydamir), https://github.com/heydamir/unslop, CC BY 4.0.
 Standard library only.
 """
 import html
@@ -84,7 +83,6 @@ def main():
     quiz = "## Self" + quiz.split("## Answers")[0]
     first = "\n### ".join(phrases.split("\n### ")[:4])
     page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Study sheet</title>
-<!-- Styled following unslop by Damir Sokolovsky (@heydamir), https://github.com/heydamir/unslop, CC BY 4.0 -->
 <link rel="stylesheet" href="style.css"><style>
 .wrap {{ display:grid; grid-template-columns:760px 572px; gap:40px; padding:64px 64px 0; }}
 .paper {{ height:856px; overflow:hidden; position:relative; padding:32px 40px; }}

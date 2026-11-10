@@ -75,7 +75,7 @@ The official UGOS Skill Creation Tool (`uliya-skill-kit`) was used to build and 
 
 - **Third-party components in the Skill package:** none. The test bench, which is not part of the package, uses Ollama (MIT) and gpt-oss-120b (Apache-2.0).
 - **AI tools:** Claude Code (Anthropic) for drafting and checking the Skill, the test bench and the documents; gpt-oss-120b as the stand-in model in the test bench.
-- **Gallery images** (not part of the Skill package): styled following [unslop](https://github.com/heydamir/unslop) by Damir Sokolovsky, CC BY 4.0. Its colour, type and spacing guidance was adapted by hand in `gallery/src/style.css`, and no unslop file is included. Fonts: Newsreader, Instrument Sans and JetBrains Mono from Google Fonts (SIL Open Font License 1.1).
+- **Gallery images** (not part of the Skill package): HTML pages in `gallery/src/`, captured with headless Chrome. Fonts: Newsreader, Instrument Sans and JetBrains Mono from Google Fonts (SIL Open Font License 1.1).
 
 Details are in [`subtitle-tutor/references/disclosures.md`](subtitle-tutor/references/disclosures.md).
 

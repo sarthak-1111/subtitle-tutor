@@ -1,7 +1,6 @@
 """Render the stand-in results (testbed/runs/*/score.json) as a 1500 x 1000 gallery page.
 
 Usage: python -I gallery/src/render_results.py OUT.html
-Styled following unslop by Damir Sokolovsky (@heydamir), https://github.com/heydamir/unslop, CC BY 4.0.
 Standard library only.
 """
 import glob
@@ -63,7 +62,6 @@ def main():
                     f"<div class='id mono'>{html.escape(r['scenario'])}</div></div>"
                     f"{bar(r['passed'], r['total'])}<div class='n num'>{r['passed']} / {r['total']}</div></li>")
     page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Stand-in results</title>
-<!-- Styled following unslop by Damir Sokolovsky (@heydamir), https://github.com/heydamir/unslop, CC BY 4.0 -->
 <link rel="stylesheet" href="style.css"><style>
 .page {{ display:grid; grid-template-columns:520px 804px; gap:48px; padding:64px 64px 0; height:920px; }}
 .left {{ display:flex; flex-direction:column; }}
