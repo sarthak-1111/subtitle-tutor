@@ -134,7 +134,7 @@ Status key: `[x]` done and verified · `[ ]` open.
 
 ## J. Off-device evidence
 
-- [x] Every stand-in result is labelled "PC stand-in, not the NAS" (testbed/RESULTS.md, README, proposal, Devpost text, both gallery images that show stand-in output).
+- [x] Every stand-in result is labelled "PC stand-in, not the NAS" (testbed/RESULTS.md, README, proposal, Devpost text, and all three gallery images, each of which shows stand-in output).
 - [x] No NAS runtime result is claimed before the finalist day [R §6].
 - [x] Each reported scenario was run once with the frozen Skill text; earlier runs and what they found are in testbed/DEVLOG.md.
 - [x] Failures are published with the passes: all 50 failed checks of the final round are listed in testbed/RESULTS.md, and the gallery sheet is shown as it came out.

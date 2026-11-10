@@ -3,79 +3,104 @@
 <head>
 <meta charset="utf-8">
 <title>Subtitle Tutor flow</title>
+<!-- Styled following unslop by Damir Sokolovsky (@heydamir), https://github.com/heydamir/unslop, CC BY 4.0 -->
+<link rel="stylesheet" href="style.css">
 <style>
-  :root {
-    --bg: #f6f4ef; --ink: #1c1c1e; --muted: #5d5d63; --line: #d9d5cc; --card: #ffffff;
-    --accent: #0f6e66; --accent-soft: #e2f0ee; --warn: #9a5b00; --warn-soft: #fbefdc;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { width: 1500px; height: 1000px; background: var(--bg); color: var(--ink);
-    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
-  .page { padding: 56px 64px; height: 100%; display: grid; grid-template-columns: 820px 1fr; gap: 48px; }
-  h1 { font-size: 46px; letter-spacing: -0.5px; }
-  .sub { font-size: 22px; color: var(--muted); margin-top: 6px; margin-bottom: 30px; }
-  .steps { display: flex; flex-direction: column; gap: 12px; }
-  .step { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px;
-    display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 14px; }
-  .n { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700;
-    display: grid; place-items: center; font-size: 19px; }
-  .t { font-size: 21px; font-weight: 600; }
-  .d { font-size: 16px; color: var(--muted); margin-top: 2px; }
-  .chips { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
-  .chip { font-family: Consolas, "SFMono-Regular", monospace; font-size: 14px; padding: 3px 9px; border-radius: 6px;
-    background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
-  .chip.think { background: #ecebf6; color: #43407a; }
-  .ask { font-size: 13px; font-weight: 700; color: var(--warn); background: var(--warn-soft); padding: 3px 9px;
-    border-radius: 6px; white-space: nowrap; }
-  .side { display: flex; flex-direction: column; gap: 16px; padding-top: 6px; }
-  .bubble { border-radius: 16px; padding: 14px 18px; font-size: 18px; line-height: 1.4; max-width: 520px; }
-  .user { background: var(--accent); color: #fff; align-self: flex-end; border-bottom-right-radius: 4px; }
-  .bot { background: var(--card); border: 1px solid var(--line); border-bottom-left-radius: 4px; }
-  .who { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; opacity: 0.75; margin-bottom: 4px; }
-  .sheet { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 22px; margin-top: 4px; }
-  .sheet h3 { font-size: 20px; margin-bottom: 8px; }
-  .sheet .row { font-size: 16px; line-height: 1.55; }
-  .sheet b { font-weight: 600; }
-  .src { color: var(--accent); font-style: italic; }
-  .foot { position: absolute; left: 64px; bottom: 26px; font-size: 15px; color: var(--muted); }
+  .page { display: grid; grid-template-columns: 724px 600px; gap: 48px; padding: 64px 64px 0; }
+
+  h1 { font-family: var(--serif); font-weight: 400; font-size: 64px; line-height: 68px; letter-spacing: -0.03em; }
+  .lede { margin-top: 16px; max-width: 576px; font-size: 18px; line-height: 28px; color: var(--text-2); }
+
+  .steps { list-style: none; margin-top: 40px; border-bottom: 1px solid var(--hair-2); }
+  .steps li { display: grid; grid-template-columns: 40px 1fr auto; align-items: center; gap: 16px;
+    padding: 12px 0; border-top: 1px solid var(--hair-2); }
+  .num { font-family: var(--mono); font-size: 13px; line-height: 16px; color: var(--text-3); }
+  .t { font-size: 17px; line-height: 24px; font-weight: 500; }
+  .d { margin-top: 2px; font-size: 14px; line-height: 20px; color: var(--text-2); }
+  .cap { margin-top: 4px; font-family: var(--mono); font-size: 12px; line-height: 16px; color: var(--text-3); }
+  .ask { display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; line-height: 16px; font-weight: 500; color: var(--accent); }
+  .ask::before { content: ""; width: 6px; height: 6px; border-radius: 3px; background: var(--accent); }
+
+  /* The moment: a paused frame of the film, with the cue that became phrase 3 in the core stand-in run. */
+  .frame { position: relative; width: 600px; height: 336px; border-radius: 16px; overflow: hidden;
+    background: radial-gradient(ellipse at 50% 38%, #24211e 0%, var(--night-2) 46%, var(--night) 100%); }
+  .frame .file { position: absolute; left: 20px; top: 16px; font-family: var(--mono); font-size: 12px; line-height: 16px;
+    color: var(--night-text-2); }
+  .frame .cue { position: absolute; left: 0; right: 0; bottom: 64px; text-align: center;
+    font-size: 26px; line-height: 34px; font-weight: 500; color: #fbf8f2; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .frame .bar { position: absolute; left: 20px; right: 20px; bottom: 20px; display: grid;
+    grid-template-columns: auto 1fr auto; align-items: center; gap: 12px;
+    font-family: var(--mono); font-size: 12px; line-height: 16px; color: var(--night-text-2); }
+  .frame .track { position: relative; height: 4px; border-radius: 2px; background: rgba(239, 233, 222, 0.18); }
+  .frame .played { position: absolute; left: 0; top: 0; bottom: 0; width: 5.4%; border-radius: 2px; background: var(--night-text); }
+  .frame .head { position: absolute; left: 5.4%; top: -4px; width: 12px; height: 12px; margin-left: -6px;
+    border-radius: 6px; background: var(--night-text); }
+  .frame .now { color: var(--night-text); }
+
+  .chat { margin-top: 24px; display: flex; flex-direction: column; gap: 8px; }
+  .msg { max-width: 488px; padding: 12px 16px; border-radius: 12px; font-size: 15px; line-height: 22px; }
+  .msg .by { font-size: 12px; line-height: 16px; color: var(--text-3); margin-bottom: 4px; }
+  .msg.you { align-self: flex-end; background: var(--raised); }
+  .msg.nas { background: var(--card); border: 1px solid var(--hair-2); }
+
+  .sheetcard { margin-top: 24px; padding: 20px 24px; }
+  .sheetcard h3 { font-size: 20px; line-height: 28px; font-weight: 500; }
+  .sheetcard h3 .n { font-family: var(--mono); font-size: 14px; color: var(--text-3); margin-right: 8px; }
+  .rows { margin-top: 12px; display: grid; grid-template-columns: 72px 1fr; row-gap: 4px; column-gap: 12px;
+    font-size: 14px; line-height: 20px; }
+  .rows dt { color: var(--text-3); }
+  .rows .src { color: var(--text-3); }
 </style>
 </head>
 <body>
 <div class="page">
-  <div>
+  <section>
     <h1>Subtitle Tutor</h1>
-    <div class="sub">A film already on your NAS becomes a language lesson. Every NAS action goes to a registered expert.</div>
-    <div class="steps">
-      <div class="step"><div class="n">1</div><div><div class="t">Find the title</div><div class="d">By name, or from what you watched recently</div></div>
-        <div class="chips"><span class="chip">media-agent · ug-video search</span></div></div>
-      <div class="step"><div class="n">2</div><div><div class="t">Find both subtitle files</div><div class="d">Language from the file name or the first lines</div></div>
-        <div class="chips"><span class="chip">file-agent · ug-filesystem ls</span></div></div>
-      <div class="step"><div class="n">3</div><div><div class="t">Download a missing file</div><div class="d">Only after you say yes; found again by listing the folder</div></div>
-        <div class="chips"><span class="ask">ASKS FIRST</span><span class="chip">media-agent · subtitle-search, -download</span></div></div>
-      <div class="step"><div class="n">4</div><div><div class="t">Read subtitles and earlier sheets</div><div class="d">Full text with timestamps; old phrases are excluded</div></div>
-        <div class="chips"><span class="chip">file-agent · ug-filesystem cat</span></div></div>
-      <div class="step"><div class="n">5</div><div><div class="t">Choose phrases, check alignment</div><div class="d">Level, usefulness, frequency, spread; 10 anchors by meaning</div></div>
-        <div class="chips"><span class="chip think">NAS assistant reasoning</span></div></div>
-      <div class="step"><div class="n">6</div><div><div class="t">Translate only the gaps</div><div class="d">Subtitle lines first; unsupported pairs are reported</div></div>
-        <div class="chips"><span class="chip">document-agent · ug-document translate</span></div></div>
-      <div class="step"><div class="n">7</div><div><div class="t">Save the lesson, tag the video</div><div class="d">Sheet and flashcards; never overwrites, shares or deletes</div></div>
-        <div class="chips"><span class="ask">ASKS FIRST</span><span class="chip">knowledge-agent · save-text · ug-filemgr tag</span></div></div>
+    <p class="lede">A film already on your NAS becomes a language lesson, and every NAS action goes to a registered expert</p>
+    <ol class="steps">
+      <li><span class="num">01</span><div><div class="t">Find the title</div><div class="d">By name, or from what you watched recently</div><div class="cap">media-agent · ug-video search</div></div>
+        <div></div></li>
+      <li><span class="num">02</span><div><div class="t">Find both subtitle files</div><div class="d">Language from the file name or the first lines</div><div class="cap">file-agent · ug-filesystem ls</div></div>
+        <div></div></li>
+      <li><span class="num">03</span><div><div class="t">Download a missing file</div><div class="d">Only after a yes, then found again by listing the folder</div><div class="cap">media-agent · ug-video subtitle-search, subtitle-download</div></div>
+        <div class="ask">Asks you first</div></li>
+      <li><span class="num">04</span><div><div class="t">Read the subtitles and earlier sheets</div><div class="d">Full text with timestamps; phrases you studied are left out</div><div class="cap">file-agent · ug-filesystem cat</div></div>
+        <div></div></li>
+      <li><span class="num">05</span><div><div class="t">Choose phrases, check alignment</div><div class="d">Level, usefulness and spread; 10 anchors matched by meaning</div><div class="cap">NAS assistant reasoning</div></div>
+        <div></div></li>
+      <li><span class="num">06</span><div><div class="t">Translate only the gaps</div><div class="d">Subtitle lines first; an unsupported pair is reported</div><div class="cap">document-agent · ug-document translate</div></div>
+        <div></div></li>
+      <li><span class="num">07</span><div><div class="t">Save the lesson, tag the video</div><div class="d">Sheet and flashcards; never overwrites, shares or deletes</div><div class="cap">knowledge-agent · ug-knowledge save-text; file-agent · ug-filemgr tag</div></div>
+        <div class="ask">Asks you first</div></li>
+    </ol>
+  </section>
+
+  <section>
+    <figure class="frame" aria-label="Paused film frame showing the Spanish subtitle line at 00:00:30">
+      <div class="file">Umbrella Weather (2026).es.srt</div>
+      <div class="cue">¿Puedo pagar con tarjeta?</div>
+      <div class="bar"><span class="now">00:00:30</span><div class="track"><div class="played"></div><div class="head"></div></div><span>00:09:18</span></div>
+    </figure>
+
+    <div class="chat">
+      <div class="msg you"><div class="by">You</div>Make an intermediate Spanish lesson from Umbrella Weather. My language is English.</div>
+      <div class="msg nas"><div class="by">NAS assistant</div>Spanish phrases from Umbrella Weather, intermediate, 20 phrases, whole film. Alignment: aligned. Save the study sheet here? Reply yes, yes with flashcards, or no.</div>
+      <div class="msg you"><div class="by">You</div>Yes with flashcards.</div>
     </div>
-  </div>
-  <div class="side">
-    <div class="bubble user"><div class="who">You</div>Make an intermediate Spanish lesson from Umbrella Weather.</div>
-    <div class="bubble bot"><div class="who">NAS assistant</div>Alignment check: 10 of 10 anchors matched, median difference +0.0 s: aligned.<br>20 phrases ready. Save the study sheet to Language Lessons/Umbrella Weather? Reply yes, yes with flashcards, or no.</div>
-    <div class="bubble user"><div class="who">You</div>Yes with flashcards.</div>
-    <div class="sheet">
-      <h3>3. ¿Para tomar aquí o para llevar?</h3>
-      <div class="row"><b>When</b> 00:00:11</div>
-      <div class="row"><b>Meaning</b> For here or to go? <span class="src">(subtitle line)</span></div>
-      <div class="row"><b>Before</b> Un café con leche, por favor.</div>
-      <div class="row"><b>After</b> Para llevar. Tengo un poco de prisa.</div>
-      <div class="row"><b>Usage</b> Asked in any café or bakery. Neutral; answer with "para llevar" (to go).</div>
-    </div>
-  </div>
+
+    <article class="card sheetcard">
+      <h3><span class="n">3</span><span class="mark">¿Puedo pagar con tarjeta?</span></h3>
+      <dl class="rows">
+        <dt>When</dt><dd class="mono">00:00:30</dd>
+        <dt>Meaning</dt><dd>Can I pay by card? <span class="src">· subtitle line</span></dd>
+        <dt>Before</dt><dd>Son dos euros con cincuenta.</dd>
+        <dt>After</dt><dd>Sí, sin problema.</dd>
+        <dt>Usage</dt><dd>Asking if you can pay by card; standard phrase at any shop or cafe.</dd>
+      </dl>
+    </article>
+  </section>
 </div>
-<div class="foot">Illustration with the original test script "Umbrella Weather" (CC0). Conversation shortened.</div>
+<div class="foot">Messages and phrase 3 as produced in the core stand-in run (gpt-oss-120b on a PC, not the NAS), messages shortened · Test script: Umbrella Weather (CC0)</div>
 </body>
 </html>

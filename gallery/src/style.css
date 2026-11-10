@@ -1,0 +1,55 @@
+/* Shared style for the Subtitle Tutor gallery pages (1500 x 1000 screenshots).
+   Styled following unslop by Damir Sokolovsky (@heydamir), https://github.com/heydamir/unslop,
+   CC BY 4.0: warm light neutral ramp, type scale, 4px spacing, radius and depth tokens.
+   Direction: patient, exact, bookish. World: a paused film and a paper study sheet.
+   Signature: a highlighter mark, used only on chosen phrases. */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=block");
+
+:root {
+  --bg: #f7f4ee;
+  --card: #fdfbf7;
+  --raised: #efe9df;
+  --text: #1f1b16;
+  --text-2: #5e554a;
+  --text-3: #7b7266;
+  --hair: rgba(31, 27, 22, 0.08);
+  --hair-2: rgba(31, 27, 22, 0.12);
+  --accent: #0f6e66;
+  --mark: rgba(240, 196, 64, 0.5);
+  --night: #12110f;
+  --night-2: #1c1a18;
+  --night-text: #efe9de;
+  --night-text-2: #aaa398;
+  --sans: "Instrument Sans", "Segoe UI", Arial, sans-serif;
+  --serif: "Newsreader", Georgia, serif;
+  --mono: "JetBrains Mono", Consolas, monospace;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 1500px; height: 1000px; overflow: hidden;
+  background: var(--bg); color: var(--text);
+  font-family: var(--sans); font-size: 15px; line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.display { font-family: var(--serif); font-weight: 400; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+/* Signature: the highlighter on a chosen phrase. */
+.mark {
+  background: linear-gradient(transparent 56%, var(--mark) 56%, var(--mark) 94%, transparent 94%);
+  padding: 0 2px; margin: 0 -2px;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+
+.card {
+  background: var(--card); border: 1px solid var(--hair-2); border-radius: 16px; box-shadow: var(--shadow);
+}
+
+.foot {
+  position: absolute; left: 64px; right: 64px; bottom: 24px;
+  font-size: 13px; line-height: 20px; color: var(--text-3);
+}

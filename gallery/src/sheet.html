@@ -1,47 +1,63 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Study sheet</title><style>
-:root { --bg:#f6f4ef; --ink:#1c1c1e; --muted:#5d5d63; --line:#d9d5cc; --accent:#0f6e66; }
-* { box-sizing:border-box; margin:0; padding:0; }
-html,body { width:1500px; height:1000px; background:var(--bg); color:var(--ink); font-family:"Segoe UI",Arial,sans-serif; }
-.wrap { display:grid; grid-template-columns: 1fr 1fr; gap:28px; padding:44px 56px 0; }
-.card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:26px 30px; height:880px; overflow:hidden; position:relative; }
-.card:after { content:""; position:absolute; left:0; right:0; bottom:0; height:70px; background:linear-gradient(rgba(255,255,255,0),#fff); }
-h1 { font-size:25px; margin-bottom:8px; } h2 { font-size:20px; margin:14px 0 8px; color:var(--accent); }
-h3 { font-size:18px; margin:14px 0 4px; }
-p { font-size:14px; color:var(--muted); margin-bottom:8px; }
-table { border-collapse:collapse; font-size:14px; margin:6px 0 4px; width:100%; }
-td { border-bottom:1px solid #eee; padding:4px 8px 4px 0; vertical-align:top; } td:first-child { color:var(--muted); width:42%; }
-ul { list-style:none; font-size:15px; line-height:1.5; } ol { font-size:15.5px; line-height:1.55; padding-left:24px; }
-ol li { margin-bottom:6px; }
-i { color:var(--accent); }
-.cap { position:absolute; left:56px; bottom:22px; font-size:15px; color:var(--muted); }
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Study sheet</title>
+<!-- Styled following unslop by Damir Sokolovsky (@heydamir), https://github.com/heydamir/unslop, CC BY 4.0 -->
+<link rel="stylesheet" href="style.css"><style>
+.wrap { display:grid; grid-template-columns:760px 572px; gap:40px; padding:64px 64px 0; }
+.paper { height:856px; overflow:hidden; position:relative; padding:32px 40px; }
+.paper::after { content:""; position:absolute; left:0; right:0; bottom:0; height:96px;
+  background:linear-gradient(rgba(253,251,247,0), var(--card)); }
+.col { display:flex; flex-direction:column; gap:20px; }
+.side { padding:24px 28px; }
+h1 { font-family:var(--serif); font-weight:500; font-size:30px; line-height:36px; letter-spacing:-0.01em; }
+p { font-size:14px; line-height:20px; color:var(--text-2); }
+h1 + p { margin-top:8px; }
+table { width:100%; border-collapse:collapse; margin-top:16px; font-size:14px; line-height:20px; }
+td { padding:6px 12px 6px 0; border-top:1px solid var(--hair); vertical-align:top; }
+td:first-child { width:40%; color:var(--text-3); }
+h2 { margin-top:28px; padding-top:20px; border-top:1px solid var(--hair-2); font-size:15px; line-height:20px; font-weight:500; color:var(--text-2); }
+.side h2 { margin-top:0; padding-top:0; border-top:0; }
+h3 { margin-top:20px; font-size:19px; line-height:26px; font-weight:500; }
+h3 .n { font-family:var(--mono); font-size:13px; color:var(--text-3); margin-right:8px; }
+ul { list-style:none; margin-top:8px; font-size:14px; line-height:22px; }
+b { font-weight:500; color:var(--text-3); }
+i { font-style:normal; color:var(--text-3); }
+ol { margin-top:12px; padding-left:28px; font-size:14px; line-height:22px; }
+ol li { margin-bottom:6px; padding-left:4px; }
+ol li::marker { font-family:var(--mono); font-size:12px; color:var(--text-3); }
+.file { margin-top:4px; font-size:12px; line-height:16px; color:var(--text-3); }
+ul.cards { margin-top:12px; font-size:14px; line-height:20px; }
+ul.cards li { padding:7px 0; border-top:1px solid var(--hair); }
+ul.cards .row { display:flex; justify-content:space-between; gap:16px; }
+ul.cards .ref { color:var(--text-3); white-space:nowrap; font-size:13px; }
+ul.cards .mean { color:var(--text-2); }
+.more { margin-top:10px; font-size:12px; line-height:16px; color:var(--text-3); }
 </style></head><body><div class="wrap">
-<div class="card"><h1>Umbrella Weather: Spanish phrases (intermediate)</h1>
+<article class="card paper"><h1>Umbrella Weather: Spanish phrases (intermediate)</h1>
 <p>For personal study. Short excerpts from the subtitles of a title in your own NAS library.</p>
-<table><tr><td>Made on</td><td>2026-11-09 with Subtitle Tutor</td></tr><tr><td>Target-language subtitles</td><td>Umbrella Weather (2026).es.srt</td></tr><tr><td>Translations from</td><td>Umbrella Weather (2026).en.srt</td></tr><tr><td>Scene range</td><td>whole title</td></tr><tr><td>Alignment</td><td>aligned</td></tr><tr><td>Phrases</td><td>20 of 20</td></tr><tr><td>Phrases per fifth</td><td>8 / 4 / 3 / 3 / 2</td></tr><tr><td>Review</td><td>none</td></tr></table><h2>Phrases</h2><h3>1. ¡Buenos días! ¿Qué te pongo?</h3>
+<table><tr><td>Made on</td><td>2026-11-09 with Subtitle Tutor</td></tr><tr><td>Target-language subtitles</td><td>Umbrella Weather (2026).es.srt</td></tr><tr><td>Translations from</td><td>Umbrella Weather (2026).en.srt</td></tr><tr><td>Scene range</td><td>whole title</td></tr><tr><td>Alignment</td><td>aligned</td></tr><tr><td>Phrases</td><td>20 of 20</td></tr><tr><td>Phrases per fifth</td><td>8 / 4 / 3 / 3 / 2</td></tr><tr><td>Review</td><td>none</td></tr></table><h2>Phrases</h2><h3><span class='n'>1</span><span class='mark'>¡Buenos días! ¿Qué te pongo?</span></h3>
 <ul>
-<li><b>When:</b> 00:00:04</li>
+<li><b>When:</b> <span class='mono'>00:00:04</span></li>
 <li><b>Meaning:</b> Good morning! What can I get you? <i>(subtitle line)</i></li>
 <li><b>Before:</b> —</li>
 <li><b>After:</b> Un café con leche, por favor.</li>
 <li><b>Usage:</b> A friendly way to say good morning and ask what the customer would like.</li>
 </ul>
-<h3>2. Para llevar. Tengo un poco de prisa.</h3>
+<h3><span class='n'>2</span><span class='mark'>Para llevar. Tengo un poco de prisa.</span></h3>
 <ul>
-<li><b>When:</b> 00:00:15</li>
+<li><b>When:</b> <span class='mono'>00:00:15</span></li>
 <li><b>Meaning:</b> To go. I’m in a hurry. <i>(subtitle line)</i></li>
 <li><b>Before:</b> ¿Para tomar aquí o para llevar?</li>
 <li><b>After:</b> Claro. ¿Algo más?</li>
 <li><b>Usage:</b> Indicating you want the order to‑go and you’re in a hurry; useful in fast‑service contexts.</li>
 </ul>
-<h3>3. ¿Puedo pagar con tarjeta?</h3>
+<h3><span class='n'>3</span><span class='mark'>¿Puedo pagar con tarjeta?</span></h3>
 <ul>
-<li><b>When:</b> 00:00:30</li>
+<li><b>When:</b> <span class='mono'>00:00:30</span></li>
 <li><b>Meaning:</b> Can I pay by card? <i>(subtitle line)</i></li>
 <li><b>Before:</b> Son dos euros con cincuenta.</li>
 <li><b>After:</b> Sí, sin problema.</li>
 <li><b>Usage:</b> Asking if you can pay by card; standard phrase at any shop or cafe.</li>
-</ul></div>
-<div class="card"><h2>Self-quiz</h2>
+</ul></article>
+<div class="col"><section class="card side"><h2>Self-quiz</h2>
 <ol>
 <li>Say it: “Good morning! What can I get you?”</li>
 <li>Say it: “I want the order to go because I’m in a hurry.”</li>
@@ -53,5 +69,5 @@ i { color:var(--accent); }
 <li>Say it: “There’s another person interested, honestly.”</li>
 <li>Fill the gap: “La paella está muy _____ hoy.”</li>
 <li>Say it: “The rent is eight hundred euros, bills included.”</li>
-</ol></div>
-</div><div class="cap">Stand-in output, not the NAS: gpt-oss-120b on a PC followed SKILL.md (core scenario, final test round). Test script: Umbrella Weather (CC0).</div></body></html>
+</ol></section><section class='card side'><h2>Flashcards</h2><p class='file mono'>Umbrella Weather - Spanish intermediate - 2026-11-09 - flashcards.txt</p><ul class='cards'><li><div class='row'><span>¡Buenos días! ¿Qué te pongo?</span><span class='ref'>Umbrella Weather <span class='mono'>00:00:04</span></span></div><div class='mean'>Good morning! What can I get you?</div></li><li><div class='row'><span>Para llevar. Tengo un poco de prisa.</span><span class='ref'>Umbrella Weather <span class='mono'>00:00:15</span></span></div><div class='mean'>To go. I&#x27;m in a hurry.</div></li><li><div class='row'><span>¿Puedo pagar con tarjeta?</span><span class='ref'>Umbrella Weather <span class='mono'>00:00:30</span></span></div><div class='mean'>Can I pay by card?</div></li><li><div class='row'><span>Regular. Todo es carísimo.</span><span class='ref'>Umbrella Weather <span class='mono'>00:00:56</span></span></div><div class='mean'>So‑so. Everything is very expensive.</div></li><li><div class='row'><span>Te entiendo perfectamente.</span><span class='ref'>Umbrella Weather <span class='mono'>00:01:00</span></span></div><div class='mean'>I understand you perfectly.</div></li></ul><p class='more'>First 5 of 20 lines, each with three fields separated by tabs</p></section></div>
+</div><div class="foot">Sheet and flashcards as saved in the core stand-in run (gpt-oss-120b on a PC, not the NAS), cropped · Test script: Umbrella Weather (CC0)</div></body></html>

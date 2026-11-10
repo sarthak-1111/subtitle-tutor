@@ -1,6 +1,7 @@
 """Render the stand-in results (testbed/runs/*/score.json) as a 1500 x 1000 gallery page.
 
 Usage: python -I gallery/src/render_results.py OUT.html
+Styled following unslop by Damir Sokolovsky (@heydamir), https://github.com/heydamir/unslop, CC BY 4.0.
 Standard library only.
 """
 import glob
@@ -27,54 +28,90 @@ LABEL = {
     "repeat": "Second lesson: no repeats, review questions",
     "unsupported": "No English file, unsupported language pair",
 }
+# The accent marks one figure only: the share of workflow and safety checks passed.
+ACCENT = "Workflow and safety"
+ABOUT = {
+    "Workflow and safety": "Consent before every write, real results only, one delegation at a time, no substitute titles",
+    "Sheet text and quiz": "Exact phrases and times, spread, translations, quiz format",
+    "Alignment": "Anchor table, offset and drift detection",
+}
+
+
+def bar(ok, total, accent=False):
+    width = 100 * ok / total if total else 0
+    return f"<div class='bar{' on' if accent else ''}'><div style='width:{width:.1f}%'></div></div>"
 
 
 def main():
     scores = []
     for p in glob.glob(os.path.join(RUNS, "*", "score.json")):
         scores.append(json.load(open(p, encoding="utf-8")))
-    scores.sort(key=lambda r: ORDER.index(r["scenario"]) if r["scenario"] in ORDER else 99)
+    scores = [r for r in scores if r["scenario"] in ORDER]
+    scores.sort(key=lambda r: ORDER.index(r["scenario"]))
     passed = sum(r["passed"] for r in scores)
     total = sum(r["total"] for r in scores)
     model = ", ".join(sorted({f"{r['model']} ({r['think']} reasoning)" for r in scores}))
-    tiles = []
+    cats = []
     for name in ("Workflow and safety", "Sheet text and quiz", "Alignment"):
         items = [c for r in scores for c in r["checks"] if category(c["check"]) == name]
         ok = sum(c["ok"] for c in items)
-        tiles.append(f"<div class='tile'><div class='k'>{html.escape(name)}</div><div class='v'>{ok} / {len(items)}</div>"
-                     f"<div class='bar'><div style='width:{100 * ok / max(1, len(items)):.0f}%'></div></div></div>")
+        cats.append(f"<li><div class='line'><span>{html.escape(name)}</span><span class='num'>{ok} / {len(items)}</span></div>"
+                    f"<div class='about'>{html.escape(ABOUT[name])}</div>{bar(ok, len(items), name == ACCENT)}</li>")
     rows = []
     for r in scores:
-        pct = 100 * r["passed"] / r["total"] if r["total"] else 0
-        rows.append(f"<tr><td class='s'>{html.escape(r['scenario'])}</td><td>{html.escape(LABEL.get(r['scenario'], r['about']))}</td>"
-                    f"<td class='n'>{r['passed']} / {r['total']}</td>"
-                    f"<td class='bar'><div style='width:{pct:.0f}%'></div></td></tr>")
-    page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Stand-in results</title><style>
-:root {{ --bg:#f6f4ef; --ink:#1c1c1e; --muted:#5d5d63; --line:#d9d5cc; --accent:#0f6e66; --warn:#9a5b00; }}
-* {{ box-sizing:border-box; margin:0; padding:0; }}
-html,body {{ width:1500px; height:1000px; background:var(--bg); color:var(--ink); font-family:"Segoe UI",Arial,sans-serif; }}
-.page {{ padding:52px 64px; }}
-h1 {{ font-size:40px; }} .sub {{ font-size:20px; color:var(--muted); margin:8px 0 18px; }}
-.badge {{ display:inline-block; font-size:15px; font-weight:700; color:var(--warn); background:#fbefdc; padding:5px 12px; border-radius:7px; margin-bottom:22px; }}
-.total {{ font-size:22px; margin-bottom:14px; }} .total b {{ color:var(--accent); font-size:30px; }}
-table {{ width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; }}
-.tiles {{ display:flex; gap:18px; margin-bottom:18px; }}
-.tile {{ flex:1; background:#fff; border:1px solid var(--line); border-radius:14px; padding:12px 18px; }}
-.tile .k {{ font-size:16px; color:var(--muted); }} .tile .v {{ font-size:26px; font-weight:700; margin:2px 0 8px; }}
-.tile .bar {{ height:10px; background:#ece8df; border-radius:5px; }} .tile .bar div {{ height:10px; background:var(--accent); border-radius:5px; }}
-td {{ padding:8px 18px; border-bottom:1px solid #eee; font-size:18px; }}
-td.s {{ font-family:Consolas,monospace; font-size:16px; color:var(--accent); width:150px; }}
-td.n {{ width:120px; text-align:right; font-weight:600; }}
-td.bar {{ width:260px; }} td.bar div {{ height:12px; background:var(--accent); border-radius:6px; }}
-.foot {{ position:absolute; left:64px; bottom:24px; font-size:15px; color:var(--muted); max-width:1370px; }}
+        rows.append(f"<li><div><div class='lab'>{html.escape(LABEL[r['scenario']])}</div>"
+                    f"<div class='id mono'>{html.escape(r['scenario'])}</div></div>"
+                    f"{bar(r['passed'], r['total'])}<div class='n num'>{r['passed']} / {r['total']}</div></li>")
+    page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Stand-in results</title>
+<!-- Styled following unslop by Damir Sokolovsky (@heydamir), https://github.com/heydamir/unslop, CC BY 4.0 -->
+<link rel="stylesheet" href="style.css"><style>
+.page {{ display:grid; grid-template-columns:520px 804px; gap:48px; padding:64px 64px 0; height:920px; }}
+.left {{ display:flex; flex-direction:column; }}
+h1 {{ font-family:var(--serif); font-weight:400; font-size:56px; line-height:60px; letter-spacing:-0.03em; }}
+.lede {{ margin-top:16px; font-size:18px; line-height:28px; color:var(--text-2); }}
+.note {{ margin-top:24px; padding:12px 16px; border-radius:10px; background:var(--raised);
+  font-size:14px; line-height:20px; color:var(--text-2); }}
+.note b {{ font-weight:500; color:var(--text); }}
+.figure {{ margin-top:auto; }}
+.big {{ font-size:72px; line-height:72px; font-weight:500; letter-spacing:-0.02em; font-variant-numeric:tabular-nums; }}
+.big span {{ color:var(--text-3); font-weight:400; }}
+.cap {{ margin-top:8px; font-size:14px; line-height:20px; color:var(--text-2); }}
+.cats {{ list-style:none; margin-top:32px; border-top:1px solid var(--hair-2); }}
+.cats li {{ padding:12px 0; border-bottom:1px solid var(--hair-2); }}
+.cats .line {{ display:flex; justify-content:space-between; font-size:15px; line-height:22px; }}
+.num {{ font-variant-numeric:tabular-nums; }}
+.cats .num {{ font-size:15px; color:var(--text-2); }}
+.cats .about {{ margin-top:2px; font-size:13px; line-height:20px; color:var(--text-3); text-wrap:balance; }}
+.cats .bar {{ margin-top:8px; }}
+.bar {{ height:4px; border-radius:2px; background:var(--raised); }}
+.bar div {{ height:4px; border-radius:2px; background:#a39887; }}
+.bar.on div {{ background:var(--accent); }}
+.table {{ padding:24px 32px 8px; }}
+.table h2 {{ font-size:15px; line-height:20px; font-weight:500; color:var(--text-2); }}
+.table .sub {{ margin-top:2px; font-size:13px; line-height:20px; color:var(--text-3); }}
+.rows {{ list-style:none; margin-top:16px; }}
+.rows li {{ display:grid; grid-template-columns:1fr 200px 72px; align-items:center; gap:24px;
+  padding:17px 0; border-top:1px solid var(--hair); }}
+.lab {{ font-size:15px; line-height:22px; }}
+.id {{ margin-top:2px; font-size:12px; line-height:16px; color:var(--text-3); }}
+.n {{ text-align:right; font-size:15px; line-height:20px; color:var(--text-2); }}
 </style></head><body><div class="page">
-<h1>Off-device stand-in tests</h1>
-<div class="sub">Ten scenarios on original test subtitles; every phrase, timestamp, translation and confirmation is checked automatically.</div>
-<div class="badge">PC STAND-IN, NOT THE NAS: {html.escape(model)} follows SKILL.md; NAS experts, approvals and user are emulated</div>
-<div class="total"><b>{passed} / {total}</b> checks passed, one attempt per scenario</div>
-<div class="tiles">{''.join(tiles)}</div>
-<table>{''.join(rows)}</table>
-</div><div class="foot">Test bench, transcripts and scoring: github.com/sarthak-1111/subtitle-tutor, folder testbed/. Results on the UGREEN NAS will be measured on the finalist testing day.</div></body></html>"""
+<section class="left">
+  <h1>Off-device<br>stand-in tests</h1>
+  <p class="lede">Ten scenarios on original test subtitles; every phrase, timestamp, translation and confirmation is checked automatically</p>
+  <p class="note"><b>PC stand-in, not the NAS:</b> {html.escape(model)} follows SKILL.md; the NAS experts, approvals and user are emulated</p>
+  <div class="figure">
+    <div class="big">{passed}<span> / {total}</span></div>
+    <p class="cap">Checks passed in the final round, one attempt per scenario</p>
+    <ul class="cats">{''.join(cats)}</ul>
+  </div>
+</section>
+<section class="card table">
+  <h2>Scenarios</h2>
+  <p class="sub">Checks passed per scenario</p>
+  <ul class="rows">{''.join(rows)}</ul>
+</section>
+</div><div class="foot">Test bench, transcripts and scores: github.com/sarthak-1111/subtitle-tutor (folder testbed) · NAS results will be measured on the finalist testing day</div></body></html>"""
     open(sys.argv[1], "w", encoding="utf-8").write(page)
     print(f"{passed}/{total} from {len(scores)} runs")
 
