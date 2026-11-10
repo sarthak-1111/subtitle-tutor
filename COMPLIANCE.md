@@ -10,12 +10,13 @@ Sources read on 2026-11-09:
 
 Status key: `[x]` done and verified · `[ ]` open.
 
-**Status as of 2026-11-09, after Step 2:**
+**Status as of 2026-11-09, final Round 1 package (version 1.1.0):**
 
 - Sections B–G are verified against the built files:
   - `subtitle-tutor/` passes the official checker with `static-pass`, 0 errors and 0 warnings (see CHECK_RESULT.md);
-  - the copy extracted from `dist/subtitle-tutor.zip` gives the same result;
-  - the proposal's ten answers total 409 words, and the whole PDF 484 words.
+  - the copy extracted from `dist/subtitle-tutor.zip` gives the same result, and its SHA-256 values are in CHECK_RESULT.md;
+  - `SKILL.md` has 348 lines; the package has six Markdown files and nothing else;
+  - the proposal's ten answers total 443 words, and the whole PDF 497 words (every word counted, including headings and the disclosure line).
 - Sections A, H and I list actions for the entrant (eligibility, Devpost upload, Submit) or for the finalist day.
 
 ## A. Deadlines and eligibility
@@ -75,7 +76,7 @@ Status key: `[x]` done and verified · `[ ]` open.
 - [x] No download-and-execute and no shell-download wording (the checker flags the words for common download tools as `SECURITY_REMOTE_DOWNLOAD`).
 - [x] No wording that bypasses or switches off approval, permission or audit (checker `SECURITY_GATEWAY_BYPASS`), and no instruction override [AS §2.7, §3].
 - [x] No hard-coded NAS paths (` /nas/…`, ` /volume1/…`) and no hard-coded home directories (checker `SECURITY_DIRECT_FILE_ACCESS`, `DELEGATE_HARDCODED_HOME_PATH`). All paths come from expert results or from the user.
-- [x] Least privilege: the Skill reads only the chosen video's folder and the chosen study folder [AS §4.1, §4.2].
+- [x] Least privilege: the Skill reads only the chosen video's folder, the lesson folder with its earlier sheets, and the recently watched list when the user asks for it [AS §4.1, §4.2].
 - [x] No persistence, background jobs or schedules [AS §5.4].
 - [x] Minors [AS §10.2]: the Skill is not directed at, or primarily intended for, minors. Users are adult learners and parents who prepare material for their family. The wording avoids targeting children directly.
 
@@ -85,9 +86,10 @@ Status key: `[x]` done and verified · `[ ]` open.
 - [x] No TODO, TBD, "replace-with-" or placeholder content (checker `SKILL_PLACEHOLDER_REMAINS`) [SK].
 - [x] Original work, newly developed during the Hackathon. No reused Skill or submission material [R §4 "New & Existing Projects"].
 - [x] Disclosures in SKILL.md or a linked reference [DP, R]:
-  - third-party components and licences (expected: **none**);
-  - main functionality developed for this Hackathon;
-  - AI tools used and what for (Claude Code, drafting and checking the Skill text).
+  - third-party components and licences: **none** in the package; the off-device test bench (not in the package) uses Ollama (MIT) and gpt-oss-120b (Apache-2.0);
+  - main functionality developed for this Hackathon, with a version history;
+  - AI tools used and what for: Claude Code (drafting and checking the Skill, the test bench and the documents) and gpt-oss-120b (stand-in model in the test bench).
+- [x] Test material is original: the "Umbrella Weather" test subtitles and the "Quay Three" lines in the example sheet were written for this entry and released as CC0. No line from a real film is in the repository.
 - [x] Copyright of film subtitles: the Skill quotes only short phrase excerpts for personal study. Demo media for finalist day is a public-domain film with subtitles we have the right to use [R "Final Demo Video", AS §11].
 
 ## G. Proposal PDF (Round 1)
@@ -111,7 +113,8 @@ Status key: `[x]` done and verified · `[ ]` open.
 
 ## H. Devpost form and judging
 
-- [ ] Track selected: **Open Innovation** (see GO_NO_GO.md).
+- [ ] Track selected on the Devpost form: **Explore Your Imagination**, which is the Open Innovation track of the Rules (the form and the Rules use different names; see GO_NO_GO.md).
+- [ ] Devpost FAQ: AI tools are allowed if disclosed, but entrants are asked to write the project name, the text description and the PDF answers themselves ("be human where it counts"). `devpost.md` and `proposal/proposal.md` are factual drafts: rewrite them in your own words before submitting, and keep the AI disclosure.
 - [x] Judging criteria, equally weighted [R §6]:
   - User Value;
   - Innovation & Differentiation;
@@ -128,3 +131,11 @@ Status key: `[x]` done and verified · `[ ]` open.
 - [ ] Logs and test data are backed up before the testing day ends [R "Testing"].
 - [ ] Demo video under 3 minutes, English narration, public on YouTube, showing the Skill running on the assigned NAS. No third-party copyrighted material without permission, so the demo uses a public-domain film [R].
 - [ ] Final ZIP submitted by Nov 30, 11:45 pm PT [R].
+
+## J. Off-device evidence
+
+- [x] Every stand-in result is labelled "PC stand-in, not the NAS" (testbed/RESULTS.md, README, proposal, Devpost text, and all three gallery images, each of which shows stand-in output).
+- [x] No NAS runtime result is claimed before the finalist day [R §6].
+- [x] Each reported scenario was run once with the frozen Skill text; earlier runs and what they found are in testbed/DEVLOG.md.
+- [x] Failures are published with the passes: all 50 failed checks of the final round are listed in testbed/RESULTS.md, and the gallery sheet is shown as it came out.
+- [x] The test bench is not part of the Skill package and is not uploaded to the NAS.

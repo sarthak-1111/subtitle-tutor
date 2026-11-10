@@ -1,0 +1,227 @@
+=== core start 10:53:13
+[10:53:21] turn 1 (8.2s): "[tool call] delegate --target media-agent --instruction 'Search the NAS video library for movies and"
+[10:53:27] turn 2 (6.0s): "[tool call] delegate --target file-agent --instruction 'List the files directly inside the folder /v"
+[10:53:33] turn 3 (5.5s): "[tool call] delegate --target file-agent --instruction 'Return the real path of the personal folder "
+[10:53:37] turn 4 (4.5s): "[tool call] delegate --target file-agent --instruction 'Check whether the folder /volume1/home/demo/"
+[10:53:43] turn 5 (6.1s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[10:53:48] turn 6 (4.7s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[10:54:12] turn 7 (23.8s): 'Spanish phrases from Umbrella Weather, intermediate, 20 phrases, whole film, translations into Engli'
+[10:55:26] turn 8 (74.2s): '**Study sheet preview**  \n- **Title:** Umbrella Weather  \n- **Target language:** Spanish (es) – inte'
+[10:55:32] turn 9 (6.0s): '**Phrase 3:** “Para llevar. Tengo un poco de prisa.”  \n\n- **Timestamp:** 00:00:15 (start)  \n- **Lead'
+[10:55:33] turn 10 (1.0s): 'Great! You have the timestamp and context for phrase\u202f3. If you need anything else—another replay, a '
+done in 140s -> D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\runs\core
+=== core end 10:55:33
+core            11/14    140s  turns 10
+    FAIL told the user the alignment result with its anchor numbers: 
+    FAIL tag attached to the video after a yes: {}
+    FAIL exactly one new sheet saved: 
+=== offset start 10:55:33
+[10:55:39] turn 1 (5.5s): "[tool call] delegate --target media-agent --instruction 'Search the NAS video library for movies and"
+[10:55:44] turn 2 (5.0s): "[tool call] delegate --target file-agent --instruction 'List the files directly inside the folder /v"
+[10:55:48] turn 3 (4.3s): "[tool call] delegate --target file-agent --instruction 'Return the real path of the personal folder "
+[10:55:52] turn 4 (3.8s): "[tool call] delegate --target file-agent --instruction 'Check whether the folder /volume1/home/demo/"
+[10:55:58] turn 5 (5.8s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[10:57:09] turn 6 (71.0s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[10:59:32] turn 7 (142.9s): 'Spanish phrases from **Umbrella Weather**, intermediate, 20 phrases, whole film, translations into E'
+[11:01:42] turn 8 (130.4s): "[tool call] delegate --target knowledge-agent --instruction 'Save the following Markdown text as a n"
+[11:01:46] turn 9 (3.6s): "[tool call] delegate --target file-agent --instruction 'Create the folder /volume1/home/demo/Languag"
+[11:01:47] turn 10 (1.5s): 'The NAS needs your approval to create the folder\u202f`/volume1/home/demo/Language Lessons/Umbrella Weath'
+[11:02:16] turn 11 (28.3s): "[tool call] delegate --target knowledge-agent --instruction 'Save the following Markdown text as a n"
+[11:02:17] turn 12 (1.7s): 'The NAS is waiting for you to approve saving the study sheet **Umbrella Weather\u202f-\u202fSpanish\u202fintermedia'
+[11:02:20] turn 13 (2.3s): 'The study sheet has been saved and verified at  \n\n`/volume1/home/demo/Language Lessons/Umbrella Weat'
+[11:02:30] turn 14 (10.0s): "[tool call] delegate --target knowledge-agent --instruction 'Save the following plain text as a new "
+[11:02:32] turn 15 (2.6s): 'The NAS is waiting for you to approve saving the flashcard file **Umbrella Weather\u202f-\u202fSpanish\u202finterme'
+[11:02:34] turn 16 (1.9s): '**Tagging** – Would you like to tag the video file so you can later see that you studied *Umbrella W'
+[11:02:37] turn 17 (2.5s): '**Task complete.**  \n\n- Title: **Umbrella Weather**  \n- Target language: **Spanish** (intermediate) '
+done in 423s -> D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\runs\offset
+=== offset end 11:02:37
+offset          29/37    423s  turns 17
+    FAIL no straight single quote inside an instruction: 3 instruction(s)
+    FAIL told the user the alignment result with its anchor numbers: 
+    FAIL reported the 4-second offset: 
+    FAIL every phrase copied from a real cue within 1.5 s of its timestamp: 7. A las diez y cuarto, pero hoy va con retraso. @ 00:02:27; 15. Le recomiendo estas pastillas para la garganta. @ 00:06:04
+    FAIL every phrase block has When, Meaning, Before, After and Usage: 1
+    FAIL context lines copied from the subtitle file: 1 before, 16 before
+    FAIL subtitle translations are the English line spoken at the same time: 10: Does it include heating? (cue: Yes, the heating and the water.); 20: Deal done. (cue: Here you are. Enjoy your meal!)
+    FAIL Alignment row states the right result: aligned
+=== drift start 11:02:37
+[11:02:43] turn 1 (5.8s): "[tool call] delegate --target media-agent --instruction 'Search the NAS video library for movies and"
+[11:02:47] turn 2 (4.0s): "[tool call] delegate --target file-agent --instruction 'List the files directly inside the folder /v"
+[11:02:53] turn 3 (6.4s): "[tool call] delegate --target file-agent --instruction 'Return the real path of the personal folder "
+[11:02:59] turn 4 (5.5s): "[tool call] delegate --target file-agent --instruction 'Check whether the folder /volume1/home/demo/"
+[11:03:03] turn 5 (4.5s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[11:03:08] turn 6 (4.6s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[11:04:22] turn 7 (74.5s): 'Spanish phrases from **Umbrella Weather**, intermediate, 12 phrases, whole film, translations into E'
+[11:05:47] turn 8 (84.5s): "[tool call] delegate --target file-agent --instruction 'Create the folder /volume1/home/demo/Languag"
+[11:05:47] turn 9 (0.7s): '[waiting_approval]'
+[11:06:53] turn 10 (65.7s): "[tool call] delegate --target file-agent --instruction 'Check whether a file named Umbrella Weather "
+[11:08:26] turn 11 (93.2s): "[tool call] delegate --target knowledge-agent --instruction 'Save the following Markdown text as a n"
+[11:08:28] turn 12 (2.2s): '[waiting_approval]'
+[11:08:31] turn 13 (2.9s): 'The study sheet has been saved:\n\n**Path:** `/volume1/home/demo/Language Lessons/Umbrella Weather/Umb'
+[11:08:33] turn 14 (1.8s): 'Would you like to tag the video file with **studied: Spanish intermediate** so you can see later tha'
+[11:08:35] turn 15 (2.3s): "[tool call] delegate --target file-agent --instruction 'Attach the tag named studied: Spanish interm"
+[11:08:36] turn 16 (0.8s): '[waiting_approval]'
+[11:08:37] turn 17 (0.7s): 'The video file has been successfully tagged with **studied: Spanish intermediate** (tag ID\u202f41).  \n\n*'
+done in 360s -> D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\runs\drift
+=== drift end 11:08:37
+drift           28/36    360s  turns 17
+    FAIL every write, download, tag or playback came after the user's yes: tag
+    FAIL told the user the alignment result with its anchor numbers: 
+    FAIL every phrase copied from a real cue within 1.5 s of its timestamp: 6. Hoy tengo una visita a las once. @ 00:01:07; 8. Aquí, llévate el mío. @ 00:01:28; 11. Salga por la puerta principal y gire a la izquierda. @ 00:03:01; 12. Da al sur, así que tiene sol toda la tarde. @ 00:04:04
+    FAIL context lines copied from the subtitle file: 7 before, 7 after
+    FAIL spread: no fifth of the film holds more than 35 % of the phrases: [8, 3, 1, 0, 0]
+    FAIL misaligned file not used for pairing (no 'subtitle line' marks): 12 subtitle-line marks
+    FAIL phrases translated by the NAS translation capability: 
+    FAIL Alignment row states the right result: aligned
+=== download start 11:08:37
+[11:08:41] turn 1 (4.3s): "[tool call] delegate --target media-agent --instruction 'Search the NAS video library for movies and"
+[11:08:44] turn 2 (2.6s): 'Spanish phrases from Umbrella Weather, beginner, 10 phrases, whole film, translations into English. '
+[11:08:48] turn 3 (4.1s): "[tool call] delegate --target file-agent --instruction 'List the files directly inside the folder /v"
+[11:08:50] turn 4 (2.0s): 'The video has an English subtitle file, but no Spanish subtitle file was found.\n\nShall I search onli'
+[11:08:52] turn 5 (2.2s): "[tool call] delegate --target media-agent --instruction 'Search online subtitles for the video /volu"
+[11:08:55] turn 6 (2.6s): 'I found two Spanish subtitle candidates:\n\n1. **file‑id\u202f7781** – “Umbrella.Weather.2026.1080p.WEB.spa'
+[11:08:57] turn 7 (1.8s): "[tool call] delegate --target media-agent --instruction 'Download the subtitle with file-id 7781 for"
+[11:08:58] turn 8 (1.8s): 'The NAS is now asking you to approve the download of the Spanish subtitle file from the online sourc'
+[11:09:01] turn 9 (2.5s): "[tool call] delegate --target file-agent --instruction 'List the files directly inside the folder /v"
+[11:09:05] turn 10 (3.7s): "[tool call] delegate --target file-agent --instruction 'Return the real path of the personal folder "
+[11:09:09] turn 11 (4.7s): "[tool call] delegate --target file-agent --instruction 'Check whether the folder /volume1/home/demo/"
+[11:09:14] turn 12 (4.8s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[11:09:18] turn 13 (3.7s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[11:10:50] turn 14 (92.1s): '**Spanish phrases from Umbrella Weather, beginner, 10 phrases, whole film, translations into English'
+[11:11:20] turn 15 (29.5s): "[tool call] delegate --target file-agent --instruction 'Create the folder /volume1/home/demo/Languag"
+[11:11:20] turn 16 (0.9s): 'The NAS is now asking for your approval to create the folder **/volume1/home/demo/Language Lessons/U'
+[11:12:19] turn 17 (58.6s): "[tool call] delegate --target knowledge-agent --instruction 'Save the following Markdown text as a n"
+[11:12:20] turn 18 (1.3s): 'The NAS is now asking for your approval to save the study sheet **Umbrella Weather (2026) - Spanish '
+[11:12:22] turn 19 (2.0s): 'The study sheet has been saved at:\n\n**/volume1/home/demo/Language Lessons/Umbrella Weather/Umbrella '
+[11:12:25] turn 20 (2.4s): 'Understood. No tag will be added.\n\n**Summary**\n\n- Title: *Umbrella Weather* (2026) – movie  \n- Targe'
+done in 228s -> D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\runs\download
+=== download end 11:12:25
+download        34/39    228s  turns 20
+    FAIL told the user the alignment result with its anchor numbers: 
+    FAIL no credits, adverts, lyrics, sound labels, signs, tags or speaker labels: ¡Lena! ¿Qué haces por aquí?
+    FAIL spread: no fifth of the film holds more than 35 % of the phrases: [8, 0, 1, 1, 0]
+    FAIL 'Phrases per fifth' row matches the real phrase times (within 1 per part): stated [10, 0, 0, 0, 0], measured [8, 0, 1, 1, 0]
+    FAIL subtitle translations are the English line spoken at the same time: 5: It's two euros fifty. (cue: That's two euros fifty.); 9: It's newly renovated. (cue: Of course. It has just been renovated.)
+=== notfound start 11:12:25
+[11:12:29] turn 1 (3.9s): "[tool call] delegate --target media-agent --instruction 'Search the NAS video library for movies and"
+[11:12:30] turn 2 (1.2s): 'I could not find a title matching **Casablanca** in the NAS media library. Please provide a differen'
+done in 5s -> D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\runs\notfound
+=== notfound end 11:12:30
+notfound        11/11      5s  turns 2
+=== decline start 11:12:30
+[11:12:34] turn 1 (3.3s): "delegate --target media-agent --instruction 'Search the NAS video library for movies and TV series w"
+[11:12:38] turn 2 (4.3s): "[tool call] delegate --target file-agent --instruction 'List the files directly inside the folder /v"
+[11:12:43] turn 3 (4.9s): "[tool call] delegate --target file-agent --instruction 'Return the real path of the personal folder "
+[11:12:47] turn 4 (3.7s): "[tool call] delegate --target file-agent --instruction 'Check whether the folder /volume1/home/demo/"
+[11:12:52] turn 5 (5.2s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[11:12:59] turn 6 (7.1s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[11:13:15] turn 7 (15.9s): '**Summary of the requested lesson**  \nSpanish phrases from **Umbrella Weather**, intermediate level,'
+[11:14:07] turn 8 (52.4s): '# Umbrella Weather – Spanish phrases (intermediate)\n\nFor personal study. Short excerpts from the sub'
+done in 97s -> D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\runs\decline
+=== decline end 11:14:07
+decline          8/10     97s  turns 8
+    FAIL delegations sent as tool calls, not as text: 1 reply(s)
+    FAIL showed the sheet in the conversation instead: 
+=== noisy start 11:14:08
+[11:14:13] turn 1 (4.7s): "[tool call] delegate --target media-agent --instruction 'Search the NAS video library for movies and"
+[11:14:17] turn 2 (4.1s): "[tool call] delegate --target file-agent --instruction 'List the files directly inside the folder /v"
+[11:14:22] turn 3 (5.0s): "[tool call] delegate --target file-agent --instruction 'Return the real path of the personal folder "
+[11:14:27] turn 4 (5.1s): "[tool call] delegate --target file-agent --instruction 'Check whether the folder /volume1/home/demo/"
+[11:14:33] turn 5 (6.2s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[11:14:38] turn 6 (4.8s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[11:16:36] turn 7 (118.6s): 'Spanish phrases from Umbrella Weather (2026), intermediate, 20 phrases, whole film, translations int'
+[11:17:35] turn 8 (58.5s): "[tool call] delegate --target file-agent --instruction 'Create the folder /volume1/home/demo/Languag"
+[11:17:36] turn 9 (1.6s): 'The NAS is asking for your approval to create the folder:\n\n**/volume1/home/demo/Language Lessons/Umb'
+[11:18:37] turn 10 (60.4s): "[tool call] delegate --target file-agent --instruction 'Check whether a file named Umbrella Weather "
+[11:19:47] turn 11 (70.5s): "[tool call] delegate --target file-agent --instruction 'Save the following Markdown text as a new fi"
+[11:20:21] turn 12 (33.5s): "[tool call] delegate --target knowledge-agent --instruction ''Save the following Markdown text as a "
+[11:20:22] turn 13 (1.8s): 'The NAS is waiting for you to approve the save of the study sheet **Umbrella Weather (2026) - Spanis'
+[11:20:26] turn 14 (3.9s): 'The study sheet has been saved and verified:\n\n**Path:** `/volume1/home/demo/Language Lessons/Umbrell'
+[11:20:31] turn 15 (4.8s): 'Got it—you don’t want flashcards, and you don’t want to add a tag to the video.\n\n**Summary**\n\n- **Ti'
+[11:20:32] turn 16 (0.9s): 'Great! If you need any more lessons, replay a phrase, or anything else, just let me know. Happy stud'
+done in 384s -> D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\runs\noisy
+=== noisy end 11:20:32
+noisy           28/36    384s  turns 16
+    FAIL every delegation matched a catalog-backed instruction of the Skill: Save the following Markdown text as a new file named Umbrella Weather (2026) - S
+    FAIL no straight single quote inside an instruction: 1 instruction(s)
+    FAIL told the user the alignment result with its anchor numbers: 
+    FAIL every phrase copied from a real cue within 1.5 s of its timestamp: 9. MARCO: Toma, llévate el mío. @ 00:01:24
+    FAIL context lines copied from the subtitle file: 18 after
+    FAIL no credits, adverts, lyrics, sound labels, signs, tags or speaker labels: MARCO: Toma, llévate el mío.
+    FAIL spread: no fifth of the film holds more than 35 % of the phrases: [10, 8, 2, 0, 0]
+    FAIL subtitle translations are the English line spoken at the same time: 10: Don't worry. Shall we have dinner together at nine? (cue: Don't worry about it. Shall we have dinner at nine?); 20: Does it include heating? (cue: Yes, the heating and the water.)
+=== ass start 11:20:32
+[11:20:38] turn 1 (5.6s): "[tool call] delegate --target media-agent --instruction 'Search the NAS video library for movies and"
+[11:20:42] turn 2 (4.2s): "[tool call] delegate --target file-agent --instruction 'List the files directly inside the folder /v"
+[11:20:46] turn 3 (3.4s): "[tool call] delegate --target file-agent --instruction 'Return the real path of the personal folder "
+[11:20:50] turn 4 (4.3s): "[tool call] delegate --target file-agent --instruction 'Check whether the folder /volume1/home/demo/"
+[11:20:55] turn 5 (5.0s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[11:21:02] turn 6 (7.1s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[11:21:28] turn 7 (26.1s): 'Spanish phrases from Umbrella Weather, advanced, 15 phrases, whole film, translations into English  '
+[11:22:58] turn 8 (89.6s): 'Spanish phrases from **Umbrella Weather**, advanced, 15 phrases, whole film, translations into Engli'
+[11:24:08] turn 9 (70.0s): "[tool call] delegate --target file-agent --instruction 'Create the folder /volume1/home/demo/Languag"
+[11:24:09] turn 10 (1.3s): 'The NAS needs your approval to create the folder **/volume1/home/demo/Language Lessons/Umbrella Weat'
+[11:24:11] turn 11 (2.1s): "[tool call] delegate --target file-agent --instruction 'Check whether a file named Umbrella Weather "
+[11:25:17] turn 12 (65.6s): "[tool call] delegate --target document-agent --instruction 'Translate the following numbered lines f"
+[11:25:21] turn 13 (1.5s): 'The NAS is asking for your approval to perform the translation from Spanish to English. Please confi'
+[11:26:16] turn 14 (55.1s): "[tool call] delegate --target document-agent --instruction 'Translate the following line from Spanis"
+[11:27:33] turn 15 (77.1s): "[tool call] delegate --target knowledge-agent --instruction 'Save the following Markdown text as a n"
+[11:27:37] turn 16 (3.6s): 'The NAS is waiting for your approval to save the study sheet **Umbrella Weather - Spanish advanced -'
+[11:27:40] turn 17 (2.9s): '**Study sheet saved!**  \nPath: `/volume1/home/demo/Language Lessons/Umbrella Weather/Umbrella Weathe'
+[11:27:41] turn 18 (0.9s): 'Understood. No tag was added.\n\n**Task complete.** If you need anything else—another lesson, a replay'
+done in 428s -> D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\runs\ass
+=== ass end 11:27:41
+ass             28/36    428s  turns 18
+    FAIL every delegation matched a catalog-backed instruction of the Skill: Translate the following line from Spanish (es) into English (en). Do not save an
+    FAIL no straight single quote inside an instruction: 1 instruction(s)
+    FAIL told the user the alignment result with its anchor numbers: 
+    FAIL phrases copied character for character (not only word for word): 1. ¿Para tomar aquí o para llevar ?; 2. No, gracias. ¿Cuánto es ?; 3. ¡Lena! ¿Qué haces por aquí ?; 4. Todavía no. Sigo buscando piso .; 5. Te entiendo perfectamente .; 6. Oye, va a llover. ¿Tienes paraguas ?; 7. Toma, llévate el mío .; 8. A las diez y cuarto, pero hoy va con retraso .; 9. Entonces 
+    FAIL context lines copied from the subtitle file: 11 after, 15 after
+    FAIL no credits, adverts, lyrics, sound labels, signs, tags or speaker labels: ¡Lena! ¿Qué haces por aquí ?
+    FAIL spread: no fifth of the film holds more than 35 % of the phrases: [7, 4, 3, 1, 0]
+    FAIL subtitle translations are the English line spoken at the same time: 1: To eat here or to take away? (cue: For here or to go?); 2: No, thank you. How much is it? (cue: No, thanks. How much is it?); 4: Not yet. I'm still looking for an apartment. (cue: Not yet. I'm still looking for a flat.); 5: I understand you perfectly. (cue: So-so. Everything is really expensive.)
+=== unsupported start 11:27:41
+[11:27:45] turn 1 (4.5s): 'Spanish phrases from **Umbrella Weather**, beginner, 10 phrases, whole film, translations into Engli'
+[11:27:49] turn 2 (3.1s): "[tool call] delegate --target media-agent --instruction 'Search the NAS video library for movies and"
+[11:27:51] turn 3 (2.7s): "[tool call] delegate --target file-agent --instruction 'List the files directly inside the folder /v"
+[11:27:54] turn 4 (2.3s): 'I found the video **Umbrella Weather (2026)** and a Spanish subtitle file\u202f`Umbrella Weather (2026).e'
+[11:27:56] turn 5 (2.6s): 'Understood. I will use the Spanish subtitles you have and translate the phrases to English with the '
+[11:27:58] turn 6 (2.0s): "[tool call] delegate --target file-agent --instruction 'Read the whole text file /volume1/Movies/Umb"
+[11:28:11] turn 7 (13.3s): "[tool call] delegate --target file-agent --instruction 'Return the real path of the personal folder "
+[11:28:14] turn 8 (2.9s): "[tool call] delegate --target file-agent --instruction 'Check whether the folder /volume1/home/demo/"
+[11:28:35] turn 9 (20.3s): "[tool call] delegate --target document-agent --instruction 'Translate the following numbered lines f"
+[11:28:36] turn 10 (1.0s): 'The NAS needs your approval to perform the translation from Spanish to English. Please confirm (yes '
+[11:29:31] turn 11 (55.7s): '**Summary of what will be created**\n\n- **Title:** *Umbrella Weather* (movie)  \n- **Target language:*'
+[11:30:19] turn 12 (48.1s): "[tool call] delegate --target file-agent --instruction 'Create the folder /volume1/home/demo/Languag"
+[11:30:57] turn 13 (37.8s): 'The NAS is waiting for you to approve the creation of the folder **/volume1/home/demo/Language Lesso'
+[11:31:00] turn 14 (2.6s): "[tool call] delegate --target file-agent --instruction 'Check whether a file named Umbrella Weather "
+[11:32:23] turn 15 (83.3s): '**File name:** `Umbrella Weather - Spanish beginner - 2026-11-09.md`  \n**Folder:** `/volume1/home/de'
+[11:32:48] turn 16 (24.8s): "[tool call] delegate --target knowledge-agent --instruction 'Save the following Markdown text as a n"
+[11:32:50] turn 17 (1.5s): 'The NAS is waiting for you to approve the **save** of the study sheet file **Umbrella Weather - Span'
+[11:32:55] turn 18 (5.5s): '**Study sheet saved!**  \n✅ File: `/volume1/home/demo/Language Lessons/Umbrella Weather/Umbrella Weat'
+[11:32:58] turn 19 (3.3s): 'The study sheet **has already been saved** with all phrases marked “no translation available”:\n\n**Pa'
+done in 317s -> D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\runs\unsupported
+=== unsupported end 11:32:58
+unsupported     28/36    317s  turns 19
+    FAIL every write, download, tag or playback came after the user's yes: mkdir, save
+    FAIL reported the unsupported language pair: 
+    FAIL no credits, adverts, lyrics, sound labels, signs, tags or speaker labels: ¡Lena! ¿Qué haces por aquí?
+    FAIL spread: no fifth of the film holds more than 35 % of the phrases: [6, 1, 2, 0, 1]
+    FAIL no invented translations: every phrase marked 'no translation available': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    FAIL no question shows its own answer: 5, 6, 7, 10
+    FAIL 'What does it mean' questions list options a), b), c): 2 such questions
+    FAIL 10 answers, each naming a phrase and a timestamp: 10 answers
+=== repeat start 11:32:59
+repeat needs a sheet from a core run first (or --earlier-sheet PATH)
+=== repeat end 11:32:59
+Traceback (most recent call last):
+  File "D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\checks.py", line 441, in <module>
+    main()
+  File "D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\checks.py", line 430, in main
+    results = [score_run(os.path.join(RUNS, i)) for i in ids]
+  File "D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\checks.py", line 430, in <listcomp>
+    results = [score_run(os.path.join(RUNS, i)) for i in ids]
+  File "D:\ugreen-hn\.claude\worktrees\r1-improvements\testbed\checks.py", line 172, in score_run
+    ev = json.load(open(os.path.join(run_dir, "events.json"), encoding="utf-8"))
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\ugreen-hn\\.claude\\worktrees\\r1-improvements\\testbed\\runs\\repeat\\events.json'
+=== BATCH DONE

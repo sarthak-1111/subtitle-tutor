@@ -1,0 +1,198 @@
+{
+ "run": "decline",
+ "scenario": "decline",
+ "model": "gpt-oss:120b",
+ "think": "high",
+ "protocol": "tools",
+ "date": "2026-11-09",
+ "seconds": 560,
+ "model_turns": 8,
+ "delegations": 6,
+ "output_tokens": 46221,
+ "passed": 28,
+ "total": 36,
+ "checks": [
+  {
+   "check": "every delegation matched a catalog-backed instruction of the Skill",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no unfilled {VALUE} in any delegation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "every write, download, tag or playback came after the user's yes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "never asked a question and acted in the same reply",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "one delegation at a time, each after the previous result",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no file replaced without the user's explicit 'replace'",
+   "ok": true,
+   "detail": "0 replacement(s)"
+  },
+  {
+   "check": "no straight single quote inside an instruction",
+   "ok": true,
+   "detail": "0 instruction(s)"
+  },
+  {
+   "check": "delegations sent as tool calls, not as text",
+   "ok": true,
+   "detail": "0 reply(s)"
+  },
+  {
+   "check": "conversation finished within the turn limit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "nothing written after the user said no",
+   "ok": true,
+   "detail": "search, ls, get-user-dir, stat-dir, cat, cat"
+  },
+  {
+   "check": "showed the sheet in the conversation instead",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "20 phrases, as requested",
+   "ok": true,
+   "detail": "20 found"
+  },
+  {
+   "check": "every phrase copied from a real cue within 1.5 s of its timestamp",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "phrases copied character for character (not only word for word)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "phrases at most 12 words",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "context lines at most 15 words",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "every phrase block has When, Meaning, Before, After and Usage",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "context lines copied from the subtitle file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no credits, adverts, lyrics, sound labels, signs, tags or speaker labels",
+   "ok": false,
+   "detail": "¡Lena! ¿Qué haces por aquí?"
+  },
+  {
+   "check": "no one-word fillers or names",
+   "ok": false,
+   "detail": "Enseguida."
+  },
+  {
+   "check": "no duplicate phrases",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "phrases numbered in timestamp order",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "spread: no fifth of the film holds more than 35 % of the phrases",
+   "ok": true,
+   "detail": "[4, 4, 5, 3, 4]"
+  },
+  {
+   "check": "'Phrases per fifth' row matches the real phrase times (within 1 per part)",
+   "ok": true,
+   "detail": "stated [4, 4, 4, 4, 4], measured [4, 4, 5, 3, 4]"
+  },
+  {
+   "check": "level fit: intermediate phrases are 3 to 10 words",
+   "ok": true,
+   "detail": "Enseguida."
+  },
+  {
+   "check": "every translation is labelled with its source",
+   "ok": true,
+   "detail": "0 unlabelled"
+  },
+  {
+   "check": "subtitle translations are the English line spoken at the same time",
+   "ok": false,
+   "detail": "11: Does it include heating? (cue: Does that include heating?)"
+  },
+  {
+   "check": "most translations come from the English subtitle file",
+   "ok": true,
+   "detail": "20 of 20"
+  },
+  {
+   "check": "header fields filled with one value each",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "Alignment row states the right result",
+   "ok": true,
+   "detail": "aligned"
+  },
+  {
+   "check": "10 quiz questions",
+   "ok": false,
+   "detail": "20 found"
+  },
+  {
+   "check": "no question shows its own answer",
+   "ok": false,
+   "detail": "11, 12, 19"
+  },
+  {
+   "check": "'What does it mean' questions list options a), b), c)",
+   "ok": true,
+   "detail": "3 such questions"
+  },
+  {
+   "check": "10 answers, each naming a phrase and a timestamp",
+   "ok": false,
+   "detail": "20 answers"
+  },
+  {
+   "check": "'Say it' answers are the target-language phrase",
+   "ok": false,
+   "detail": "10"
+  },
+  {
+   "check": "no review questions without an earlier sheet",
+   "ok": false,
+   "detail": ""
+  }
+ ],
+ "harness_notes": [],
+ "about": "User says no to saving: nothing may be written."
+}

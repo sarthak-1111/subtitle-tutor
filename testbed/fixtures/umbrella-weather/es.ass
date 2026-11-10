@@ -1,0 +1,149 @@
+[Script Info]
+Title: Umbrella Weather
+ScriptType: v4.00+
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, Bold, Italic, Alignment, MarginL, MarginR, MarginV
+Style: Default,Arial,48,&H00FFFFFF,0,0,2,20,20,30
+Style: Sign,Arial,40,&H0000FFFF,1,0,8,20,20,30
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:01.00,Default,,0,0,0,,Timing checked against the 2026 cut
+Dialogue: 0,0:00:04.00,0:00:06.94,Default,BARISTA,0,0,0,,{\i1}¡Buenos días! ¿Qué te pongo?{\i0}
+Dialogue: 0,0:00:07.64,0:00:10.64,Default,LENA,0,0,0,,Un café con leche, por favor.
+Dialogue: 0,0:00:11.58,0:00:14.69,Default,BARISTA,0,0,0,,¿Para tomar aquí o para llevar?
+Dialogue: 0,0:00:15.89,0:00:19.27,Default,LENA,0,0,0,,Para llevar. Tengo un poco de prisa.
+Dialogue: 0,0:00:19.97,0:00:22.30,Default,BARISTA,0,0,0,,Claro. ¿Algo más?
+Dialogue: 0,0:00:23.26,0:00:25.98,Default,LENA,0,0,0,,No, gracias.\N¿Cuánto es?
+Dialogue: 0,0:00:27.18,0:00:30.12,Default,BARISTA,0,0,0,,Son dos euros con cincuenta.
+Dialogue: 0,0:00:30.82,0:00:33.59,Default,LENA,0,0,0,,{\i1}¿Puedo pagar con tarjeta?{\i0}
+Dialogue: 0,0:00:34.54,0:00:36.88,Default,BARISTA,0,0,0,,Sí, sin problema.
+Dialogue: 0,0:00:38.08,0:00:40.96,Default,MARCO,0,0,0,,¡Lena! ¿Qué haces por aquí?
+Dialogue: 0,0:00:41.66,0:00:44.32,Default,LENA,0,0,0,,¡Marco! Qué casualidad.
+Dialogue: 0,0:00:45.28,0:00:47.66,Default,MARCO,0,0,0,,¿Ya te has mudado?
+Dialogue: 0,0:00:48.86,0:00:51.97,Default,LENA,0,0,0,,Todavía no. Sigo buscando piso.
+Dialogue: 0,0:00:52.67,0:00:55.94,Default,MARCO,0,0,0,,¿En serio? ¿Y cómo va la búsqueda?
+Dialogue: 0,0:00:56.89,0:00:59.72,Default,LENA,0,0,0,,{\i1}Regular. Todo es carísimo.{\i0}
+Dialogue: 0,0:01:00.92,0:01:03.75,Default,MARCO,0,0,0,,Te entiendo perfectamente.
+Dialogue: 0,0:01:04.45,0:01:07.61,Default,LENA,0,0,0,,Hoy tengo una visita a las once.
+Dialogue: 0,0:01:08.56,0:01:11.33,Default,MARCO,0,0,0,,¿Quieres que te acompañe?
+Dialogue: 0,0:01:12.54,0:01:15.47,Default,LENA,0,0,0,,No hace falta, pero gracias.
+Dialogue: 0,0:01:16.18,0:01:19.50,Default,MARCO,0,0,0,,Oye, va a llover. ¿Tienes paraguas?
+Dialogue: 0,0:01:20.45,0:01:23.22,Default,LENA,0,0,0,,No, se me olvidó en casa.
+Dialogue: 0,0:01:24.42,0:01:26.98,Default,MARCO,0,0,0,,{\i1}Toma, llévate el mío.{\i0}
+Dialogue: 0,0:01:27.68,0:01:29.85,Default,LENA,0,0,0,,¿Estás seguro?
+Dialogue: 0,0:01:30.80,0:01:34.34,Default,MARCO,0,0,0,,Segurísimo. Me lo devuelves esta noche.
+Dialogue: 0,0:01:35.54,0:01:37.94,Default,LENA,0,0,0,,Vale. Te debo una.
+Dialogue: 0,0:01:38.64,0:01:42.51,Default,MARCO,0,0,0,,No te preocupes. ¿Cenamos juntos a las nueve?
+Dialogue: 0,0:01:43.46,0:01:45.80,Default,LENA,0,0,0,,Me parece genial.
+Dialogue: 0,0:01:47.00,0:01:49.66,Default,MARCO,0,0,0,,Perfecto.\N¡Hasta luego!
+Dialogue: 0,0:01:50.36,0:01:52.86,Default,BARISTA,0,0,0,,{\i1}Aquí tienes tu café.{\i0}
+Dialogue: 0,0:01:53.81,0:01:57.41,Default,LENA,0,0,0,,Muchas gracias. ¡Que tengas un buen día!
+Dialogue: 0,0:02:05.61,0:02:08.44,Default,LENA,0,0,0,,Perdone, ¿me puede ayudar?
+Dialogue: 0,0:02:09.14,0:02:11.31,Default,CLERK,0,0,0,,Claro, dígame.
+Dialogue: 0,0:02:12.26,0:02:15.26,Default,LENA,0,0,0,,Busco el tren para el centro.
+Dialogue: 0,0:02:16.46,0:02:19.06,Default,CLERK,0,0,0,,Sale del andén cuatro.
+Dialogue: 0,0:02:16.46,0:02:19.06,Sign,,0,0,0,,{\pos(960,80)}ANDÉN 4
+Dialogue: 0,0:02:19.76,0:02:22.71,Default,LENA,0,0,0,,¿A qué hora sale el próximo?
+Dialogue: 0,0:02:23.66,0:02:27.53,Default,CLERK,0,0,0,,{\i1}A las diez y cuarto, pero hoy va con retraso.{\i0}
+Dialogue: 0,0:02:28.73,0:02:31.72,Default,LENA,0,0,0,,¿Con retraso? ¿Cuánto tiempo?
+Dialogue: 0,0:02:32.43,0:02:35.64,Default,CLERK,0,0,0,,Unos veinte minutos, más o menos.
+Dialogue: 0,0:02:36.59,0:02:39.75,Default,LENA,0,0,0,,Vaya.\NTengo una cita a las once.
+Dialogue: 0,0:02:40.95,0:02:44.44,Default,CLERK,0,0,0,,Entonces le conviene tomar el autobús.
+Dialogue: 0,0:02:45.14,0:02:48.19,Default,LENA,0,0,0,,¿Está lejos de aquí la parada?
+Dialogue: 0,0:02:49.14,0:02:52.36,Default,CLERK,0,0,0,,No, está a cinco minutos andando.
+Dialogue: 0,0:02:53.56,0:02:57.76,Default,CLERK,0,0,0,,{\i1}Salga por la puerta principal y gire a la izquierda.{\i0}
+Dialogue: 0,0:02:58.46,0:03:01.56,Default,LENA,0,0,0,,¿Y qué autobús tengo que coger?
+Dialogue: 0,0:03:02.51,0:03:06.16,Default,CLERK,0,0,0,,El treinta y dos. Pasa cada diez minutos.
+Dialogue: 0,0:03:07.36,0:03:11.08,Default,LENA,0,0,0,,¿Puede repetirlo, por favor? Más despacio.
+Dialogue: 0,0:03:11.78,0:03:15.16,Default,CLERK,0,0,0,,El treinta y dos, cada diez minutos.
+Dialogue: 0,0:03:16.10,0:03:19.60,Default,LENA,0,0,0,,Perfecto. Muchas gracias por su ayuda.
+Dialogue: 0,0:03:20.80,0:03:23.35,Default,CLERK,0,0,0,,De nada. ¡Buen viaje!
+Dialogue: 0,0:03:24.05,0:03:26.77,Default,LENA,0,0,0,,{\i1}¿Señora Ortiz? Soy Lena.{\i0}
+Dialogue: 0,0:03:27.72,0:03:31.21,Default,LENA,0,0,0,,Lo siento, voy a llegar un poco tarde.
+Dialogue: 0,0:03:32.41,0:03:35.84,Default,ORTIZ,0,0,0,,No pasa nada. Te espero en el portal.
+Dialogue: 0,0:03:36.54,0:03:39.32,Default,LENA,0,0,0,,Gracias por su paciencia.
+Dialogue: 0,0:03:47.27,0:03:50.26,Default,ORTIZ,0,0,0,,Pasa, pasa. Este es el salón.
+Dialogue: 0,0:03:51.46,0:03:53.64,Default,LENA,0,0,0,,¡Qué luminoso!
+Dialogue: 0,0:03:54.34,0:03:58.10,Default,ORTIZ,0,0,0,,Da al sur, así que tiene sol toda la tarde.
+Dialogue: 0,0:03:59.05,0:04:01.99,Default,LENA,0,0,0,,{\i1}¿Cuántas habitaciones tiene?{\i0}
+Dialogue: 0,0:04:03.19,0:04:06.08,Default,ORTIZ,0,0,0,,Dos habitaciones y un baño.
+Dialogue: 0,0:04:06.78,0:04:09.33,Default,LENA,0,0,0,,¿Puedo ver la cocina?
+Dialogue: 0,0:04:10.28,0:04:13.66,Default,ORTIZ,0,0,0,,Por supuesto. Está recién reformada.
+Dialogue: 0,0:04:14.86,0:04:17.91,Default,LENA,0,0,0,,¿Cuánto es el alquiler al mes?
+Dialogue: 0,0:04:18.61,0:04:21.99,Default,ORTIZ,0,0,0,,Ochocientos euros, gastos incluidos.
+Dialogue: 0,0:04:22.94,0:04:25.66,Default,LENA,0,0,0,,¿Incluye la calefacción?
+Dialogue: 0,0:04:26.86,0:04:29.86,Default,ORTIZ,0,0,0,,{\i1}Sí, la calefacción y el agua.{\i0}
+Dialogue: 0,0:04:30.56,0:04:33.17,Default,LENA,0,0,0,,¿Hay que pagar fianza?
+Dialogue: 0,0:04:34.12,0:04:36.62,Default,ORTIZ,0,0,0,,Dos meses de fianza.
+Dialogue: 0,0:04:37.82,0:04:40.37,Default,LENA,0,0,0,,¿Se admiten mascotas?
+Dialogue: 0,0:04:41.07,0:04:44.06,Default,ORTIZ,0,0,0,,Depende. ¿Qué mascota tienes?
+Dialogue: 0,0:04:45.02,0:04:47.62,Default,LENA,0,0,0,,Un gato muy tranquilo.
+Dialogue: 0,0:04:48.82,0:04:51.49,Default,ORTIZ,0,0,0,,Un gato no es problema.
+Dialogue: 0,0:04:52.19,0:04:55.08,Default,LENA,0,0,0,,{\i1}¿Cuándo estaría disponible?{\i0}
+Dialogue: 0,0:04:56.02,0:04:58.58,Default,ORTIZ,0,0,0,,A partir del día uno.
+Dialogue: 0,0:04:59.78,0:05:03.32,Default,ORTIZ,0,0,0,,Hay otra persona interesada, la verdad.
+Dialogue: 0,0:05:04.02,0:05:06.86,Default,LENA,0,0,0,,Entiendo. Déjeme pensarlo.
+Dialogue: 0,0:05:07.80,0:05:10.80,Default,ORTIZ,0,0,0,,Claro. ¿Me dices algo mañana?
+Dialogue: 0,0:05:12.00,0:05:15.16,Default,LENA,0,0,0,,Sí, le escribo mañana sin falta.
+Dialogue: 0,0:05:15.86,0:05:18.74,Default,ORTIZ,0,0,0,,Muy bien. ¡Ay, cómo llueve!
+Dialogue: 0,0:05:19.70,0:05:22.69,Default,LENA,0,0,0,,{\i1}Menos mal que llevo paraguas.{\i0}
+Dialogue: 0,0:05:30.89,0:05:34.44,Default,PHARMACIST,0,0,0,,Buenas tardes. ¿En qué le puedo ayudar?
+Dialogue: 0,0:05:35.14,0:05:37.91,Default,LENA,0,0,0,,No me encuentro muy bien.
+Dialogue: 0,0:05:38.86,0:05:40.98,Default,PHARMACIST,0,0,0,,¿Qué le pasa?
+Dialogue: 0,0:05:42.18,0:05:45.83,Default,LENA,0,0,0,,Me duele la garganta y estoy muy cansada.
+Dialogue: 0,0:05:46.53,0:05:48.70,Default,PHARMACIST,0,0,0,,¿Desde cuándo?
+Dialogue: 0,0:05:49.65,0:05:52.37,Default,LENA,0,0,0,,Desde ayer por la noche.
+Dialogue: 0,0:05:53.57,0:05:55.74,Default,PHARMACIST,0,0,0,,{\i1}¿Tiene fiebre?{\i0}
+Dialogue: 0,0:05:56.44,0:05:59.71,Default,LENA,0,0,0,,Creo que no, pero no estoy segura.
+Dialogue: 0,0:06:00.66,0:06:04.64,Default,PHARMACIST,0,0,0,,Le recomiendo estas pastillas para la garganta.
+Dialogue: 0,0:06:05.84,0:06:08.73,Default,PHARMACIST,0,0,0,,Tome una cada cuatro horas.
+Dialogue: 0,0:06:09.43,0:06:12.92,Default,LENA,0,0,0,,¿Puedo tomarlas con el estómago vacío?
+Dialogue: 0,0:06:13.87,0:06:16.54,Default,PHARMACIST,0,0,0,,Mejor después de comer.
+Dialogue: 0,0:06:17.74,0:06:20.12,Default,PHARMACIST,0,0,0,,Y beba mucha agua.
+Dialogue: 0,0:06:20.82,0:06:23.10,Default,LENA,0,0,0,,{\i1}¿Y si no mejoro?{\i0}
+Dialogue: 0,0:06:24.06,0:06:27.76,Default,PHARMACIST,0,0,0,,Si no mejora en tres días, vaya al médico.
+Dialogue: 0,0:06:28.96,0:06:31.90,Default,LENA,0,0,0,,De acuerdo.\N¿Cuánto le debo?
+Dialogue: 0,0:06:32.60,0:06:35.22,Default,PHARMACIST,0,0,0,,Seis euros con veinte.
+Dialogue: 0,0:06:36.16,0:06:38.17,Default,LENA,0,0,0,,Aquí tiene.
+Dialogue: 0,0:06:39.37,0:06:41.54,Default,PHARMACIST,0,0,0,,Que se mejore.
+Dialogue: 0,0:06:42.24,0:06:44.74,Default,LENA,0,0,0,,Gracias, muy amable.
+Dialogue: 0,0:06:52.69,0:06:55.85,Default,MARCO,0,0,0,,{\i1}¡Por fin! Pensaba que no venías.{\i0}
+Dialogue: 0,0:06:57.05,0:07:00.10,Default,LENA,0,0,0,,Perdona, llego tarde otra vez.
+Dialogue: 0,0:07:00.80,0:07:04.02,Default,MARCO,0,0,0,,No te preocupes. Acabo de llegar.
+Dialogue: 0,0:07:04.96,0:07:08.62,Default,LENA,0,0,0,,Toma, tu paraguas. Me ha salvado la vida.
+Dialogue: 0,0:07:09.82,0:07:12.26,Default,MARCO,0,0,0,,¿Qué tal la visita?
+Dialogue: 0,0:07:12.96,0:07:15.96,Default,LENA,0,0,0,,Muy bien. El piso me encanta.
+Dialogue: 0,0:07:16.91,0:07:19.02,Default,MARCO,0,0,0,,¿Y el precio?
+Dialogue: 0,0:07:20.22,0:07:23.38,Default,LENA,0,0,0,,{\i1}Un poco caro, pero vale la pena.{\i0}
+Dialogue: 0,0:07:24.08,0:07:26.48,Default,MARCO,0,0,0,,¿Vas a quedártelo?
+Dialogue: 0,0:07:27.42,0:07:31.14,Default,LENA,0,0,0,,Creo que sí. Mañana le escribo a la dueña.
+Dialogue: 0,0:07:32.34,0:07:35.55,Default,MARCO,0,0,0,,¡Enhorabuena! Hay que celebrarlo.
+Dialogue: 0,0:07:36.25,0:07:38.58,Default,WAITER,0,0,0,,¿Qué van a tomar?
+Dialogue: 0,0:07:39.54,0:07:42.04,Default,LENA,0,0,0,,¿Qué nos recomienda?
+Dialogue: 0,0:07:43.24,0:07:46.23,Default,WAITER,0,0,0,,La paella está muy buena hoy.
+Dialogue: 0,0:07:46.93,0:07:49.87,Default,MARCO,0,0,0,,{\i1}Pues dos paellas, por favor.{\i0}
+Dialogue: 0,0:07:50.82,0:07:53.87,Default,LENA,0,0,0,,Y una botella de agua sin gas.
+Dialogue: 0,0:07:55.07,0:07:57.02,Default,WAITER,0,0,0,,Enseguida.
+Dialogue: 0,0:07:57.72,0:08:01.04,Default,MARCO,0,0,0,,Oye, ¿estás bien? Tienes mala cara.
+Dialogue: 0,0:08:02.00,0:08:05.26,Default,LENA,0,0,0,,Estoy un poco resfriada, nada más.
+Dialogue: 0,0:08:06.46,0:08:09.96,Default,MARCO,0,0,0,,Deberías descansar este fin de semana.
+Dialogue: 0,0:08:10.66,0:08:14.53,Default,LENA,0,0,0,,Tienes razón. Pero tengo mil cosas que hacer.
+Dialogue: 0,0:08:15.48,0:08:18.70,Default,MARCO,0,0,0,,{\i1}¿Te echo una mano con la mudanza?{\i0}
+Dialogue: 0,0:08:19.90,0:08:22.89,Default,LENA,0,0,0,,¿De verdad? Eso sería genial.
+Dialogue: 0,0:08:23.59,0:08:26.80,Default,MARCO,0,0,0,,Claro. Para eso están los amigos.
+Dialogue: 0,0:08:27.76,0:08:30.36,Default,LENA,0,0,0,,Te debo una, otra vez.
+Dialogue: 0,0:08:31.56,0:08:34.78,Default,MARCO,0,0,0,,Me debes dos. Pero ¿quién cuenta?
+Dialogue: 0,0:08:35.48,0:08:38.36,Default,LENA,0,0,0,,¿Qué quieres decir con eso?
+Dialogue: 0,0:08:39.32,0:08:42.53,Default,MARCO,0,0,0,,Que me invites a la próxima cena.
+Dialogue: 0,0:08:43.73,0:08:45.79,Default,LENA,0,0,0,,{\i1}Trato hecho.{\i0}
+Dialogue: 0,0:08:46.49,0:08:49.43,Default,WAITER,0,0,0,,Aquí tienen. ¡Que aproveche!
+Dialogue: 0,0:08:50.38,0:08:52.72,Default,LENA,0,0,0,,¡Qué buena pinta!
+Dialogue: 0,0:08:53.92,0:08:56.30,Default,MARCO,0,0,0,,Por el piso nuevo.
+Dialogue: 0,0:08:57.00,0:08:58.79,Default,LENA,0,0,0,,¡Salud!
+Dialogue: 0,0:08:59.74,0:09:02.74,Default,LENA,0,0,0,,Por cierto, ¿sigue lloviendo?
+Dialogue: 0,0:09:03.93,0:09:05.94,Default,MARCO,0,0,0,,A cántaros.
+Dialogue: 0,0:09:06.64,0:09:10.35,Default,LENA,0,0,0,,{\i1}Entonces me vuelves a prestar el paraguas.{\i0}
+Dialogue: 0,0:09:11.30,0:09:14.84,Default,MARCO,0,0,0,,Ni hablar. Esta vez te acompaño a casa.
+Dialogue: 0,0:09:16.04,0:09:18.10,Default,LENA,0,0,0,,Eres un sol.

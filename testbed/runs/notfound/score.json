@@ -1,0 +1,78 @@
+{
+ "run": "notfound",
+ "scenario": "notfound",
+ "model": "gpt-oss:120b",
+ "think": "high",
+ "protocol": "tools",
+ "date": "2026-11-09",
+ "seconds": 11,
+ "model_turns": 2,
+ "delegations": 1,
+ "output_tokens": 805,
+ "passed": 12,
+ "total": 12,
+ "checks": [
+  {
+   "check": "every delegation matched a catalog-backed instruction of the Skill",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no unfilled {VALUE} in any delegation",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "every write, download, tag or playback came after the user's yes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "never asked a question and acted in the same reply",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "one delegation at a time, each after the previous result",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no file replaced without the user's explicit 'replace'",
+   "ok": true,
+   "detail": "0 replacement(s)"
+  },
+  {
+   "check": "no straight single quote inside an instruction",
+   "ok": true,
+   "detail": "0 instruction(s)"
+  },
+  {
+   "check": "delegations sent as tool calls, not as text",
+   "ok": true,
+   "detail": "0 reply(s)"
+  },
+  {
+   "check": "conversation finished within the turn limit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "stopped after the empty search (no other expert call)",
+   "ok": true,
+   "detail": "search"
+  },
+  {
+   "check": "said the title was not found",
+   "ok": true,
+   "detail": "I could not find a title matching Casablanca in the NAS media library. END OF TASK"
+  },
+  {
+   "check": "offered no substitute title",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "harness_notes": [],
+ "about": "Title not in the library: must stop without offering another title."
+}

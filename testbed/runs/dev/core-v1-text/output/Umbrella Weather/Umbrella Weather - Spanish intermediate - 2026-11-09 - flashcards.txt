@@ -1,0 +1,20 @@
+¡Buenos días! ¿Qué te pongo?	Good morning! What can I get you?	Umbrella Weather 00:00:04
+Un café con leche, por favor.	A coffee with milk, please.	Umbrella Weather 00:00:07
+¿Para tomar aquí o para llevar?	For here or to go?	Umbrella Weather 00:00:11
+Para llevar. Tengo un poco de prisa.	To go. I’m in a bit of a hurry.	Umbrella Weather 00:00:15
+Claro. ¿Algo más?	Sure. Anything else?	Umbrella Weather 00:00:19
+No, gracias. ¿Cuánto es?	No, thanks. How much is it?	Umbrella Weather 00:00:23
+Son dos euros con cincuenta.	That’s two euros fifty.	Umbrella Weather 00:00:27
+¿Puedo pagar con tarjeta?	Can I pay by card?	Umbrella Weather 00:00:30
+Sí, sin problema.	Yes, no problem.	Umbrella Weather 00:00:34
+Oye, va a llover. ¿Tienes paraguas?	Hey, it’s going to rain. Do you have an umbrella?	Umbrella Weather 00:01:16
+No, se me olvidó en casa.	No, I left it at home.	Umbrella Weather 00:01:20
+Toma, llévate el mío.	Here, take mine.	Umbrella Weather 00:01:24
+Perdone, ¿me puede ayudar?	Excuse me, could you help me?	Umbrella Weather 00:02:05
+Busco el tren para el centro.	I’m looking for the train to the city centre.	Umbrella Weather 00:02:12
+A las diez y cuarto, pero hoy va con retraso.	At quarter past ten, but it’s running late today.	Umbrella Weather 00:02:23
+Unos veinte minutos, más o menos.	About twenty minutes, more or less.	Umbrella Weather 00:02:32
+Entonces le conviene tomar el autobús.	Then you’d better take the bus.	Umbrella Weather 00:02:40
+¿Cuánto es el alquiler al mes?	How much is the rent per month?	Umbrella Weather 00:04:14
+Ochocientos euros, gastos incluidos.	Eight hundred euros, bills included.	Umbrella Weather 00:04:18
+Le recomiendo estas pastillas para la garganta.	I recommend these throat lozenges.	Umbrella Weather 00:06:00

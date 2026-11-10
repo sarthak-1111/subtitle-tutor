@@ -1,0 +1,543 @@
+1
+00:00:04,000 --> 00:00:06,940
+¡Buenos días! ¿Qué te pongo?
+
+2
+00:00:07,640 --> 00:00:10,635
+Un café con leche, por favor.
+
+3
+00:00:11,585 --> 00:00:14,690
+¿Para tomar aquí o para llevar?
+
+4
+00:00:15,890 --> 00:00:19,270
+Para llevar. Tengo un poco de prisa.
+
+5
+00:00:19,970 --> 00:00:22,305
+Claro. ¿Algo más?
+
+6
+00:00:23,255 --> 00:00:25,975
+No, gracias. ¿Cuánto es?
+
+7
+00:00:27,175 --> 00:00:30,115
+Son dos euros con cincuenta.
+
+8
+00:00:30,815 --> 00:00:33,590
+¿Puedo pagar con tarjeta?
+
+9
+00:00:34,540 --> 00:00:36,875
+Sí, sin problema.
+
+10
+00:00:38,075 --> 00:00:40,960
+¡Lena! ¿Qué haces por aquí?
+
+11
+00:00:41,660 --> 00:00:44,325
+¡Marco! Qué casualidad.
+
+12
+00:00:45,275 --> 00:00:47,665
+¿Ya te has mudado?
+
+13
+00:00:48,865 --> 00:00:51,970
+Todavía no. Sigo buscando piso.
+
+14
+00:00:52,670 --> 00:00:55,940
+¿En serio? ¿Y cómo va la búsqueda?
+
+15
+00:00:56,890 --> 00:00:59,720
+Regular. Todo es carísimo.
+
+16
+00:01:00,920 --> 00:01:03,750
+Te entiendo perfectamente.
+
+17
+00:01:04,450 --> 00:01:07,610
+Hoy tengo una visita a las once.
+
+18
+00:01:08,560 --> 00:01:11,335
+¿Quieres que te acompañe?
+
+19
+00:01:12,535 --> 00:01:15,475
+No hace falta, pero gracias.
+
+20
+00:01:16,175 --> 00:01:19,500
+Oye, va a llover. ¿Tienes paraguas?
+
+21
+00:01:20,450 --> 00:01:23,225
+No, se me olvidó en casa.
+
+22
+00:01:24,425 --> 00:01:26,980
+Toma, llévate el mío.
+
+23
+00:01:27,680 --> 00:01:29,850
+¿Estás seguro?
+
+24
+00:01:30,800 --> 00:01:34,345
+Segurísimo. Me lo devuelves esta noche.
+
+25
+00:01:35,545 --> 00:01:37,935
+Vale. Te debo una.
+
+26
+00:01:38,635 --> 00:01:42,510
+No te preocupes. ¿Cenamos juntos a las nueve?
+
+27
+00:01:43,460 --> 00:01:45,795
+Me parece genial.
+
+28
+00:01:46,995 --> 00:01:49,660
+Perfecto. ¡Hasta luego!
+
+29
+00:01:50,360 --> 00:01:52,860
+Aquí tienes tu café.
+
+30
+00:01:53,810 --> 00:01:57,410
+Muchas gracias. ¡Que tengas un buen día!
+
+31
+00:02:05,610 --> 00:02:08,440
+Perdone, ¿me puede ayudar?
+
+32
+00:02:09,140 --> 00:02:11,310
+Claro, dígame.
+
+33
+00:02:12,260 --> 00:02:15,255
+Busco el tren para el centro.
+
+34
+00:02:16,455 --> 00:02:19,065
+Sale del andén cuatro.
+
+35
+00:02:19,765 --> 00:02:22,705
+¿A qué hora sale el próximo?
+
+36
+00:02:23,655 --> 00:02:27,530
+A las diez y cuarto, pero hoy va con retraso.
+
+37
+00:02:28,730 --> 00:02:31,725
+¿Con retraso? ¿Cuánto tiempo?
+
+38
+00:02:32,425 --> 00:02:35,640
+Unos veinte minutos, más o menos.
+
+39
+00:02:36,590 --> 00:02:39,750
+Vaya. Tengo una cita a las once.
+
+40
+00:02:40,950 --> 00:02:44,440
+Entonces le conviene tomar el autobús.
+
+41
+00:02:45,140 --> 00:02:48,190
+¿Está lejos de aquí la parada?
+
+42
+00:02:49,140 --> 00:02:52,355
+No, está a cinco minutos andando.
+
+43
+00:02:53,555 --> 00:02:57,755
+Salga por la puerta principal y gire a la izquierda.
+
+44
+00:02:58,455 --> 00:03:01,560
+¿Y qué autobús tengo que coger?
+
+45
+00:03:02,510 --> 00:03:06,165
+El treinta y dos. Pasa cada diez minutos.
+
+46
+00:03:07,365 --> 00:03:11,075
+¿Puede repetirlo, por favor? Más despacio.
+
+47
+00:03:11,775 --> 00:03:15,155
+El treinta y dos, cada diez minutos.
+
+48
+00:03:16,105 --> 00:03:19,595
+Perfecto. Muchas gracias por su ayuda.
+
+49
+00:03:20,795 --> 00:03:23,350
+De nada. ¡Buen viaje!
+
+50
+00:03:24,050 --> 00:03:26,770
+¿Señora Ortiz? Soy Lena.
+
+51
+00:03:27,720 --> 00:03:31,210
+Lo siento, voy a llegar un poco tarde.
+
+52
+00:03:32,410 --> 00:03:35,845
+No pasa nada. Te espero en el portal.
+
+53
+00:03:36,545 --> 00:03:39,320
+Gracias por su paciencia.
+
+54
+00:03:47,270 --> 00:03:50,265
+Pasa, pasa. Este es el salón.
+
+55
+00:03:51,465 --> 00:03:53,635
+¡Qué luminoso!
+
+56
+00:03:54,335 --> 00:03:58,100
+Da al sur, así que tiene sol toda la tarde.
+
+57
+00:03:59,050 --> 00:04:01,990
+¿Cuántas habitaciones tiene?
+
+58
+00:04:03,190 --> 00:04:06,075
+Dos habitaciones y un baño.
+
+59
+00:04:06,775 --> 00:04:09,330
+¿Puedo ver la cocina?
+
+60
+00:04:10,280 --> 00:04:13,660
+Por supuesto. Está recién reformada.
+
+61
+00:04:14,860 --> 00:04:17,910
+¿Cuánto es el alquiler al mes?
+
+62
+00:04:18,610 --> 00:04:21,990
+Ochocientos euros, gastos incluidos.
+
+63
+00:04:22,940 --> 00:04:25,660
+¿Incluye la calefacción?
+
+64
+00:04:26,860 --> 00:04:29,855
+Sí, la calefacción y el agua.
+
+65
+00:04:30,555 --> 00:04:33,165
+¿Hay que pagar fianza?
+
+66
+00:04:34,115 --> 00:04:36,615
+Dos meses de fianza.
+
+67
+00:04:37,815 --> 00:04:40,370
+¿Se admiten mascotas?
+
+68
+00:04:41,070 --> 00:04:44,065
+Depende. ¿Qué mascota tienes?
+
+69
+00:04:45,015 --> 00:04:47,625
+Un gato muy tranquilo.
+
+70
+00:04:48,825 --> 00:04:51,490
+Un gato no es problema.
+
+71
+00:04:52,190 --> 00:04:55,075
+¿Cuándo estaría disponible?
+
+72
+00:04:56,025 --> 00:04:58,580
+A partir del día uno.
+
+73
+00:04:59,780 --> 00:05:03,325
+Hay otra persona interesada, la verdad.
+
+74
+00:05:04,025 --> 00:05:06,855
+Entiendo. Déjeme pensarlo.
+
+75
+00:05:07,805 --> 00:05:10,800
+Claro. ¿Me dices algo mañana?
+
+76
+00:05:12,000 --> 00:05:15,160
+Sí, le escribo mañana sin falta.
+
+77
+00:05:15,860 --> 00:05:18,745
+Muy bien. ¡Ay, cómo llueve!
+
+78
+00:05:19,695 --> 00:05:22,690
+Menos mal que llevo paraguas.
+
+79
+00:05:30,890 --> 00:05:34,435
+Buenas tardes. ¿En qué le puedo ayudar?
+
+80
+00:05:35,135 --> 00:05:37,910
+No me encuentro muy bien.
+
+81
+00:05:38,860 --> 00:05:40,975
+¿Qué le pasa?
+
+82
+00:05:42,175 --> 00:05:45,830
+Me duele la garganta y estoy muy cansada.
+
+83
+00:05:46,530 --> 00:05:48,700
+¿Desde cuándo?
+
+84
+00:05:49,650 --> 00:05:52,370
+Desde ayer por la noche.
+
+85
+00:05:53,570 --> 00:05:55,740
+¿Tiene fiebre?
+
+86
+00:05:56,440 --> 00:05:59,710
+Creo que no, pero no estoy segura.
+
+87
+00:06:00,660 --> 00:06:04,645
+Le recomiendo estas pastillas para la garganta.
+
+88
+00:06:05,845 --> 00:06:08,730
+Tome una cada cuatro horas.
+
+89
+00:06:09,430 --> 00:06:12,920
+¿Puedo tomarlas con el estómago vacío?
+
+90
+00:06:13,870 --> 00:06:16,535
+Mejor después de comer.
+
+91
+00:06:17,735 --> 00:06:20,125
+Y beba mucha agua.
+
+92
+00:06:20,825 --> 00:06:23,105
+¿Y si no mejoro?
+
+93
+00:06:24,055 --> 00:06:27,765
+Si no mejora en tres días, vaya al médico.
+
+94
+00:06:28,965 --> 00:06:31,905
+De acuerdo. ¿Cuánto le debo?
+
+95
+00:06:32,605 --> 00:06:35,215
+Seis euros con veinte.
+
+96
+00:06:36,165 --> 00:06:38,170
+Aquí tiene.
+
+97
+00:06:39,370 --> 00:06:41,540
+Que se mejore.
+
+98
+00:06:42,240 --> 00:06:44,740
+Gracias, muy amable.
+
+99
+00:06:52,690 --> 00:06:55,850
+¡Por fin! Pensaba que no venías.
+
+100
+00:06:57,050 --> 00:07:00,100
+Perdona, llego tarde otra vez.
+
+101
+00:07:00,800 --> 00:07:04,015
+No te preocupes. Acabo de llegar.
+
+102
+00:07:04,965 --> 00:07:08,620
+Toma, tu paraguas. Me ha salvado la vida.
+
+103
+00:07:09,820 --> 00:07:12,265
+¿Qué tal la visita?
+
+104
+00:07:12,965 --> 00:07:15,960
+Muy bien. El piso me encanta.
+
+105
+00:07:16,910 --> 00:07:19,025
+¿Y el precio?
+
+106
+00:07:20,225 --> 00:07:23,385
+Un poco caro, pero vale la pena.
+
+107
+00:07:24,085 --> 00:07:26,475
+¿Vas a quedártelo?
+
+108
+00:07:27,425 --> 00:07:31,135
+Creo que sí. Mañana le escribo a la dueña.
+
+109
+00:07:32,335 --> 00:07:35,550
+¡Enhorabuena! Hay que celebrarlo.
+
+110
+00:07:36,250 --> 00:07:38,585
+¿Qué van a tomar?
+
+111
+00:07:39,535 --> 00:07:42,035
+¿Qué nos recomienda?
+
+112
+00:07:43,235 --> 00:07:46,230
+La paella está muy buena hoy.
+
+113
+00:07:46,930 --> 00:07:49,870
+Pues dos paellas, por favor.
+
+114
+00:07:50,820 --> 00:07:53,870
+Y una botella de agua sin gas.
+
+115
+00:07:55,070 --> 00:07:57,020
+Enseguida.
+
+116
+00:07:57,720 --> 00:08:01,045
+Oye, ¿estás bien? Tienes mala cara.
+
+117
+00:08:01,995 --> 00:08:05,265
+Estoy un poco resfriada, nada más.
+
+118
+00:08:06,465 --> 00:08:09,955
+Deberías descansar este fin de semana.
+
+119
+00:08:10,655 --> 00:08:14,530
+Tienes razón. Pero tengo mil cosas que hacer.
+
+120
+00:08:15,480 --> 00:08:18,695
+¿Te echo una mano con la mudanza?
+
+121
+00:08:19,895 --> 00:08:22,890
+¿De verdad? Eso sería genial.
+
+122
+00:08:23,590 --> 00:08:26,805
+Claro. Para eso están los amigos.
+
+123
+00:08:27,755 --> 00:08:30,365
+Te debo una, otra vez.
+
+124
+00:08:31,565 --> 00:08:34,780
+Me debes dos. Pero ¿quién cuenta?
+
+125
+00:08:35,480 --> 00:08:38,365
+¿Qué quieres decir con eso?
+
+126
+00:08:39,315 --> 00:08:42,530
+Que me invites a la próxima cena.
+
+127
+00:08:43,730 --> 00:08:45,790
+Trato hecho.
+
+128
+00:08:46,490 --> 00:08:49,430
+Aquí tienen. ¡Que aproveche!
+
+129
+00:08:50,380 --> 00:08:52,715
+¡Qué buena pinta!
+
+130
+00:08:53,915 --> 00:08:56,305
+Por el piso nuevo.
+
+131
+00:08:57,005 --> 00:08:58,790
+¡Salud!
+
+132
+00:08:59,740 --> 00:09:02,735
+Por cierto, ¿sigue lloviendo?
+
+133
+00:09:03,935 --> 00:09:05,940
+A cántaros.
+
+134
+00:09:06,640 --> 00:09:10,350
+Entonces me vuelves a prestar el paraguas.
+
+135
+00:09:11,300 --> 00:09:14,845
+Ni hablar. Esta vez te acompaño a casa.
+
+136
+00:09:16,045 --> 00:09:18,105
+Eres un sol.

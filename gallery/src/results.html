@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Stand-in results</title>
+<link rel="stylesheet" href="style.css"><style>
+.page { display:grid; grid-template-columns:520px 804px; gap:48px; padding:64px 64px 0; height:920px; }
+.left { display:flex; flex-direction:column; }
+h1 { font-family:var(--serif); font-weight:400; font-size:56px; line-height:60px; letter-spacing:-0.03em; }
+.lede { margin-top:16px; font-size:18px; line-height:28px; color:var(--text-2); }
+.note { margin-top:24px; padding:12px 16px; border-radius:10px; background:var(--raised);
+  font-size:14px; line-height:20px; color:var(--text-2); }
+.note b { font-weight:500; color:var(--text); }
+.figure { margin-top:auto; }
+.big { font-size:72px; line-height:72px; font-weight:500; letter-spacing:-0.02em; font-variant-numeric:tabular-nums; }
+.big span { color:var(--text-3); font-weight:400; }
+.cap { margin-top:8px; font-size:14px; line-height:20px; color:var(--text-2); }
+.cats { list-style:none; margin-top:32px; border-top:1px solid var(--hair-2); }
+.cats li { padding:12px 0; border-bottom:1px solid var(--hair-2); }
+.cats .line { display:flex; justify-content:space-between; font-size:15px; line-height:22px; }
+.num { font-variant-numeric:tabular-nums; }
+.cats .num { font-size:15px; color:var(--text-2); }
+.cats .about { margin-top:2px; font-size:13px; line-height:20px; color:var(--text-3); text-wrap:balance; }
+.cats .bar { margin-top:8px; }
+.bar { height:4px; border-radius:2px; background:var(--raised); }
+.bar div { height:4px; border-radius:2px; background:#a39887; }
+.bar.on div { background:var(--accent); }
+.table { padding:24px 32px 8px; }
+.table h2 { font-size:15px; line-height:20px; font-weight:500; color:var(--text-2); }
+.table .sub { margin-top:2px; font-size:13px; line-height:20px; color:var(--text-3); }
+.rows { list-style:none; margin-top:16px; }
+.rows li { display:grid; grid-template-columns:1fr 200px 72px; align-items:center; gap:24px;
+  padding:17px 0; border-top:1px solid var(--hair); }
+.lab { font-size:15px; line-height:22px; }
+.id { margin-top:2px; font-size:12px; line-height:16px; color:var(--text-3); }
+.n { text-align:right; font-size:15px; line-height:20px; color:var(--text-2); }
+</style></head><body><div class="page">
+<section class="left">
+  <h1>Off-device<br>stand-in tests</h1>
+  <p class="lede">Ten scenarios on original test subtitles; every phrase, timestamp, translation and confirmation is checked automatically</p>
+  <p class="note"><b>PC stand-in, not the NAS:</b> gpt-oss:120b (high reasoning) follows SKILL.md; the NAS experts, approvals and user are emulated</p>
+  <div class="figure">
+    <div class="big">310<span> / 360</span></div>
+    <p class="cap">Checks passed in the final round, one attempt per scenario</p>
+    <ul class="cats"><li><div class='line'><span>Workflow and safety</span><span class='num'>131 / 135</span></div><div class='about'>Consent before every write, real results only, one delegation at a time, no substitute titles</div><div class='bar on'><div style='width:97.0%'></div></div></li><li><div class='line'><span>Sheet text and quiz</span><span class='num'>160 / 193</span></div><div class='about'>Exact phrases and times, spread, translations, quiz format</div><div class='bar'><div style='width:82.9%'></div></div></li><li><div class='line'><span>Alignment</span><span class='num'>19 / 32</span></div><div class='about'>Anchor table, offset and drift detection</div><div class='bar'><div style='width:59.4%'></div></div></li></ul>
+  </div>
+</section>
+<section class="card table">
+  <h2>Scenarios</h2>
+  <p class="sub">Checks passed per scenario</p>
+  <ul class="rows"><li><div><div class='lab'>Normal lesson: save with flashcards, tag, replay</div><div class='id mono'>core</div></div><div class='bar'><div style='width:80.9%'></div></div><div class='n num'>38 / 47</div></li><li><div><div class='lab'>English subtitles 4.0 s late</div><div class='id mono'>offset</div></div><div class='bar'><div style='width:73.3%'></div></div><div class='n num'>11 / 15</div></li><li><div><div class='lab'>English subtitles drifting (other frame rate)</div><div class='id mono'>drift</div></div><div class='bar'><div style='width:82.9%'></div></div><div class='n num'>34 / 41</div></li><li><div><div class='lab'>Spanish file missing: confirmed download</div><div class='id mono'>download</div></div><div class='bar'><div style='width:84.1%'></div></div><div class='n num'>37 / 44</div></li><li><div><div class='lab'>Title not in the library</div><div class='id mono'>notfound</div></div><div class='bar'><div style='width:100.0%'></div></div><div class='n num'>12 / 12</div></li><li><div><div class='lab'>User says no to saving</div><div class='id mono'>decline</div></div><div class='bar'><div style='width:91.7%'></div></div><div class='n num'>33 / 36</div></li><li><div><div class='lab'>Credits, adverts, lyrics, labels in the file</div><div class='id mono'>noisy</div></div><div class='bar'><div style='width:82.9%'></div></div><div class='n num'>34 / 41</div></li><li><div><div class='lab'>Advanced SubStation file, advanced level</div><div class='id mono'>ass</div></div><div class='bar'><div style='width:90.2%'></div></div><div class='n num'>37 / 41</div></li><li><div><div class='lab'>Second lesson: no repeats, review questions</div><div class='id mono'>repeat</div></div><div class='bar'><div style='width:84.1%'></div></div><div class='n num'>37 / 44</div></li><li><div><div class='lab'>No English file, unsupported language pair</div><div class='id mono'>unsupported</div></div><div class='bar'><div style='width:94.9%'></div></div><div class='n num'>37 / 39</div></li></ul>
+</section>
+</div><div class="foot">Test bench, transcripts and scores: github.com/sarthak-1111/subtitle-tutor (folder testbed) · NAS results will be measured on the finalist testing day</div></body></html>

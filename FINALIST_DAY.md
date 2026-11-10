@@ -78,6 +78,7 @@ Checks before upload:
 | P5 | How does `ug-knowledge` `save-text` behave when a file of the same name exists? | Repeat-use run R1. | Keep the "new name by default" rule, and document the real behaviour. |
 | P6 | How does approval behave for `ug-filemgr` `tag-add-file`, and is a colon allowed in a tag name? | Tag step in core case 1. | If the colon is rejected, the Skill already offers `studied-es-intermediate`. |
 | P7 | Does `ug-video` `search` with play start playback, and where? | Replay step in core case 1. | If it does not, the Skill gives the timestamp only, as designed. |
+| P8 | Does `ug-video` `search` with type `recent` list recently **played** titles (not recently added ones)? | Trigger T5 after playing set A for a minute. | If it lists recently added titles, change the step 2 wording to "recently added" or drop that entry point. |
 
 ---
 
@@ -90,18 +91,19 @@ Type each trigger sentence exactly as written. Write down every confirmation the
 Triggers, in order:
 
 1. **T1:** "Make an intermediate Spanish lesson from His Girl Friday. My language is English."
-2. **T1b**, after the save: "Replay phrase 3."
-3. **T1c**, when asked to tag: "Yes, tag it."
+2. When asked to save: "Yes with flashcards."
+3. **T1b**, after the save: "Replay phrase 3."
+4. **T1c**, when asked to tag: "Yes, tag it."
 
 | Step | Expected result |
 |---|---|
 | 1 Inputs | One-line summary: Spanish, intermediate, 20 phrases, whole film, translations into English. |
 | 2 Title | One match, *His Girl Friday* (1940), movie, with its real path. No question asked. |
 | 3 Subtitles | `.en.srt` and `.es.srt` found, with the language read from the file name. No download offered. If `es-alt.srt` is already in the folder, the Skill asks which Spanish file to use; choose `.es.srt`. |
-| 4 Read | Both files read in full; the last cue is near the end of the film. The lesson folder does not exist yet, and no earlier sheet is found. |
-| 5 Phrases | 20 phrases, at most 12 words each, spread over the film. No names, fillers, `[sound]` labels or credits. |
-| 6 Pairing | Alignment: "aligned". Every phrase has a translation marked "subtitle line". No translation call is made. |
-| 7 Save | Preview of 3 phrases and the path `…/Language Lessons/His Girl Friday (1940)/His Girl Friday (1940) - Spanish intermediate - <date>.md`, with "folder will be created". Answer "yes". NAS approval appears for the folder and the save. Result: verified, with the real path and byte count. |
+| 4 Read | The lesson folder is listed first: it does not exist yet, and no earlier sheet is found. Then both files are read in full; the last cue is near the end of the film. |
+| 5 Phrases | 20 phrases, at most 12 words each, spread over the film; the "Phrases per fifth" row matches the timestamps. No names, fillers, `[sound]` labels or credits. Spot-check five phrases word by word against the `.es.srt` file. |
+| 6 Pairing | Alignment line with numbers, for example "10 of 10 anchors matched, median +0.0 s: aligned", and the anchor table: 10 rows, one from each tenth of the film, both lines quoted. Check three rows against the `.en.srt` file: each English time must be the start time of that English line (the stand-in model often copied the Spanish time instead). Every phrase has a translation marked "subtitle line". No translation call is made. |
+| 7 Save | Preview with the full phrase list (number, time, phrase, translation) and the path `…/Language Lessons/His Girl Friday/His Girl Friday - Spanish intermediate - <date>.md`, using the title exactly as the media search returned it, with "folder will be created". Answer "yes with flashcards". NAS approval appears for the folder and each save. Result: verified, with the real path and byte count; the saved sheet contains the full text (open it), and the flashcard file has one tab-separated line per phrase. |
 | 8 Replay | Phrase 3's timestamp minus 2 s, with the lines before and after. Offer to start the film. Seeking the player to that time shows the line on screen. |
 | 9 Tag | Asks before tagging. NAS approval appears. The tag `studied: Spanish intermediate` is attached, and is visible in File Manager. |
 | End | Final report: files used, 20 phrases (20 subtitle, 0 machine), aligned, saved path, tag added. |
@@ -157,10 +159,23 @@ Run **T1** again on the same day.
 
 Expected results:
 
-- The tag `studied: Spanish intermediate` is noticed.
-- The earlier sheet is found, and the Skill offers new phrases. Answer "yes".
+- The same lesson folder as in T1 is listed (in one stand-in run the model added the year to the title, looked in the wrong folder and missed the earlier sheet).
+- The earlier sheet is found and named in the preview.
 - No phrase from the first sheet is repeated.
+- 1 to 3 quiz questions are marked "(review)" and use phrases from the first sheet; the "Review" row names it.
 - The new file gets a ` (2)` name. Nothing is overwritten.
+
+### Recently watched R2
+
+Play set A for a minute, then say **T5:** "Make a Spanish lesson from the film I watched last night."
+
+Expected result: a list of recently watched titles with *His Girl Friday* in it, and a question asking which one to use (probe P8).
+
+### Regression check with the test bench
+
+Before the day, run `testbed/` with the final Skill (see `testbed/README.md`). On the day, compare each NAS run with the stand-in transcript of the same scenario, and note every difference in the run log.
+
+Check first where the stand-in was weakest (`testbed/DEVLOG.md`, batch 3): whether the anchor table's English times come from the English file, whether phrases, context lines and subtitle translations are copied exactly, and whether the lesson folder uses the title as the media search returned it.
 
 ---
 
